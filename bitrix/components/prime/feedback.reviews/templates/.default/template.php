@@ -5,7 +5,7 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.vali
 $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.maskedinput.js"></script>',true);
 ?>
 
-<div class="review-form" style="display: block;background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/upload/iblock/e3e/e3e234928cb18c3b5853fc8db58d3308.jpg');">
+<div class="review-form" style="display: block;background-image: url('/img/service.jpg');">
     <div class="container-form">
         <div class="text-form-rev">
             <h2>Помогите нам улучшить наш сервис</h2>
