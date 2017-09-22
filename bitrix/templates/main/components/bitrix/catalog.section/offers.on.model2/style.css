@@ -1,0 +1,126 @@
+.main-model-2 {
+    margin-top: 160px;
+}
+@media (max-width: 1029px) {
+    .main-model-2 {
+        margin-top: 80px;
+    }
+}
+.model-offers-block-slicked {
+    margin-bottom: 0 !important;
+}
+
+.model-offers-block-slicked .slick-list {
+    transition: height 0.5s;
+}
+
+.model-offers-block-slicked .spec-box {
+    padding: 0 !important;
+}
+.model-offers-block-slicked .m-spec-left {
+    width: 50%;
+    /*background-color: #ffe;*/
+    overflow: hidden;
+    /*padding-right: 15px;*/
+
+}
+
+.model-offers-block-slicked .m-spec-anons {
+    width: 50%;
+    overflow: hidden;
+    padding-left: 15px;
+    /*padding-right: 15px;*/
+}
+
+.p-preview-text {
+    font-size: 15px;
+    margin-top: 20px;
+}
+@media (max-width: 639px) {
+    .model-offers-block-slicked .m-spec-left {
+        width: 100%;
+    }
+
+    .model-offers-block-slicked .m-spec-anons {
+        width: 100%;
+        padding-left: 0px;
+    }
+    .p-preview-text {
+        display: none;
+    }
+    .model-param-list-1 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+.trade-car-big-slider {
+    margin-bottom: 0;
+}
+
+.trade-car-big-slider .car-big-image {
+    display: block;
+    width: 100%;
+    /*outline: 1px solid green;*/
+    /*background-color: orange;*/
+    object-fit: cover;
+}
+
+.trade-car-small-slider {
+    margin-bottom: 0;
+}
+
+.trade-car-small-slider .car-small-image {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    position: relative;
+    /*outline: 1px solid green;*/
+    /*background-color: orange;*/
+    object-fit: cover;
+}
+
+
+.trade-car-small-slider .slick-slide {
+    position: relative;
+}
+
+.trade-car-small-slider .slick-slide:after {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.trade-car-small-slider .slick-center:after {
+    opacity: 1;
+}
+
+.trade-car-small-slider .slick-slide:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(37,37,37,0.7);
+}
+
+@media (min-width: 1280px){
+    .w-container {
+        width: 1240px;
+    }
+}
+.w-container {
+    margin: 0 auto;
+}
+@media (max-width: 639px){
+    .w-container {
+        width: 100%;
+    }
+}
+
+.slick-slider {
+    margin-bottom: 0px!important;
+}
+.super-trade-slider-giant{
+    margin-bottom: 30px!important;
+}

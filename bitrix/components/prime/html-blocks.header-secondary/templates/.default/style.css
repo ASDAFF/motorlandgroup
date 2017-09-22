@@ -1,0 +1,36 @@
+.subnav-prime {
+    background-color: rgba(22,22,24,.9) !important;
+}
+.subnav-prime .subnav-header {
+    margin-left: 40px;
+}
+
+.subnav-prime .subnav-items {
+    /*outline: 1px solid red;*/
+    min-height: 50px;
+}
+
+.subnav-prime .subnav-items .subnav-item {
+    font-size: 16px !important;
+    margin-left: 30px;
+}
+
+.subnav-prime .subnav-title a {
+    font-family: "Arial Narrow", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+
+
+.subnav-prime .subnav-title a i,
+.subnav-prime .subnav-title a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.subnav-prime .subnav-title a i {
+    font-size: 15px;
+    margin-top: 2px;
+
+}

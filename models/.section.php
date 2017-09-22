@@ -1,0 +1,6 @@
+<?
+$sSectionName = "models";
+$arDirProperties = Array(
+
+);
+?>

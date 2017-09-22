@@ -1,0 +1,7 @@
+.bestdealerOnHat {
+    width: 132px;
+    height: 32px;
+    display: block;
+    background-image: url(/img/bestdiler.png);
+    transition: background-image 1s;
+}

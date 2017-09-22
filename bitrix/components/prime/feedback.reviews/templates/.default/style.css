@@ -1,0 +1,57 @@
+
+.container-form{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.container-form:after, .container-form:before {
+    content: " ";
+    display: table;
+}
+
+.review-form{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.review-form form input[type='text']{
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.review-form form textarea{
+    padding: 20px;
+    background: none;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    height: 100%;
+    resize: none;
+}
+
+.review-form input[type=submit] {
+    color: white;
+    background-color: #003057;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 17px !important;
+    padding: 0 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.review-form{
+    text-align: center;
+    color: #fff;
+}
+.text-form-rev{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.form-rev p a{
+    color: #fff;
+    text-decoration: underline;
+}

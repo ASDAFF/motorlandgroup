@@ -1,0 +1,3361 @@
+@charset "UTF-8";
+/*$korea-h1: "nanumgothic";*/
+/*$korea-h2: "nanumgothic";*/
+/*$korea-h3: "nanumgothic";*/
+/*$korea-h4: "nanumgothic";*/
+/*$korea-h5: "nanumgothic";*/
+/*$korea-body: "nanumgothic";*/
+/*$korea-cite: "nanumgothic";*/
+/*$korea-textlink: "nanumgothic";*/
+/*$korea-dl: "nanumgothic";*/
+/*$korea-blockquote: "nanumgothic";*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: "volvoglyphs";
+  src: url(../fonts/volvoglyphs.eot?548ers);
+  src: url(../fonts/volvo-comparisonTool/volvoglyphs.eot?548ers#iefix) format("embedded-opentype"), url(../fonts/volvo-comparisonTool/volvoglyphs.ttf?548ers) format("truetype"), url(../fonts/volvo-comparisonTool/volvoglyphs.woff?548ers) format("woff"), url(../fonts/volvo-comparisonTool/volvoglyphs.svg?548ers#volvoglyphs) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "volvo-car-locator-icons";
+  src: url("../fonts/volvo-car-locator-icons.eot?v=170");
+  src: url("../fonts/volvo-car-locator-icons/volvo-car-locator-icons.eot?v=170#iefix") format("eot"), url("../fonts/volvo-car-locator-icons/volvo-car-locator-icons.woff?v=170") format("woff"), url("../fonts/volvo-car-locator-icons/volvo-car-locator-icons.ttf?v=170") format("truetype"), url("../fonts/volvo-car-locator-icons/volvo-car-locator-icons.svg?v=170#volvo-car-locator-icons") format("svg"); }
+
+.cl-icon, [class*='cl-icon-']:before, .nci-car-locator .cl-product-details__header:before, .nci-car-locator .inventory__list__item_options__toggle:before, .nci-car-locator .cl-grid-header__no-results__button:before, .nci-car-locator .cl-inv-pagination-button--first:before,
+.nci-car-locator .cl-inv-pagination-button--next:before,
+.nci-car-locator .cl-inv-pagination-button--previous:before,
+.nci-car-locator .cl-inv-pagination-button--last:before, .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:before, .nci-car-locator .toggle-panels-button-desktop:before {
+  font-family: "volvo-car-locator-icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: none;
+  text-transform: none; }
+
+.ssh-icon, [class*='ssh-icon-']:before {
+  font-family: "volvoglyphs";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: none;
+  text-transform: none; }
+
+.cl-icon-angle-down:before, .nci-car-locator .cl-product-details__header:before, .nocsstransforms .closed .nci-car-locator .cl-product-details__header:before, .nci-car-locator .inventory__list__item_options__toggle:before, .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:before {
+  content: "\E001";
+  color: #007bcd; }
+
+.cl-icon-angle-left:before {
+  content: "\E002"; }
+
+.cl-icon-angle-right:before {
+  content: "\E003"; }
+
+.cl-icon-angle-up:before, .nocsstransforms .nci-car-locator .cl-product-details__header:before, .nci-car-locator .inventory__list__item_options__toggle.open:before, .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav.active:before, .nci-car-locator .toggle-panels-button-desktop:before {
+  content: "\E004";
+  color: #007bcd; }
+
+.cl-icon-calendar:before {
+  content: "\E005"; }
+
+.cl-icon-car:before {
+  content: "\E006"; }
+
+.cl-icon-dealer_map_marker:before {
+  content: "\E007"; }
+
+.cl-icon-drivetrain:before {
+  content: "\E008"; }
+
+.cl-icon-filters-closed:before {
+  content: "\E00A"; }
+
+.cl-icon-filters-open:before {
+  content: "\E00B"; }
+
+.cl-icon-fuel:before {
+  content: "\E00C"; }
+
+.cl-icon-magnifying-glass:before {
+  content: "\E00D"; }
+
+.cl-icon-map:before, .nci-car-locator .cl-grid-header__no-results__button--extended-results:before {
+  content: "\E00E"; }
+
+.cl-icon-pagination_first:before, .nci-car-locator .cl-inv-pagination-button--first:before {
+  content: "\E00F"; }
+
+.cl-icon-pagination_last:before, .nci-car-locator .cl-inv-pagination-button--last:before {
+  content: "\E010"; }
+
+.cl-icon-pagination_next:before, .nci-car-locator .cl-inv-pagination-button--next:before {
+  content: "\E011"; }
+
+.cl-icon-pagination_prev:before, .nci-car-locator .cl-inv-pagination-button--previous:before {
+  content: "\E012"; }
+
+.cl-icon-speech-bubbles:before, .nci-car-locator .cl-grid-header__no-results__button--contact-dealer:before {
+  content: "\E014"; }
+
+.ssh-icon-facebook:before {
+  content: "\"; }
+
+.ssh-icon-twitter:before {
+  content: "\"; }
+
+.ssh-icon-print:before {
+  content: "\"; }
+
+[class*='nci-'] .inputSR {
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: .025em;
+  color: #333;
+  font-family: "Volvo Sans Light","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  font-weight: normal; }
+
+[class*='nci-'] h3 + h1, [class*='nci-'] h3 + h2 {
+  padding-top: 20px !important; }
+
+[class*='nci-'] h1 + p, [class*='nci-'] h2 + p, [class*='nci-'] h3 + p, [class*='nci-'] h4 + p, [class*='nci-'] h5 + p {
+  padding-top: 20px !important; }
+
+[class*='nci-'] .cta, [class*='nci-'] .link, [class*='nci-'] .linkBack, [class*='nci-'] .ctaWhite {
+  cursor: pointer; }
+
+[class*='nci-'] .h1, [class*='nci-'] .h2, [class*='nci-'] .h3, [class*='nci-'] .h5, [class*='nci-'] .body, [class*='nci-'] .buttonPrimary, [class*='nci-'] .cta, [class*='nci-'] .link, [class*='nci-'] .linkBack, [class*='nci-'] .ctaWhite {
+  visibility: inherit; }
+
+[class*='nci-'] .h1, [class*='nci-'] .h2, [class*='nci-'] .h3, [class*='nci-'] .h5, [class*='nci-'] p.body {
+  display: block; }
+
+[class*='nci-'] a.body, [class*='nci-'] a.h1, [class*='nci-'] a.h2, [class*='nci-'] a.h3, [class*='nci-'] a.h5,
+[class*='nci-'] button.body, [class*='nci-'] button.h1, [class*='nci-'] button.h2, [class*='nci-'] button.h3, [class*='nci-'] button.h5,
+[class*='nci-'] a.cta, [class*='nci-'] a.link, [class*='nci-'] a.ctaWhite, [class*='nci-'] a.linkBack,
+[class*='nci-'] button.cta, [class*='nci-'] button.link, [class*='nci-'] button.ctaWhite, [class*='nci-'] button.linkBack {
+  cursor: pointer; }
+
+@media screen and (min-width: 768px) {
+  [class*='nci-'] .cta + .link, [class*='nci-'] .cta + .linkBack,
+  [class*='nci-'] .ctaWhite + .link, [class*='nci-'] .ctaWhite + .linkBack {
+    left: 30px; } }
+
+@media screen and (min-width: 992px) {
+  [class*='nci-'] .cta + .link, [class*='nci-'] .cta + .linkBack,
+  [class*='nci-'] .ctaWhite + .link, [class*='nci-'] .ctaWhite + .linkBack {
+    left: 40px; } }
+
+@media screen and (max-width: 767px) {
+  [class*='nci-'] .cta, [class*='nci-'] .link, [class*='nci-'] .linkBack, [class*='nci-'] .ctaWhite {
+    width: 100% !important; } }
+
+@media print and (min-width: 1px) {
+  .h1 {
+    font-size: 38px !important;
+    line-height: 42px !important;
+    letter-spacing: 0.025rem !important; }
+  .h2 {
+    font-size: 26px !important;
+    line-height: 32px !important;
+    letter-spacing: 0.025rem !important; }
+  .h3 {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.040rem !important; }
+  .h5 {
+    font-size: 22px !important;
+    line-height: 26px !important;
+    letter-spacing: 0.025rem !important; }
+  .body {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    letter-spacing: 0.025rem !important; }
+  .cta, .ctaWhite, .link, .linkBack {
+    font-size: 15px !important;
+    line-height: 42px !important;
+    letter-spacing: 0.025rem !important; } }
+
+/* ==========================================================================
+   Variables
+
+   ========================================================================== */
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+/* ==========================================================================
+   Column Grid
+   ========================================================================== */
+/* ==========================================================================
+    Breakpoints - defined in px
+    ========================================================================== */
+.cl-text-right {
+  text-align: right; }
+
+.cl-text-center {
+  text-align: center; }
+
+.cl-text-left {
+  text-align: left; }
+
+/* ==========================================================================
+   Utility Mixins
+   ========================================================================== */
+/* Quick vertical align */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* ==========================================================================
+   Effects
+   ========================================================================== */
+/* ==========================================================================
+   Responsive media query mixins
+   * These are used so that we can define separate media-query content
+     for <IE9 and browsers with support for media queries
+   * These are directly related to the global $fix-mqs var defined in
+     kickoff-old-ie.scss
+   * kickoff-old-ie.scss ignores any content in media-queries with values less
+     than the $fix-mqs var value
+   ========================================================================== */
+/*
+   Min-width media query:
+   * Equivalent to: @media screen and (min-width: 20em) { ... }
+   * Usage: @include respond-min(500) { ... };
+   * Argument is a pixel value WITHOUT a unit of measurement
+   ========================================================================== */
+/*
+   Max-width media query:
+   * Equivalent to: @media screen and (max-width: 20em) { ... }
+   * Usage: @include respond-max(500) { ... };
+   * Argument is a pixel value WITHOUT a unit of measurement
+   ========================================================================== */
+/*
+   Min-max-width media query:
+   * Equivalent to: @media screen and (min-width: 10em) and (max-width: 20em) { ... }
+   * Usage: @include respond-min-max(500, 600) { ... };
+   * Arguments are pixel values WITHOUT a unit of measurement
+   ========================================================================== */
+/*
+   Old IE specific mixin
+   * Only use this content if we're dealing with old IE
+   * Usage: @include oldie() { ... }
+   ========================================================================== */
+[class*=cl-small-block-grid-], [class*=cl-medium-block-grid-], [class*=cl-large-block-grid-] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0;
+  width: 100%;
+  max-width: 1320px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
+  [class*=cl-small-block-grid-] li, [class*=cl-medium-block-grid-] li, [class*=cl-large-block-grid-] li {
+    display: inline-block;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    vertical-align: top; }
+
+.cl-small-block-grid-12 li {
+  width: 8.33333%; }
+
+.cl-small-block-grid-11 li {
+  width: 9.09091%; }
+
+.cl-small-block-grid-10 li {
+  width: 10%; }
+
+.cl-small-block-grid-9 li {
+  width: 11.11111%; }
+
+.cl-small-block-grid-8 li {
+  width: 12.5%; }
+
+.cl-small-block-grid-7 li {
+  width: 14.28571%; }
+
+.cl-small-block-grid-6 li {
+  width: 16.66667%; }
+
+.cl-small-block-grid-5 li {
+  width: 20%; }
+
+.cl-small-block-grid-4 li {
+  width: 25%; }
+
+.cl-small-block-grid-3 li {
+  width: 33.33333%; }
+
+.cl-small-block-grid-2 li {
+  width: 50%; }
+
+.cl-small-block-grid-1 li {
+  width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  .cl-mid-block-grid-12 li {
+    width: 8.33333%; }
+  .cl-mid-block-grid-11 li {
+    width: 9.09091%; }
+  .cl-mid-block-grid-10 li {
+    width: 10%; }
+  .cl-mid-block-grid-9 li {
+    width: 11.11111%; }
+  .cl-mid-block-grid-8 li {
+    width: 12.5%; }
+  .cl-mid-block-grid-7 li {
+    width: 14.28571%; }
+  .cl-mid-block-grid-6 li {
+    width: 16.66667%; }
+  .cl-mid-block-grid-5 li {
+    width: 20%; }
+  .cl-mid-block-grid-4 li {
+    width: 25%; }
+  .cl-mid-block-grid-3 li {
+    width: 33.33333%; }
+  .cl-mid-block-grid-2 li {
+    width: 50%; }
+  .cl-mid-block-grid-1 li {
+    width: 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  .cl-wide-block-grid-12 li {
+    width: 8.33333%; }
+  .cl-wide-block-grid-11 li {
+    width: 9.09091%; }
+  .cl-wide-block-grid-10 li {
+    width: 10%; }
+  .cl-wide-block-grid-9 li {
+    width: 11.11111%; }
+  .cl-wide-block-grid-8 li {
+    width: 12.5%; }
+  .cl-wide-block-grid-7 li {
+    width: 14.28571%; }
+  .cl-wide-block-grid-6 li {
+    width: 16.66667%; }
+  .cl-wide-block-grid-5 li {
+    width: 20%; }
+  .cl-wide-block-grid-4 li {
+    width: 25%; }
+  .cl-wide-block-grid-3 li {
+    width: 33.33333%; }
+  .cl-wide-block-grid-2 li {
+    width: 50%; }
+  .cl-wide-block-grid-1 li {
+    width: 100%; } }
+
+.cl-row {
+  zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1320px;
+  margin: 0 auto; }
+  .cl-row:before, .cl-row:after {
+    display: table;
+    content: " "; }
+  .cl-row:after {
+    clear: both; }
+
+.cl-column {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  width: 100%; }
+  .cl-column:last-child {
+    float: right; }
+    .cl-column:last-child:first-child, .cl-column:last-child.cl-end {
+      float: left; }
+  .cl-row.cl-collapse .cl-column {
+    padding-left: 0;
+    padding-right: 0; }
+  @media only screen and (min-width: 768px) {
+    .cl-row.cl-mid-collapse .cl-column {
+      padding-left: 0;
+      padding-right: 0; }
+    .cl-row.cl-mid-uncollapse .cl-column {
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media only screen and (min-width: 1024px) {
+    .cl-row.cl-wide-collapse .cl-column {
+      padding-left: 0;
+      padding-right: 0; }
+    .cl-row.cl-wide-uncollapse .cl-column {
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+
+.cl-small-11 {
+  width: 91.66667%; }
+
+.cl-small-10 {
+  width: 83.33333%; }
+
+.cl-small-9 {
+  width: 75%; }
+
+.cl-small-8 {
+  width: 66.66667%; }
+
+.cl-small-7 {
+  width: 58.33333%; }
+
+.cl-small-6 {
+  width: 50%; }
+
+.cl-small-5 {
+  width: 41.66667%; }
+
+.cl-small-4 {
+  width: 33.33333%; }
+
+.cl-small-3 {
+  width: 25%; }
+
+.cl-small-2 {
+  width: 16.66667%; }
+
+.cl-small-1 {
+  width: 8.33333%; }
+
+@media only screen and (min-width: 768px) {
+  .cl-mid-11 {
+    width: 91.66667%; }
+  .cl-mid-10 {
+    width: 83.33333%; }
+  .cl-mid-9 {
+    width: 75%; }
+  .cl-mid-8 {
+    width: 66.66667%; }
+  .cl-mid-7 {
+    width: 58.33333%; }
+  .cl-mid-6 {
+    width: 50%; }
+  .cl-mid-5 {
+    width: 41.66667%; }
+  .cl-mid-4 {
+    width: 33.33333%; }
+  .cl-mid-3 {
+    width: 25%; }
+  .cl-mid-2 {
+    width: 16.66667%; }
+  .cl-mid-1 {
+    width: 8.33333%; } }
+
+@media only screen and (min-width: 1024px) {
+  .cl-wide-11 {
+    width: 91.66667%; }
+  .cl-wide-10 {
+    width: 83.33333%; }
+  .cl-wide-9 {
+    width: 75%; }
+  .cl-wide-8 {
+    width: 66.66667%; }
+  .cl-wide-7 {
+    width: 58.33333%; }
+  .cl-wide-6 {
+    width: 50%; }
+  .cl-wide-5 {
+    width: 41.66667%; }
+  .cl-wide-4 {
+    width: 33.33333%; }
+  .cl-wide-3 {
+    width: 25%; }
+  .cl-wide-2 {
+    width: 16.66667%; }
+  .cl-wide-1 {
+    width: 8.33333%; } }
+
+.cl-hide {
+  display: none !important; }
+
+.cl-show {
+  display: inherit !important; }
+
+@media only screen and (max-width: 398px) {
+  .cl-hide-for-x-small-only {
+    display: none !important; } }
+
+@media only screen and (min-width: 399px) {
+  .cl-hide-for-small-up {
+    display: none !important; } }
+
+@media only screen and (min-width: 399px) and (max-width: 767px) {
+  .cl-hide-for-small-only {
+    display: none !important; } }
+
+@media only screen and (min-width: 768px) {
+  .cl-hide-for-mid-up {
+    display: none !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .cl-hide-for-mid-only {
+    display: none !important; } }
+
+@media only screen and (min-width: 1024px) {
+  .cl-hide-for-wide-up {
+    display: none !important; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .cl-hide-for-wide-only {
+    display: none !important; } }
+
+@media only screen and (min-width: 1280px) {
+  .cl-hide-for-comfy-up {
+    display: none !important; } }
+
+@media only screen and (max-width: 398px) {
+  .cl-show-for-x-small-only {
+    display: inherit !important; } }
+
+@media only screen and (min-width: 399px) {
+  .cl-show-for-small-up {
+    display: inherit !important; } }
+
+@media only screen and (min-width: 399px) and (max-width: 767px) {
+  .cl-show-for-small-only {
+    display: inherit !important; } }
+
+@media only screen and (min-width: 768px) {
+  .cl-show-for-mid-up {
+    display: inherit !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .cl-show-for-mid-only {
+    display: inherit !important; } }
+
+@media only screen and (min-width: 1024px) {
+  .cl-show-for-wide-up {
+    display: inherit !important; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .cl-show-for-wide-only {
+    display: inherit !important; } }
+
+@media only screen and (min-width: 1280px) {
+  .cl-show-for-comfy-up {
+    display: inherit !important; } }
+
+html.no-scroll, html.no-scroll body {
+  overflow: hidden !important;
+  position: relative !important; }
+
+.car-locator {
+  padding-top: 64px;
+  width: 100%;
+  min-width: 320px; }
+  .car-locator .cl-inventory {
+    margin: 0 auto;
+    display: block; }
+  @media screen and (min-width: 480px) {
+    .car-locator {
+      padding-top: 64px; } }
+  @media screen and (min-width: 1025px) {
+    .car-locator {
+      padding-top: 79px; } }
+
+.cl-preload-container {
+  text-align: center;
+  position: absolute;
+  z-index: 1002; }
+  .cl-preload-container:before {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6); }
+
+.cl-preload-speeding-wheel {
+  position: fixed;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: cl-preload-spin 575ms infinite ease-out; }
+
+@keyframes cl-preload-spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-o-keyframes cl-preload-spin {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-ms-keyframes cl-preload-spin {
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes cl-preload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-moz-keyframes cl-preload-spin {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.car-locator + .footer {
+  margin-top: 0; }
+
+.cl-button--disabled {
+  opacity: 0.5;
+  cursor: default;
+  transition: none !important;
+  pointer-events: none; }
+
+.cl-modal-window {
+  position: fixed;
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s linear; }
+  .cl-modal-window.cl-modal-window--open {
+    opacity: 1; }
+  .ios .cl-modal-window {
+    position: absolute;
+    box-sizing: content-box; }
+
+.cl-modal-window__scroller {
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  padding: 2.0625rem 1.25rem;
+  font-size: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+  .cl-modal-window__scroller:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+
+.cl-modal-window__window {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle; }
+
+.cl-modal-window__close {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 0.625rem;
+  text-align: center;
+  border: 0;
+  font-size: 1.875rem;
+  line-height: .5em;
+  letter-spacing: 0;
+  z-index: 1; }
+  .cl-modal-window__close:before {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 3px; }
+
+.cl-modal-window__child {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 572px;
+  text-align: left;
+  transform: scale(0.7);
+  transition: transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045), -webkit-transform 0.5s cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+  .cl-modal-window--open .cl-modal-window__child {
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.cl-select-dealer__details-container, .cl-select-dealer__map, .cl-change-dealer__nearest, .cl-change-dealer__results {
+  opacity: 1;
+  transition: opacity 0.2s linear;
+  will-change: opacity; }
+  .transparent.cl-select-dealer__details-container, .transparent.cl-select-dealer__map, .transparent.cl-change-dealer__nearest, .transparent.cl-change-dealer__results {
+    opacity: 0; }
+
+.cl-modal-window--cl-select-dealer .cl-modal-window__scroller:before {
+  content: none; }
+
+@media only screen and (min-width: 1025px) {
+  .cl-modal-window--cl-select-dealer {
+    overflow: hidden; } }
+
+.cl-modal-window--cl-select-dealer .cl-modal-window__window {
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  transform: none;
+  position: static; }
+  @media only screen and (min-width: 1025px) {
+    .cl-modal-window--cl-select-dealer .cl-modal-window__window {
+      position: absolute;
+      width: auto;
+      top: 2.0625rem;
+      bottom: 2.0625rem;
+      left: 1.25rem;
+      right: 1.25rem; } }
+
+.cl-modal-window--cl-select-dealer .cl-modal-window__child.cl-select-dealer {
+  height: 100%;
+  max-width: 758px; }
+
+.cl-select-dealer__selected, .cl-select-dealer__selected_map {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  padding: 0.9375rem 1.0625rem 0;
+  height: auto; }
+
+.cl-select-dealer__title {
+  font-family: "Volvo Sans Medium";
+  font-size: 1.25rem;
+  text-transform: none;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0;
+  color: #003057; }
+  @media only screen and (min-width: 1025px) {
+    .cl-select-dealer__title {
+      font-size: 1.3125rem; } }
+
+@media only screen and (min-width: 1025px) {
+  .cl-select-dealer__selected {
+    padding: 1.500rem 1.875rem 0; }
+  .cl-select-dealer__selected_map {
+    height: 20%; } }
+
+@media only screen and (min-width: 1025px) {
+  .cl-select-dealer__details-container {
+    padding: 0 0 10px; } }
+
+.cl-dealer-details {
+  font-family: "Volvo Sans Regular";
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-bottom: 0.75rem;
+  max-width: none;
+  color: #003057;
+  text-align: left;
+  margin-top: 10px;
+  float: left; }
+  @media only screen and (min-width: 1025px) {
+    .cl-dealer-details {
+      margin-bottom: 0;
+      font-size: .9375rem;
+      line-height: 1.25rem; } }
+
+.cl-dealer-details__name {
+  font-family: "Volvo Sans Medium";
+  font-size: 1.0625rem; }
+  @media only screen and (min-width: 1025px) {
+    .cl-dealer-details__name {
+      font-size: 1.125rem; } }
+
+.cl-select-dealer__button--inventory {
+  margin: 0 0 1.0625rem;
+  padding: 0.625rem; }
+  @media only screen and (min-width: 1025px) {
+    .cl-select-dealer__button--inventory {
+      position: absolute;
+      margin: 0;
+      right: 1.875rem;
+      top: 2.8125rem; } }
+
+.cl-select-dealer__map-container {
+  position: relative;
+  margin-left: -1.0625rem;
+  margin-right: -1.0625rem;
+  padding-top: 56.25%;
+  background: #e5e3df;
+  margin-top: -15px;
+  height: 100%; }
+  @media only screen and (min-width: 1025px) {
+    .cl-select-dealer__map-container {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; } }
+
+.cl-select-dealer__map {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.cl-change-dealer {
+  position: relative;
+  height: auto; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer {
+      height: 48%; } }
+
+.cl-change-dealer__header {
+  position: relative;
+  height: auto;
+  padding: 0.875rem 1.0625rem 0.625rem;
+  border-bottom: 1px solid #DDD;
+  background: #fff; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer__header {
+      height: 120px;
+      padding: 1.3125rem 1.875rem 1.5rem; } }
+
+.cl-change-dealer__title {
+  font-family: "Volvo Sans Medium";
+  font-size: 1.25rem;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+  margin: 0; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer__title {
+      font-size: 1.375rem;
+      line-height: 1.5rem; } }
+
+.cl-change-dealer .cl-change-dealer__header .cl-change-dealer__text {
+  padding: 10px 0 !important; }
+
+.cl-change-dealer__nearest {
+  font-family: "Volvo Sans Medium";
+  font-size: 0.875rem; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer__nearest {
+      font-size: 1rem;
+      position: absolute;
+      left: 1.875rem;
+      bottom: 1rem; } }
+
+.cl-change-dealer__form {
+  position: relative; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer__form {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.875rem; } }
+  .cl-change-dealer__form .cl-select-dealer__zipcode-input {
+    height: 2.5rem;
+    padding: 0 0.625rem;
+    font-family: "Volvo Sans Medium";
+    font-size: 0.9375rem; }
+    .cl-change-dealer__form .cl-select-dealer__zipcode-input::-ms-clear {
+      display: none; }
+    @media only screen and (min-width: 1025px) {
+      .cl-change-dealer__form .cl-select-dealer__zipcode-input {
+        width: 17.125rem;
+        height: 3.125rem;
+        font-size: 1.25rem; } }
+  .cl-change-dealer__form .cl-select-dealer__zipcode-submit {
+    position: absolute;
+    -webkit-appearance: none;
+    letter-spacing: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    top: 0.625rem;
+    right: 0.625rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    font-size: 1.25rem; }
+    .cl-change-dealer__form .cl-select-dealer__zipcode-submit:hover {
+      background: none;
+      color: #5b7f95; }
+    @media only screen and (min-width: 1025px) {
+      .cl-change-dealer__form .cl-select-dealer__zipcode-submit {
+        top: 0.8125rem;
+        right: 0.8125rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        font-size: 1.5rem; } }
+
+.cl-change-dealer__zipcode-error {
+  display: inline-block;
+  font-family: "Volvo Sans Medium";
+  color: #b30000;
+  font-size: 0.875rem;
+  line-height: 1.0625rem; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer__zipcode-error {
+      font-size: 1rem;
+      line-height: 1.0625rem;
+      position: absolute;
+      right: 1.875rem;
+      bottom: 1rem; } }
+
+.cl-change-dealer__results {
+  background: #fff;
+  padding: 0 1.0625rem; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer__results {
+      position: absolute;
+      padding: 0 1.875rem;
+      top: 120px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; } }
+
+.cl-change-dealer__result {
+  position: relative;
+  padding: 0.875rem 0 1.0625rem;
+  border-bottom: 1px solid #DDD;
+  overflow: hidden; }
+  .cl-change-dealer__result:last-child {
+    border: none; }
+  @media only screen and (min-width: 1025px) {
+    .cl-change-dealer__result {
+      padding: 1.3125rem 0 1.1875rem; } }
+
+.cl-modal-window__scroller .cl-modal-window__window .cl-select-dealer .cl-select-dealer__button--select,
+.cl-modal-window__scroller .cl-modal-window__window .cl-select-dealer .cl-select-dealer__button--inventory {
+  margin: 0;
+  width: 100%;
+  cursor: pointer; }
+  @media screen and (min-width: 1024px) {
+    .cl-modal-window__scroller .cl-modal-window__window .cl-select-dealer .cl-select-dealer__button--select,
+    .cl-modal-window__scroller .cl-modal-window__window .cl-select-dealer .cl-select-dealer__button--inventory {
+      float: right;
+      width: auto;
+      margin-top: 10px; } }
+
+#iframecontainer {
+  width: 99%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: #FFF;
+  border: 1px solid #666;
+  border: 1px solid #555;
+  box-shadow: 2px 2px 40px #222;
+  z-index: 999999; }
+  #iframecontainer iframe {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: none; }
+
+#loader {
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+  margin: auto; }
+
+#block {
+  background: #000;
+  opacity: 0.6;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none; }
+
+.nci-car-locator {
+  /* Inventory grid */ }
+  .nci-car-locator .cl-landing-page .zip-code-error-field {
+    display: none;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 0;
+    width: 80%;
+    margin: 10px 0 10px 0;
+    color: #fff; }
+    .nci-car-locator .cl-landing-page .zip-code-error-field.invalid {
+      display: block; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-landing-page .zip-code-error-field {
+        width: 95%;
+        margin: 10px 0 10px 40px; } }
+
+@keyframes splash {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+  .nci-car-locator .cl-splash {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden; }
+    .nci-car-locator .cl-splash .background-image {
+      display: block;
+      width: 100%;
+      height: 60vh;
+      min-height: 400px;
+      position: relative;
+      background-size: cover;
+      background-position: center center; }
+  .nci-car-locator .cl-splash__mask {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 3; }
+  .nci-car-locator .cl-splash form {
+    margin: 0 auto;
+    padding: 0 30px; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-splash form {
+        width: 500px;
+        padding: 0; } }
+  .nci-car-locator .cl-splash__content {
+    max-width: 79.125em;
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    padding-top: 44px; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-splash__content {
+        padding-top: 0; } }
+  .nci-car-locator .cl-splash__header-1 {
+    width: 90%;
+    margin: 0 auto;
+    color: white; }
+  .nci-car-locator .cl-splash__header-2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    color: #fff; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-splash__header-2 {
+        padding: 10px 0; } }
+  .nci-car-locator .cl-splash__header-3 {
+    color: #fff;
+    width: 90%;
+    margin: 0 auto 20px; }
+  .nci-car-locator .cl-splash__zip-code {
+    width: 60%; }
+  .nci-car-locator input.cl-splash__zip-code {
+    padding-right: 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 1px;
+    height: 57px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator input.cl-splash__zip-code {
+        display: inline;
+        width: 50%;
+        margin: 0 10px 0 auto; } }
+  @media print {
+    .nci-car-locator .cl-detail-carousel__images {
+      width: 100%; }
+    .nci-car-locator .owl-wrapper-outer {
+      overflow: hidden; }
+    .nci-car-locator .owl-wrapper {
+      transition-duration: 0s !important;
+      width: 100% !important;
+      left: 0 !important;
+      transform: none !important;
+      overflow: hidden !important; }
+    .nci-car-locator .owl-item {
+      width: 100% !important;
+      display: none !important; }
+      .nci-car-locator .owl-item:first-child {
+        display: block !important; }
+    .nci-car-locator .cl-details-carousel__image {
+      width: 100% !important; }
+    .nci-car-locator .owl-controls {
+      display: none !important; }
+    .nci-car-locator .cl-detail-carousel__thumbs {
+      display: none; } }
+  @media only screen {
+    .nci-car-locator {
+      /* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.2
+ */
+      /* clearfix */
+      /* display none until init */
+      /* mouse grab icon */
+      /* fix */ }
+      .nci-car-locator .owl-carousel .owl-wrapper:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0; }
+      .nci-car-locator .owl-carousel {
+        display: none;
+        position: relative;
+        width: 100%;
+        -ms-touch-action: pan-y; }
+      .nci-car-locator .owl-carousel .owl-wrapper {
+        display: none;
+        position: relative;
+        -webkit-transform: translate3d(0px, 0px, 0px); }
+      .nci-car-locator .owl-carousel .owl-wrapper-outer {
+        overflow: hidden;
+        position: relative;
+        width: 100%; }
+      .nci-car-locator .owl-carousel .owl-wrapper-outer.autoHeight {
+        -webkit-transition: height 500ms ease-in-out;
+        -moz-transition: height 500ms ease-in-out;
+        -ms-transition: height 500ms ease-in-out;
+        -o-transition: height 500ms ease-in-out;
+        transition: height 500ms ease-in-out; }
+      .nci-car-locator .owl-carousel .owl-item {
+        float: left; }
+      .nci-car-locator .owl-controls .owl-page,
+      .nci-car-locator .owl-controls .owl-buttons div {
+        cursor: pointer; }
+      .nci-car-locator .owl-controls {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent; }
+      .nci-car-locator .grabbing {
+        cursor: url(grabbing.png) 8 8, move; }
+      .nci-car-locator .owl-carousel .owl-wrapper,
+      .nci-car-locator .owl-carousel .owl-item {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0); }
+      .nci-car-locator .owl-item.loading {
+        min-height: 120px; }
+      .nci-car-locator .cl-detail-carousel {
+        margin-bottom: 1.25rem; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .cl-detail-carousel {
+        background: #fff; } }
+  @media only screen {
+      .nci-car-locator .cl-detail-carousel__images {
+        position: relative;
+        width: 100%;
+        padding-top: 41.45833%;
+        padding-bottom: 1.75rem;
+        opacity: 0;
+        transition: opacity 0.5s linear; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .cl-detail-carousel__images {
+        padding-bottom: 0; } }
+  @media only screen {
+        .nci-car-locator .cl-detail-carousel__images.loaded {
+          opacity: 1; }
+        .nci-car-locator .cl-detail-carousel__images.owl-carousel {
+          display: block; }
+        .nci-car-locator .cl-detail-carousel__images .owl-wrapper-outer {
+          background: #fff;
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .nci-car-locator .cl-detail-carousel__images .owl-buttons {
+          display: none;
+          width: 100%;
+          height: 0; } }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .cl-detail-carousel__images .owl-buttons {
+          display: block; } }
+  @media only screen {
+        .nci-car-locator .cl-detail-carousel__images .owl-controls {
+          margin-top: 0; }
+        .nci-car-locator .cl-detail-carousel__images .owl-prev, .nci-car-locator .cl-detail-carousel__images .owl-next {
+          position: absolute;
+          display: block;
+          overflow: hidden;
+          text-indent: -9999px;
+          width: 2.125rem;
+          height: 3.9375rem;
+          margin-top: -2rem !important;
+          top: 50%; }
+        .nci-car-locator .cl-detail-carousel__images .owl-prev {
+          background: url("/Static/images/car-locator/svgs/carousel-left.svg") no-repeat !important;
+          background-size: contain !important;
+          left: 1.25rem; }
+        .nci-car-locator .cl-detail-carousel__images .owl-next {
+          background: url("/Static/images/car-locator/svgs/carousel-right.svg") no-repeat !important;
+          background-size: contain !important;
+          right: 1.25rem; }
+        .nci-car-locator .cl-detail-carousel__images .owl-pagination {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0.4375rem;
+          height: 0.875rem;
+          font-size: 0;
+          line-height: 0.5rem;
+          text-align: center; } }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .cl-detail-carousel__images .owl-pagination {
+          display: none; } }
+  @media only screen {
+        .nci-car-locator .cl-detail-carousel__images .owl-page {
+          display: inline-block;
+          vertical-align: top;
+          width: 0.875rem;
+          height: 0.875rem;
+          cursor: pointer; }
+          .nci-car-locator .cl-detail-carousel__images .owl-page span {
+            display: block;
+            width: 0.5rem;
+            height: 0.5rem;
+            margin: 0.1875rem;
+            border: 1px solid #999;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: background-color 400ms linear; }
+          .nci-car-locator .cl-detail-carousel__images .owl-page.active span {
+            background-color: #999; }
+      .nci-car-locator .cl-details-carousel__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        outline: none;
+        border: 0;
+        margin-left: 1px;
+        max-width: 100%; }
+      .nci-car-locator .cl-detail-carousel__thumbs {
+        padding: 18px 0;
+        position: relative;
+        z-index: 1; }
+      .nci-car-locator .cl-details-carousel__thumb-container {
+        padding: 0 3px;
+        cursor: pointer; }
+        .nci-car-locator .cl-details-carousel__thumb-container.cl-details-carousel__thumb-container--active {
+          border: 1px solid #dddddd; }
+      .nci-car-locator .cl-details-carousel__thumb-border {
+        padding: 3px;
+        border: 1px solid transparent;
+        transition: border-color 400ms linear; }
+        .cl-details-carousel__thumb-container--active .nci-car-locator .cl-details-carousel__thumb-border {
+          border-color: #999; }
+      .nci-car-locator .cl-details-carousel__thumb {
+        display: block;
+        width: 100%;
+        padding-top: 41.45833%;
+        opacity: 0;
+        transition: opacity 0.5s linear; }
+        .nci-car-locator .cl-details-carousel__thumb.loaded {
+          padding-top: 0;
+          opacity: 1; } }
+  @media print {
+    .nci-car-locator .car-locator {
+      margin-top: 0 !important; }
+    .nci-car-locator .cl-details-list {
+      width: 100%;
+      font-size: 0;
+      margin: 0 0 16pt;
+      padding: 0; }
+    .nci-car-locator .cl-details-list--last {
+      margin: 0;
+      padding: 0; }
+    .nci-car-locator .cl-details-list__item--bullet, .nci-car-locator .cl-details-list__item--dash, .nci-car-locator .cl-details-list__item {
+      margin: 0 0 10pt;
+      position: relative; }
+      .nci-car-locator .cl-details-list__item--bullet:last-of-type, .nci-car-locator .cl-details-list__item--dash:last-of-type, .nci-car-locator .cl-details-list__item:last-of-type {
+        margin-bottom: 0; }
+    .nci-car-locator .cl-details-list__item--indent {
+      padding-left: 22pt; }
+    .nci-car-locator .cl-details-list__item--bullet, .nci-car-locator .cl-details-list__item--dash {
+      margin-bottom: 5pt;
+      padding-left: 0.7em; }
+      .nci-car-locator .cl-details-list__item--bullet:before, .nci-car-locator .cl-details-list__item--dash:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '\2022'; }
+    .nci-car-locator .cl-details-list__item--dash:before {
+      content: '\002D'; }
+    .nci-car-locator .cl-details-list__title {
+      margin: 0 0 5pt; }
+    .nci-car-locator .cl-details-list__title--bullet {
+      display: block;
+      margin-bottom: 5pt; }
+    .nci-car-locator .cl-details-list__title--indent {
+      padding-left: 22pt; } }
+  @media only screen {
+    .nci-car-locator .cl-details-list {
+      font-size: 0;
+      margin-bottom: 1.75rem; }
+    .nci-car-locator .cl-details-list--border {
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid #DDD; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-details-list--border {
+      padding-bottom: 0;
+      border-bottom: 0; } }
+  @media only screen {
+    .nci-car-locator .cl-details-list--last {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0; }
+    .nci-car-locator .cl-details-list__item {
+      position: relative;
+      margin: 0 0 1.75rem; }
+      .nci-car-locator .cl-details-list__item:last-of-type {
+        margin-bottom: 0; }
+    .nci-car-locator .cl-details-list__item--bullet, .nci-car-locator .cl-details-list__item--dash {
+      margin-bottom: 0.6875rem;
+      padding-left: 0.7em; }
+      .nci-car-locator .cl-details-list__item--bullet:before, .nci-car-locator .cl-details-list__item--dash:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '\2022'; }
+    .nci-car-locator .cl-details-list__title {
+      margin-bottom: 1.75rem; }
+    .nci-car-locator .cl-details-list__title--bullet {
+      display: block;
+      margin-bottom: 0.6875rem; }
+    .nci-car-locator .cl-details-list__title--indent {
+      padding-left: 2.4375rem; } }
+  @media print {
+    .nci-car-locator .cl-product-details__header {
+      display: block;
+      margin-bottom: 16pt;
+      padding: 0;
+      border: 0;
+      text-decoration: none;
+      color: #007bcd !important; }
+      .nci-car-locator .cl-product-details__header:before {
+        content: none; }
+    .nci-car-locator .product-overview-data {
+      margin: 0 0 16pt;
+      padding: 0; }
+      .nci-car-locator .product-overview-data [class*='cl-icon-'] {
+        position: relative; }
+        .nci-car-locator .product-overview-data [class*='cl-icon-']:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 16pt; }
+      .nci-car-locator .product-overview-data .cl-icon-car:before {
+        font-size: 5.625rem;
+        left: -1.25rem; }
+      .nci-car-locator .product-overview-data .cl-icon-drivetrain:before {
+        font-size: 0.875rem; }
+    .nci-car-locator .product-overview-data__term, .nci-car-locator .product-overview-data__description {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0; }
+    .nci-car-locator .product-overview-data__item {
+      margin: 0 0 10pt; }
+    .nci-car-locator .product-overview-data__term {
+      position: relative;
+      width: 40%;
+      padding-left: 22pt;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .nci-car-locator .product-overview-data__description {
+      width: 60%; }
+    .nci-car-locator .cl-color-icon, .nci-car-locator .cl-color-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 16pt;
+      height: 16pt; }
+    .nci-car-locator .cl-color-icon {
+      border-radius: 8pt;
+      border: 1px solid #999;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .nci-car-locator .cl-color-image {
+      background-size: contain; }
+    .nci-car-locator .cl-product-details__tab-items {
+      display: none; }
+    .nci-car-locator .cl-product-details__section.hidden, .nci-car-locator .hidden.filter-panel {
+      display: block !important; }
+    .nci-car-locator .cl-product-details__content-container, .nci-car-locator .filter-panel-content-container {
+      height: auto !important;
+      padding: 0; }
+    .nci-car-locator .cl-product-details__content {
+      padding: 0 0 24pt; }
+    .nci-car-locator .cl-packages {
+      margin: 0; }
+      .nci-car-locator .cl-packages tr:first-child td {
+        padding-top: 0; }
+      .nci-car-locator .cl-packages tr:last-child td, .nci-car-locator .cl-packages .cl-packages__row--last td {
+        padding-bottom: 0;
+        border-bottom: 0; }
+    .nci-car-locator .cl-packages__title-cell {
+      padding: 10pt 0; }
+      .nci-car-locator .cl-packages__title-cell span {
+        color: #007bcd !important; }
+    .nci-car-locator .cl-packages__price-cell {
+      padding: 10pt;
+      padding-right: 0;
+      text-align: right; }
+      .nci-car-locator .cl-packages__price-cell span {
+        color: #007bcd !important; } }
+  @media only screen {
+    .nci-car-locator .cl-product-details {
+      margin-top: 20px;
+      display: block; }
+    .nci-car-locator .cl-product-details__tab-items {
+      font-size: 0;
+      display: none; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-product-details__tab-items {
+      display: block;
+      text-align: justify;
+      text-justify: distribute;
+      padding-right: 10px;
+      line-height: 0; }
+      .nci-car-locator .cl-product-details__tab-items:after {
+        display: inline-block;
+        content: '';
+        width: 100%;
+        height: 0; } }
+  @media only screen {
+    .nci-car-locator .cl-product-details__tab-item {
+      float: left;
+      margin: 5px 15px 5px 0;
+      box-sizing: content-box; } }
+  @media only screen and (min-width: 1025px) {
+    .nci-car-locator .cl-product-details__tab-item {
+      margin: 5px 20px 5px 0; } }
+  @media only screen {
+    .nci-car-locator .cl-product-details__tab-link {
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+      min-height: 1.875rem;
+      border-bottom: 4px solid transparent;
+      letter-spacing: 0;
+      opacity: 0.4;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: .02em;
+      color: #161618;
+      font-family: "Volvo Sans Light","Arial Narrow","Helvetica Neue",Arial,sans-serif; }
+      .nci-car-locator .cl-product-details__tab-link:hover {
+        border-color: #007bcd; }
+    .nci-car-locator .cl-product-details__tab-item.active .cl-product-details__tab-link {
+      color: #007bcd;
+      border-color: #007bcd;
+      opacity: 1; }
+    .nci-car-locator .cl-product-details__sections {
+      background: #fff;
+      border-top: 1px solid #DDD;
+      margin-bottom: 1.875rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-product-details__sections {
+      background: transparent;
+      border: none; } }
+  @media only screen {
+    .nci-car-locator .cl-product-details__section, .nci-car-locator .filter-panel {
+      border-bottom: 1px solid #DDD; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-product-details__section, .nci-car-locator .filter-panel {
+      border: none; } }
+  @media only screen {
+    .nci-car-locator .cl-product-details__header {
+      position: relative;
+      display: block;
+      padding: 10px 0;
+      border: 0;
+      cursor: pointer;
+      color: #007bcd; }
+      .nci-car-locator .cl-product-details__header:before {
+        position: absolute;
+        right: 1.25rem;
+        top: 50%;
+        display: block;
+        font-size: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
+        line-height: 1.25rem;
+        text-align: center;
+        margin-top: -0.625rem;
+        letter-spacing: 0;
+        color: #007bcd; }
+        .transitions-active .nci-car-locator .cl-product-details__header:before {
+          transition: -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .csstransforms .nci-car-locator .cl-product-details__header:before {
+          transform: rotate(180deg); }
+        .csstransforms3d .nci-car-locator .cl-product-details__header:before {
+          transform: rotateZ(180deg); }
+        .csstransforms .car-locator .closed .cl-product-details__header:before {
+          transform: rotate(0deg); }
+        .csstransforms3d .car-locator .closed .cl-product-details__header:before {
+          transform: rotateZ(0deg); } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-product-details__header {
+      display: none; } }
+  @media only screen {
+    .nci-car-locator .cl-product-details__content-container, .nci-car-locator .filter-panel-content-container {
+      overflow: hidden; }
+      .transitions-active .nci-car-locator .cl-product-details__content-container, .transitions-active .nci-car-locator .filter-panel-content-container {
+        transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .nci-car-locator .cl-product-details__content {
+      padding: 0.5rem 1.25rem 1.75rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-product-details__content {
+      padding: 1.8125rem 0 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .nci-car-locator .cl-row--product-details {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; } }
+  @media only screen {
+    .nci-car-locator .product-overview-data {
+      background: #fff;
+      width: 100%;
+      display: inline-block;
+      vertical-align: top; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .product-overview-data {
+      display: block; } }
+  @media only screen {
+      .nci-car-locator .product-overview-data [class*='cl-icon-'] {
+        position: relative; }
+        .nci-car-locator .product-overview-data [class*='cl-icon-']:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 1.0625rem;
+          margin-top: 5px; }
+      .nci-car-locator .product-overview-data .cl-icon-fuel:before {
+        font-size: 1.25rem;
+        left: 0rem; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .product-overview-data .cl-icon-fuel:before {
+        font-size: 1.4375rem;
+        left: 0rem; } }
+  @media only screen {
+      .nci-car-locator .product-overview-data .cl-icon-car:before {
+        font-size: 5.3125rem;
+        left: -1.375rem;
+        margin-top: 2px; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .product-overview-data .cl-icon-car:before {
+        font-size: 6.875rem;
+        left: -1.75rem; } }
+  @media only screen {
+      .nci-car-locator .product-overview-data .cl-icon-calendar:before {
+        font-size: 20px;
+        left: 0; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .product-overview-data .cl-icon-calendar:before {
+        font-size: 26px; } }
+  @media only screen {
+      .nci-car-locator .product-overview-data .cl-icon-drivetrain:before {
+        left: -0.1875rem;
+        font-size: 1.0625rem; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .product-overview-data .cl-icon-drivetrain:before {
+        font-size: 1.375rem;
+        left: -0.3125rem; } }
+  @media only screen {
+      .nci-car-locator .product-overview-data .cl-color-icon, .nci-car-locator .product-overview-data .cl-color-image {
+        position: absolute;
+        left: 0;
+        width: 1.125rem;
+        height: 1.125rem; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .product-overview-data .cl-color-icon, .nci-car-locator .product-overview-data .cl-color-image {
+        left: -4px;
+        width: 1.8125rem;
+        height: 1.8125rem; } }
+  @media only screen {
+      .nci-car-locator .product-overview-data .cl-color-icon {
+        border-radius: 50%;
+        border: 1px solid #999;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 9px; }
+      .nci-car-locator .product-overview-data .cl-color-image {
+        margin-top: 9px;
+        color: white; }
+    .nci-car-locator .product-overview-data__item {
+      margin-bottom: 10px;
+      margin-top: 0; }
+    .nci-car-locator .product-overview-data__term {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative;
+      padding-right: 0.3125rem;
+      padding-left: 1.875rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .product-overview-data__term {
+      padding-left: 2.5rem; } }
+  @media only screen {
+    .nci-car-locator .product-overview-data__description {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      overflow: hidden;
+      padding-left: 1.875rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .product-overview-data__description {
+      padding-left: 2.5rem; } }
+
+@media only screen and (min-width: 1024px) {
+  .nci-car-locator .cl-details-list--product-equipment .cl-details-list__term {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    padding-right: 0.625rem; }
+  .nci-car-locator .cl-details-list--product-equipment .cl-details-list__description {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    padding-left: 0.625rem; } }
+  @media only screen {
+    .nci-car-locator .cl-color-icon, .nci-car-locator .cl-color-image {
+      position: absolute;
+      left: 2px;
+      top: -0.125rem;
+      width: 1.6875rem;
+      height: 1.6875rem;
+      top: -0.25rem; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-color-icon, .nci-car-locator .cl-color-image {
+      width: 1.875rem;
+      height: 1.875rem;
+      left: 0; } }
+  @media only screen {
+    .nci-car-locator .cl-color-icon {
+      border-radius: 50%;
+      border: 1px solid #999;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    .nci-car-locator .cl-packages {
+      margin: 0; }
+      .nci-car-locator .cl-packages tr:first-child td {
+        padding-top: 0; }
+      .nci-car-locator .cl-packages tr:last-child td, .nci-car-locator .cl-packages .cl-packages__row--last td {
+        padding-bottom: 0;
+        border-bottom: 0; }
+    .nci-car-locator .cl-packages__title-cell, .nci-car-locator .cl-packages__price-cell {
+      vertical-align: top; }
+    .nci-car-locator .cl-packages__title-cell {
+      padding: 0.6875rem 0; }
+    .nci-car-locator .cl-packages__price-cell {
+      padding: 0.6875rem;
+      padding-right: 0;
+      text-align: right; }
+      .nci-car-locator .cl-packages__price-cell span {
+        color: #007bcd; }
+    .nci-car-locator .product-overview-data__item--vin .product-overview-data__description {
+      padding-right: 0.3125rem;
+      padding-left: 1.875rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .product-overview-data__item--vin .product-overview-data__description {
+      padding-left: 2.5rem; } }
+  @media print {
+    .nci-car-locator .cl-quote-form {
+      display: none; } }
+  @media only screen {
+    .nci-car-locator .cl-modal-window--cl-quote-form #btnestimator {
+      display: none; }
+    .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form {
+      max-width: 680px;
+      margin-bottom: 0;
+      padding: 1.0625rem 1.0625rem 2rem;
+      text-align: left; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form {
+      padding: 1.875rem; } }
+  @media only screen and (min-width: 1280px) {
+    .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form {
+      padding: 2.375rem 1.875rem 3.5rem; } }
+  @media only screen {
+    .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__title-block {
+      padding-right: 43px;
+      margin-bottom: 1.375rem; } }
+  @media only screen and (min-width: 1280px) {
+    .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__title-block {
+      margin-bottom: 2.25rem; } }
+  @media only screen {
+    .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__title {
+      display: inline-block;
+      line-height: 1; }
+      .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__title:after {
+        content: '\00a0'; }
+    .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__dealer {
+      display: inline-block; } }
+
+@media only screen and (min-width: 768px) {
+  .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__form {
+    margin-left: -30px;
+    margin-right: -30px; } }
+
+@media only screen and (min-width: 768px) {
+  .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__column {
+    width: 50%;
+    padding: 0 30px; } }
+
+@media only screen and (min-width: 768px) {
+  .nci-car-locator .cl-modal-window--cl-quote-form .cl-quote-form__label--zip-code {
+    margin-bottom: 0; } }
+  @media only screen {
+    .nci-car-locator .cl-quote-form {
+      padding: 1.25rem 1.25rem 0 1.75rem;
+      text-align: center;
+      background: #fff;
+      margin-bottom: 0; }
+      .nci-car-locator .cl-quote-form .cl-quote-form__input {
+        border: 1px solid #dddddd;
+        padding: 0 0.5rem;
+        height: 45px;
+        margin-bottom: 0.1875rem; }
+        .nci-car-locator .cl-quote-form .cl-quote-form__input:focus {
+          border-color: #dddddd; }
+      .nci-car-locator .cl-quote-form .cl-quote-form__input--state {
+        background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4OTgxRUM5NDQzREYxMUU1ODUwM0RENjAwMzc5Q0MyMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4OTgxRUM5NTQzREYxMUU1ODUwM0RENjAwMzc5Q0MyMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJCNjJGNkZGNDMzMjExRTU4NTAzREQ2MDAzNzlDQzIzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJCNjJGNzAwNDMzMjExRTU4NTAzREQ2MDAzNzlDQzIzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+KvRqGwAAAIRJREFUeNpi5DEIZwACFiD+w4AdgOWYgIQTEN8AYk0sijShck4ghQVArAzEh4HYBEmRCVQMJJcPUhgGxJuBWBiI9wGxAxTvhYqB5MJBCn8AcTAQLwViXiDeBsV8UDGQ3A8mqDW/gTgOiKcDMScUT4eK/Yb5CAb+AXEWEH+A8quQfQUQYADDhBibGiNMXQAAAABJRU5ErkJggg==") no-repeat 95% center; }
+      .nci-car-locator .cl-quote-form .cl-quote-form__input--textarea {
+        display: block;
+        border: 1px solid #dddddd;
+        height: 120px;
+        resize: none;
+        padding: 0.5rem;
+        margin-bottom: 2.5rem; }
+        .nci-car-locator .cl-quote-form .cl-quote-form__input--textarea:hover, .nci-car-locator .cl-quote-form .cl-quote-form__input--textarea:focus {
+          border-color: #dddddd; }
+    .nci-car-locator #btnestimator {
+      overflow: hidden; }
+    .nci-car-locator .cl-quote-form__form {
+      zoom: 1; }
+      .nci-car-locator .cl-quote-form__form:before, .nci-car-locator .cl-quote-form__form:after {
+        display: table;
+        content: " "; }
+      .nci-car-locator .cl-quote-form__form:after {
+        clear: both; }
+    .nci-car-locator .cl-quote-form__column {
+      width: 100%;
+      float: left; }
+    .nci-car-locator .cl-quote-form__label, .nci-car-locator .cl-quote-form__label--large-margin {
+      display: block;
+      margin-bottom: 0.5625rem; }
+    .nci-car-locator .cl-quote-form__label-text {
+      display: block;
+      text-align: left;
+      margin-bottom: 0.1875rem; }
+    .nci-car-locator .cl-quote-form__error {
+      display: block;
+      opacity: 1;
+      text-align: left;
+      margin-bottom: 0;
+      color: red; }
+      .nci-car-locator .cl-quote-form__error.cl-hide {
+        display: block !important;
+        opacity: 0; }
+    .nci-car-locator .cl-quote-form__title-block {
+      margin-bottom: 0.75rem; }
+    .nci-car-locator .cl-quote-form__title {
+      margin: 0;
+      max-width: none; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-quote-form__title {
+      text-align: left; } }
+  @media only screen {
+    .nci-car-locator .cl-quote-form__dealer {
+      margin: 0;
+      max-width: none; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-quote-form__dealer {
+      text-align: left;
+      margin: 5px 0 20px; } }
+  @media only screen {
+    .nci-car-locator .button--cl-quote-form {
+      margin: 0 0 1.125rem 0;
+      text-align: center;
+      padding-left: 0.6875rem;
+      padding-right: 0.6875rem;
+      text-overflow: ellipsis;
+      width: 100%; }
+    .nci-car-locator .cl-quote-form__form-text {
+      font-size: 0.9375rem;
+      line-height: 1.2;
+      color: #999;
+      max-width: none; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-quote-form__form-text {
+      font-size: 0.875rem;
+      text-align: left; } }
+  @media only screen {
+    .nci-car-locator .cl-quote-sent {
+      width: 100%;
+      background: #FFFFFF;
+      padding: 1.625rem 1.875rem 1.875rem;
+      text-align: center; }
+      .nci-car-locator .cl-quote-sent .cl-modal-window__close {
+        display: none; }
+    .nci-car-locator .cl-quote-sent__text {
+      margin-bottom: 1.5625rem; }
+    .nci-car-locator .cl-quote-sent__back-button {
+      margin: 0; } }
+  @media print {
+    .nci-car-locator .cl-selected-dealer__title {
+      margin: 0 0 10pt; }
+    .nci-car-locator .cl-selected-dealer__name {
+      margin: 0; }
+    .nci-car-locator .cl-selected-dealer__address {
+      margin: 0; }
+    .nci-car-locator .cl-selected-dealer__phone {
+      margin: 0; } }
+  @media only screen {
+    .nci-car-locator .cl-selected-dealer {
+      padding: 26px 15px;
+      background: #fff;
+      text-align: center; }
+      .nci-car-locator .cl-selected-dealer .cl-selected-dealer__phone a {
+        text-decoration: none;
+        border: 0; }
+        .nci-car-locator .cl-selected-dealer .cl-selected-dealer__phone a span {
+          color: #007bcd;
+          cursor: pointer; }
+        .nci-car-locator .cl-selected-dealer .cl-selected-dealer__phone a:hover, .nci-car-locator .cl-selected-dealer .cl-selected-dealer__phone a:active, .nci-car-locator .cl-selected-dealer .cl-selected-dealer__phone a:focus {
+          color: #007bcd;
+          border: 0;
+          text-decoration: none; }
+    .nci-car-locator .cl-selected-dealer__title {
+      margin-bottom: 0.625rem;
+      max-width: none; }
+    .nci-car-locator .cl-selected-dealer__name {
+      margin-bottom: 0.625rem;
+      max-width: none; }
+    .nci-car-locator .cl-selected-dealer__address {
+      margin-bottom: 0.6875rem;
+      max-width: none; }
+    .nci-car-locator .cl-selected-dealer__phone {
+      margin-bottom: 0;
+      max-width: none; } }
+  @media only screen {
+    .nci-car-locator .cl-vin-not-available .cl-splash {
+      width: 100%;
+      height: 80vh;
+      min-height: 650px; }
+    .nci-car-locator .cl-vin-not-available .cl-splash__mask {
+      position: inherit; }
+    .nci-car-locator .cl-vin-not-available .cl-splash__content {
+      padding: 1.25rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-vin-not-available .cl-splash__content {
+      padding: 2.5rem; } }
+  @media only screen {
+    .nci-car-locator .cl-vin-not-available .cl-splash__header-1 {
+      margin-bottom: 2.375rem;
+      max-width: 650px; }
+    .nci-car-locator .cl-vin-not-available .cl-select-dealer__title.cl-select-dealer__title {
+      text-align: left;
+      margin-bottom: 1.0625rem; }
+    .nci-car-locator .cl-vin-not-available .cl-dealer-details.cl-dealer-details {
+      margin-bottom: 1.625rem; }
+    .nci-car-locator .cl-vin-not-available .background-image {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+    .nci-car-locator .cl-vin-not-available .cl-row {
+      margin: 0 -0.3125rem; }
+    .nci-car-locator .cl-vin-not-available .cl-column {
+      padding: 0 0.3125rem;
+      margin-bottom: 0.625rem; }
+      .nci-car-locator .cl-vin-not-available .cl-column:last-child {
+        margin: 0; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-vin-not-available .cl-column {
+      margin-bottom: 0; } }
+  @media only screen {
+    .nci-car-locator .cl-vin-not-available__selected-dealer-container {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5625rem 1.875rem 1.875rem; }
+    .nci-car-locator .cl-vin-not-available__button {
+      margin: 0;
+      width: 100%;
+      padding-left: 0.6875rem;
+      padding-right: 0.6875rem; } }
+  @media print {
+    .nci-car-locator body {
+      background: #fff !important; }
+    @page {
+      .nci-car-locator {
+        margin: 1cm; } }
+    .nci-car-locator .cl-color-icon,
+    .nci-car-locator .cl-color-image {
+      visibility: visible; }
+    .nci-car-locator .cl-back-button {
+      display: none; }
+    .nci-car-locator .cl-details-page-info {
+      position: relative;
+      width: 100%; }
+    .nci-car-locator .cl-details-page-info__title {
+      margin: 0; }
+    .nci-car-locator .cl-details-page-info__price {
+      position: absolute;
+      right: 0;
+      bottom: 0.04cm; }
+    .nci-car-locator .cl-details-page-info__price-msrp {
+      margin-right: 0.2cm; }
+    .nci-car-locator .cl-column--share-container {
+      display: none; }
+    .nci-car-locator .button--details-quote {
+      display: none; }
+    .nci-car-locator .footer {
+      display: none; } }
+  @media only screen {
+    .nci-car-locator .cl-details-page {
+      padding: 0.9375rem 0 2.75rem;
+      margin: 0 auto;
+      min-height: 500px; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-details-page {
+      padding: 1.375rem 0 6rem; } }
+  @media only screen {
+    .nci-car-locator .cl-row--details-page {
+      padding: 0 0.3125rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-row--details-page {
+      padding: 0 0.625rem; } }
+  @media only screen {
+    .nci-car-locator .cl-back-button {
+      display: inline-block;
+      border: 0;
+      position: relative;
+      margin-bottom: 1.25rem; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-back-button {
+      padding-left: 0;
+      margin-bottom: 1.4375rem; } }
+  @media only screen {
+    .nci-car-locator .cl-back-button__icon {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-back-button__icon {
+      position: static;
+      display: inline;
+      margin-right: 0.4375rem; } }
+  @media only screen {
+    .nci-car-locator .cl-details-page-info {
+      display: block;
+      line-height: 1.5;
+      margin-bottom: 0.75rem;
+      position: relative; }
+    .nci-car-locator .cl-details-page-info__title {
+      margin: 0 0.4375rem 0 0; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-details-page-info__title {
+      display: inline; } }
+  @media only screen {
+    .nci-car-locator .cl-details-page-info__subtitle {
+      display: inline-block;
+      margin: 0;
+      max-width: 80%; }
+    .nci-car-locator .cl-details-page-info__price {
+      display: block;
+      margin: 5px 0; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .cl-details-page-info__price {
+      float: right;
+      bottom: -0.375rem;
+      display: inline-block;
+      margin: 0; } }
+  @media only screen {
+      .nci-car-locator .cl-details-page-info__price .h2 {
+        float: left;
+        color: #007bcd;
+        text-decoration: none; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .cl-details-page-info__price .h2 {
+        color: #007bcd;
+        text-decoration: none; } }
+    @media only screen and (min-width: 768px) {
+      .nci-car-locator .cl-details-page-info__price .h2 {
+        float: none;
+        display: inline-block; } }
+  @media only screen {
+    .nci-car-locator .cl-details-page-info__price-msrp {
+      display: inline-block;
+      margin: 11px 5px 0 5px; }
+    .nci-car-locator .cl-column--share-container {
+      position: absolute;
+      height: 30px;
+      width: auto;
+      right: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .cl-column--share-container {
+      display: block;
+      position: relative; } }
+
+@media only screen and (min-width: 1024px) {
+  .nci-car-locator .share-links {
+    position: relative;
+    right: 0.625rem;
+    top: 0;
+    font-size: 0; } }
+  @media only screen {
+    .nci-car-locator .share-links__item {
+      vertical-align: top;
+      display: inline-block;
+      margin-left: 0.625rem; } }
+  @media only screen and (min-width: 768px) {
+    .nci-car-locator .share-links__item:last-child {
+      margin-right: 25px; } }
+  @media only screen {
+    .nci-car-locator .share-link__link {
+      display: block;
+      letter-spacing: 0;
+      text-align: center;
+      text-decoration: none;
+      border: 0;
+      margin: 0 10px;
+      color: #333; }
+      .nci-car-locator .share-link__link:before {
+        display: block;
+        font-size: 1.2rem;
+        line-height: 32px; }
+    .nci-car-locator .button--details-quote {
+      margin: 0 0 1.25rem;
+      width: 100%; } }
+  .nci-car-locator .cl-back-button:hover {
+    border-bottom-color: #003057;
+    color: #003057; }
+  .nci-car-locator .cl-back-button:focus {
+    border-bottom-color: #003057;
+    color: #003057; }
+  .nci-car-locator .cl-inventory-grid.hidden {
+    display: none; }
+  .nci-car-locator .inventory__list-row {
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .inventory__list-row {
+        max-width: 680px; } }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list-row {
+        max-width: 939px; } }
+    @media screen and (min-width: 1280px) {
+      .nci-car-locator .inventory__list-row {
+        max-width: 1280px; } }
+  .nci-car-locator .inventory__list {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    clear: both; }
+  .nci-car-locator .inventory__list__item {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .inventory__list__item {
+        width: 50%; } }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item {
+        width: 33.3%; } }
+    @media screen and (min-width: 1280px) {
+      .nci-car-locator .inventory__list__item {
+        width: 25%; } }
+  .nci-car-locator .inventory__list__item__features__description--vin, .nci-car-locator .inventory__list__item__features__term, .nci-car-locator .inventory__list__item__features__description {
+    width: 100%;
+    position: relative;
+    display: block;
+    vertical-align: top;
+    box-sizing: border-box; }
+  .nci-car-locator .inventory__list__item__features-list {
+    background: #fff;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__features-list {
+        display: block; } }
+    .nci-car-locator .inventory__list__item__features-list [class*='cl-icon-'] {
+      position: relative; }
+      .nci-car-locator .inventory__list__item__features-list [class*='cl-icon-']:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.0625rem;
+        margin-top: 5px; }
+    .nci-car-locator .inventory__list__item__features-list .cl-icon-fuel:before {
+      font-size: 1.25rem;
+      left: 0rem; }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .inventory__list__item__features-list .cl-icon-fuel:before {
+          font-size: 1.4375rem;
+          left: 0rem; } }
+    .nci-car-locator .inventory__list__item__features-list .cl-icon-car:before {
+      font-size: 5.3125rem;
+      left: -1.375rem;
+      margin-top: 2px; }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .inventory__list__item__features-list .cl-icon-car:before {
+          font-size: 6.875rem;
+          left: -1.75rem; } }
+    .nci-car-locator .inventory__list__item__features-list .cl-icon-calendar:before {
+      font-size: 20px;
+      left: 0; }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .inventory__list__item__features-list .cl-icon-calendar:before {
+          font-size: 26px; } }
+    .nci-car-locator .inventory__list__item__features-list .cl-icon-drivetrain:before {
+      left: -0.1875rem;
+      font-size: 1.0625rem; }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .inventory__list__item__features-list .cl-icon-drivetrain:before {
+          font-size: 1.375rem;
+          left: -0.3125rem; } }
+    .nci-car-locator .inventory__list__item__features-list .cl-color-icon, .nci-car-locator .inventory__list__item__features-list .cl-color-image {
+      position: absolute;
+      left: 0;
+      width: 1.125rem;
+      height: 1.125rem; }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .inventory__list__item__features-list .cl-color-icon, .nci-car-locator .inventory__list__item__features-list .cl-color-image {
+          left: -4px;
+          width: 1.8125rem;
+          height: 1.8125rem; } }
+    .nci-car-locator .inventory__list__item__features-list .cl-color-icon {
+      border-radius: 50%;
+      border: 1px solid #999;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-top: 9px; }
+    .nci-car-locator .inventory__list__item__features-list .cl-color-image {
+      margin-top: 9px;
+      color: transparent; }
+  .nci-car-locator .inventory__list__item__features-list--vin {
+    width: 100%; }
+  .nci-car-locator .inventory__list__item__features__description--vin {
+    padding-right: 0.3125rem;
+    padding-left: 1.875rem; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__features__description--vin {
+        padding-left: 2.5rem; } }
+  .nci-car-locator .inventory__list__item__features__item {
+    margin-bottom: 10px;
+    margin-top: 0; }
+  .nci-car-locator .inventory__list__item__features__term {
+    position: relative;
+    padding-right: 0.3125rem;
+    padding-left: 1.875rem; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__features__term {
+        padding-left: 2.5rem; } }
+  .nci-car-locator .inventory__list__item__features__description {
+    padding-left: 1.875rem;
+    overflow: hidden; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__features__description {
+        padding-left: 2.5rem; } }
+  .nci-car-locator .inventory__list__item__wrapper {
+    background-color: #fff; }
+  .nci-car-locator .inventory__list__item__imageholder {
+    float: left;
+    width: 100%;
+    min-height: 112px;
+    overflow: hidden; }
+    .nci-car-locator .inventory__list__item__imageholder img {
+      max-width: 386px;
+      margin-left: -60px;
+      color: white; }
+      @media only screen and (min-width: 768px) {
+        .nci-car-locator .inventory__list__item__imageholder img {
+          margin-left: -45px; } }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .inventory__list__item__imageholder img {
+          margin-left: -50px; } }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__imageholder {
+        min-height: 160px; } }
+  .nci-car-locator .inventory__list__item__footer {
+    position: relative;
+    float: left;
+    width: 100%; }
+  .nci-car-locator .inventory__list__item__content,
+  .nci-car-locator .inventory__list__item__footer {
+    padding: 0 15px; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__content,
+      .nci-car-locator .inventory__list__item__footer {
+        height: auto;
+        padding: 0 30px 0 30px; } }
+  .nci-car-locator .inventory__list__item__content {
+    position: relative;
+    min-height: 600px; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__content {
+        min-height: 720px; } }
+  .nci-car-locator .inventory__list__item__list-wrapper {
+    display: table;
+    margin-top: 10px; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__list-wrapper {
+        height: auto; } }
+  .nci-car-locator .inventory__list__item__wrapper__content {
+    position: relative; }
+  .nci-car-locator .inventory__list__item__keyinfo-list__item,
+  .nci-car-locator .inventory__list__item_options__toggle {
+    vertical-align: top; }
+  .nci-car-locator .inventory__list__item__modelinfo {
+    line-height: 1;
+    min-height: 225px; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__modelinfo {
+        min-height: 235px; } }
+  .nci-car-locator .inventory__list__item_modelinfo__description {
+    display: block; }
+  @media only screen and (min-width: 1024px) {
+    .nci-car-locator .inventory__list__item__price {
+      margin-bottom: 35px;
+      margin-top: 15px; } }
+  .nci-car-locator .inventory__list__item__price__title {
+    color: #007bcd;
+    display: inline-block; }
+  .nci-car-locator .inventory__list__item__price_msrp {
+    margin-left: 5px;
+    display: inline-block; }
+  .nci-car-locator .inventory__list__item_options__wrapper {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .nci-car-locator .inventory__list__item_options__wrapper:before {
+      content: '';
+      display: block;
+      border-top: 1px solid;
+      border-color: #bdd6e6;
+      width: 100%; }
+  .nci-car-locator .inventory__list__item__options {
+    display: none; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__options {
+        display: block; } }
+  .nci-car-locator .inventory__list__item_options__list {
+    margin: 20px 0; }
+  .nci-car-locator .inventory__list__item_options__list_item {
+    list-style: disc;
+    margin: 20px 0 0 0; }
+  .nci-car-locator .inventory__list__item_options__toggle-wrapper {
+    margin: 20px 0;
+    text-align: center; }
+  .nci-car-locator .inventory__list__item_options__toggle {
+    border-bottom: none;
+    letter-spacing: 0;
+    position: relative;
+    user-select: none;
+    margin-right: 12px;
+    display: inline-block;
+    cursor: pointer; }
+    .nci-car-locator .inventory__list__item_options__toggle:active, .nci-car-locator .inventory__list__item_options__toggle:focus {
+      color: #003057; }
+    .nci-car-locator .inventory__list__item_options__toggle:before {
+      position: absolute;
+      margin-right: -16px;
+      right: 0;
+      top: 4px;
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1;
+      text-align: left;
+      color: #007bcd; }
+    .nci-car-locator .inventory__list__item_options__toggle.open:before {
+      color: #007bcd; }
+  .nci-car-locator .inventory__list__item__button-view-details {
+    display: none;
+    width: 100%; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .inventory__list__item__button-view-details {
+        display: block; } }
+  .nci-car-locator .inventory__list__item__button-view-details-hitarea {
+    position: absolute;
+    border-bottom: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer; }
+  .nci-car-locator .cl-inventory-page-header {
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    color: #fff;
+    width: 100%; }
+  .nci-car-locator .cl-inventory-page-header-top {
+    background-size: cover;
+    background-position: center 70%;
+    height: 90px; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header-top {
+        height: 300px;
+        background-position: center 80%; } }
+  .nci-car-locator .cl-inventory-page-header__header-title {
+    font-size: 30px;
+    text-align: center;
+    user-select: none;
+    cursor: default;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__header-title {
+        font-size: 60px; } }
+  .nci-car-locator .cl-inventory-page-header__dealership-panel {
+    min-height: 100px;
+    position: relative;
+    width: 100%;
+    background-color: #000; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__dealership-panel {
+        height: auto;
+        min-height: 90px; } }
+  .nci-car-locator .cl-inventory-page-header__dealer-wrapper {
+    padding: 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: block;
+    user-select: none;
+    padding: 0 10px;
+    position: relative;
+    overflow: hidden; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__dealer-wrapper {
+        max-width: 939px; } }
+    @media screen and (min-width: 1280px) {
+      .nci-car-locator .cl-inventory-page-header__dealer-wrapper {
+        max-width: 1280px; } }
+  .nci-car-locator .cl-inventory-page-header__dealer-name-container {
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 2px; }
+  .nci-car-locator .cl-inventory-page-header__container-left,
+  .nci-car-locator .cl-inventory-page-header__container-right {
+    height: 100%;
+    display: inline-block; }
+  .nci-car-locator .cl-inventory-page-header__container-left {
+    width: 100%;
+    margin: 15px 0 0 0;
+    vertical-align: middle;
+    display: inline-block; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__container-left {
+        width: 75%;
+        margin: 0; } }
+  .nci-car-locator .cl-inventory-page-header__dealer-name {
+    width: 100%;
+    display: block;
+    text-align: center; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__dealer-name {
+        text-align: left;
+        width: auto;
+        display: inline; } }
+  .nci-car-locator .cl-inventory-page-header__dealer-name-description {
+    display: none; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__dealer-name-description {
+        display: inline; } }
+  .nci-car-locator .cl-inventory-page-header__dealer-address-list {
+    width: 100%;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #fff; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__dealer-address-list {
+        text-align: left; } }
+  .nci-car-locator .cl-inventory-page-header__dealer-address-list__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inventory-page-header__dealer-address-list__item {
+        padding: 0;
+        width: auto; }
+        .nci-car-locator .cl-inventory-page-header__dealer-address-list__item:not(:last-child) {
+          border-right: solid 1px;
+          margin-right: 15px;
+          padding: 0 15px 0 0; }
+        .nci-car-locator .cl-inventory-page-header__dealer-address-list__item a {
+          line-height: 21px; } }
+    .nci-car-locator .cl-inventory-page-header__dealer-address-list__item a {
+      border: none; }
+  .nci-car-locator .cl-inventory-page-header__container-right {
+    text-align: center;
+    width: 100%;
+    margin: 0px 0;
+    position: inherit;
+    vertical-align: middle; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__container-right {
+        width: 25%;
+        text-align: right;
+        margin: 0; } }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-page-header__container-right .cl-inventory-page-header__right-link-container {
+        border-left: 1px solid #979797;
+        padding-left: 50px;
+        display: inline-block; } }
+  @media screen and (min-width: 1024px) {
+    .nci-car-locator .cl-inventory-page-header__contact-dealer-button {
+      display: inline-block;
+      margin-right: 10px;
+      position: inherit;
+      margin-top: 22px;
+      margin-bottom: 25px; } }
+  .nci-car-locator .cl-inventory-grid-header {
+    /* percentage widths with fixed margins */ }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-grid-header {
+        border-top: 1px solid #dddddd; } }
+    .nci-car-locator .cl-inventory-grid-header.hidden {
+      display: none; }
+    .nci-car-locator .cl-inventory-grid-header .header-item-mobile {
+      display: block; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-grid-header .header-item-mobile {
+          display: none; } }
+    .nci-car-locator .cl-inventory-grid-header .header-item-desktop {
+      display: none;
+      float: left; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-grid-header .header-item-desktop {
+          display: block; } }
+    .nci-car-locator .cl-inventory-grid-header .button-inventory-selector {
+      border: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      width: 100%;
+      opacity: 0.4; }
+      .nci-car-locator .cl-inventory-grid-header .button-inventory-selector span {
+        border-bottom: 3px solid transparent; }
+      .nci-car-locator .cl-inventory-grid-header .button-inventory-selector:active, .nci-car-locator .cl-inventory-grid-header .button-inventory-selector:hover, .nci-car-locator .cl-inventory-grid-header .button-inventory-selector:active {
+        background-color: transparent;
+        color: inherit; }
+        .nci-car-locator .cl-inventory-grid-header .button-inventory-selector:active span, .nci-car-locator .cl-inventory-grid-header .button-inventory-selector:hover span, .nci-car-locator .cl-inventory-grid-header .button-inventory-selector:active span {
+          border-bottom: 3px solid #007bcd; }
+      .nci-car-locator .cl-inventory-grid-header .button-inventory-selector.active {
+        opacity: 1; }
+        .nci-car-locator .cl-inventory-grid-header .button-inventory-selector.active span {
+          color: #007bcd;
+          border-bottom: 3px solid #007bcd; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-grid-header .button-inventory-selector {
+          width: auto; } }
+    .nci-car-locator .cl-inventory-grid-header .button-inventory-selector--extended {
+      padding-left: 10px; }
+    .nci-car-locator .cl-inventory-grid-header .button-inventory-selector--local {
+      padding-right: 10px; }
+    .nci-car-locator .cl-inventory-grid-header .sort-by-price {
+      margin: 20px 0 0 0;
+      display: none; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-grid-header .sort-by-price {
+          display: block;
+          margin: 28px 0 0 0; }
+          .nci-car-locator .cl-inventory-grid-header .sort-by-price.hidden {
+            display: none !important; } }
+    .nci-car-locator .cl-inventory-grid-header .select-sort-by-price,
+    .nci-car-locator .cl-inventory-grid-header .sort-by-price-title {
+      border: 0; }
+    .nci-car-locator .cl-inventory-grid-header .sort-by-price-title {
+      display: none;
+      padding-right: 20px; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-grid-header .sort-by-price-title {
+          display: inline-block; } }
+    .nci-car-locator .cl-inventory-grid-header .select-sort-by-price {
+      width: auto;
+      display: inline;
+      appearance: none;
+      text-indent: 0.01px;
+      padding-left: 25px;
+      padding-right: 25px;
+      text-overflow: "";
+      outline: none;
+      cursor: pointer;
+      background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4OTgxRUM5NDQzREYxMUU1ODUwM0RENjAwMzc5Q0MyMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4OTgxRUM5NTQzREYxMUU1ODUwM0RENjAwMzc5Q0MyMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJCNjJGNkZGNDMzMjExRTU4NTAzREQ2MDAzNzlDQzIzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJCNjJGNzAwNDMzMjExRTU4NTAzREQ2MDAzNzlDQzIzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+KvRqGwAAAIRJREFUeNpi5DEIZwACFiD+w4AdgOWYgIQTEN8AYk0sijShck4ghQVArAzEh4HYBEmRCVQMJJcPUhgGxJuBWBiI9wGxAxTvhYqB5MJBCn8AcTAQLwViXiDeBsV8UDGQ3A8mqDW/gTgOiKcDMScUT4eK/Yb5CAb+AXEWEH+A8quQfQUQYADDhBibGiNMXQAAAABJRU5ErkJggg==") no-repeat center right; }
+    .nci-car-locator .cl-inventory-grid-header .header-row {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 10px; }
+      @media screen and (min-width: 768px) {
+        .nci-car-locator .cl-inventory-grid-header .header-row {
+          max-width: 680px; } }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-grid-header .header-row {
+          max-width: 939px; } }
+      @media screen and (min-width: 1280px) {
+        .nci-car-locator .cl-inventory-grid-header .header-row {
+          max-width: 1280px; } }
+      .nci-car-locator .cl-inventory-grid-header .header-row .header-items-wrapper {
+        padding: 0 15px; }
+        @media screen and (min-width: 1024px) {
+          .nci-car-locator .cl-inventory-grid-header .header-row .header-items-wrapper {
+            padding: 0; } }
+    .nci-car-locator .cl-inventory-grid-header .header-item:not(.sort-by-price) {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+      width: 49%; }
+      @media screen and (min-width: 768px) {
+        .nci-car-locator .cl-inventory-grid-header .header-item:not(.sort-by-price) {
+          width: auto; }
+          .nci-car-locator .cl-inventory-grid-header .header-item:not(.sort-by-price):nth-child(2) {
+            margin-left: 10px; } }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inventory-grid-header .header-items-wrapper .header-item.sort-by-price {
+        float: right;
+        text-align: right; } }
+  .nci-car-locator .inventory-result-number {
+    float: left;
+    padding-bottom: 5px;
+    margin-top: 6px;
+    padding-right: 5px;
+    display: none;
+    vertical-align: top; }
+    .nci-car-locator .cl-inventory-grid-header.has-filters .inventory-result-number {
+      display: block;
+      margin-top: 30px;
+      border-bottom: none !important;
+      margin-right: 10px; }
+  .nci-car-locator .inventory-selector-title {
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    padding-bottom: 5px;
+    margin-top: 6px; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .inventory-selector-title {
+        display: block;
+        margin-top: 30px; }
+        .has-filters .nci-car-locator .inventory-selector-title {
+          margin-top: 0; } }
+  .nci-car-locator .cl-grid-header__extended-results {
+    clear: both;
+    padding: 30px 15px; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-grid-header__extended-results {
+        padding: 50px 0; } }
+  .nci-car-locator .cl-grid-header__extended-results_copy {
+    line-height: 1; }
+  .nci-car-locator .cl-grid-header__extended-results__link_copy {
+    margin-top: 20px; }
+    .nci-car-locator .cl-grid-header__extended-results__link_copy a {
+      letter-spacing: 0;
+      color: #007bcd;
+      cursor: pointer; }
+      .nci-car-locator .cl-grid-header__extended-results__link_copy a:hover {
+        text-decoration: underline; }
+  .nci-car-locator .cl-grid-header__no-results.hidden {
+    display: none; }
+  .nci-car-locator .cl-grid-header__no-results-list-row {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 40px; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .cl-grid-header__no-results-list-row {
+        max-width: 660px; }
+        .extended .nci-car-locator .cl-grid-header__no-results-list-row {
+          max-width: 300px; } }
+  .nci-car-locator .cl-grid-header__no-results-list {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0; }
+  .nci-car-locator .cl-grid-header__no-results-list__item {
+    padding: 10px 0; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .cl-grid-header__no-results-list__item {
+        width: 50%;
+        display: table-cell;
+        padding: 10px; } }
+    .extended .nci-car-locator .cl-grid-header__no-results-list__item {
+      width: 100%;
+      padding: 10px 0; }
+  .nci-car-locator .cl-grid-header__no-results .cl-grid-header__no-results-list__item.hidden,
+  .nci-car-locator .cl-grid-header__no-results__button--contact-dealer.hidden,
+  .nci-car-locator .cl-grid-header__no-results__button--extended-results.hidden {
+    display: none !important; }
+  .nci-car-locator .cl-grid-header__no-results .cl-grid-header__no-results-list__item__no-results-title.cl-grid-header__no-results-list__item__no-results-title--local.body {
+    display: block; }
+  .nci-car-locator .cl-grid-header__no-results.extended .cl-grid-header__no-results-list__item__no-results-title.cl-grid-header__no-results-list__item__no-results-title--local.body {
+    display: none; }
+  .nci-car-locator .cl-grid-header__no-results .cl-grid-header__no-results-list__item__no-results-title.cl-grid-header__no-results-list__item__no-results-title--extended.body {
+    display: none; }
+  .nci-car-locator .cl-grid-header__no-results.extended .cl-grid-header__no-results-list__item__no-results-title.cl-grid-header__no-results-list__item__no-results-title--extended.body {
+    display: block; }
+  .nci-car-locator .cl-grid-header__no-results-list__item__no-results-title {
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 auto;
+    cursor: default; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .cl-grid-header__no-results-list__item__no-results-title {
+        padding: 50px 0 30px 0; } }
+  .nci-car-locator .cl-grid-header__no-results-list__item__no-results-title,
+  .nci-car-locator .cl-grid-header__no-results__button {
+    user-select: none;
+    clear: both; }
+  .nci-car-locator .cl-grid-header__no-results__button {
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 120px;
+    border-bottom: none;
+    position: relative; }
+    .nci-car-locator .cl-grid-header__no-results__button:before {
+      position: absolute;
+      padding: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #007bcd; }
+  .nci-car-locator .cl-grid-header__no-results__button__label {
+    margin-left: 110px;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    overflow: hidden; }
+    .nci-car-locator .cl-grid-header__no-results__button__label:after {
+      line-height: 0.4;
+      margin-left: 5px;
+      vertical-align: middle; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .cl-grid-header__no-results__button__label {
+        width: 50%; } }
+  .nci-car-locator .cl-grid-header__no-results__button--contact-dealer:before {
+    font-size: 80px; }
+  .nci-car-locator .cl-grid-header__no-results__button--extended-results:before {
+    font-size: 70px;
+    padding: 20px; }
+  .extended .nci-car-locator .cl-grid-header__no-results__button--extended-results {
+    display: none; }
+  .nci-car-locator .cl-inventory-pagination {
+    position: relative;
+    -webkit-user-select: none;
+    text-align: center;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inventory-pagination {
+        padding: 30px 0 40px 0; } }
+  .nci-car-locator .cl-inv-pagination__row {
+    margin: 0 auto;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inv-pagination__row {
+        text-align: right; } }
+    @media screen and (min-width: 1280px) {
+      .nci-car-locator .cl-inv-pagination__row {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto; } }
+  .nci-car-locator .cl-inv-pagination__content {
+    position: relative;
+    text-align: center;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inv-pagination__content {
+        max-width: 1024px;
+        display: inline-block;
+        width: 100%; } }
+  .nci-car-locator .cl-inv-pagination__list {
+    margin: 0;
+    display: block;
+    text-align: center; }
+  .nci-car-locator .cl-inv-pagination__list--left {
+    float: left; }
+  .nci-car-locator .cl-inv-pagination__list--right {
+    float: right; }
+  .nci-car-locator .cl-inv-pagination__list__item {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    width: 50px;
+    box-sizing: border-box; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inv-pagination__list__item:not(:last-child) {
+        padding: 0 10px; } }
+    .nci-car-locator .cl-inv-pagination__list__item.hidden {
+      visibility: hidden; }
+  .nci-car-locator .cl-inv-pagination__list__item--first {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inv-pagination__list__item--first {
+        display: inline-block; } }
+  .nci-car-locator .cl-inv-pagination__list__item--last {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inv-pagination__list__item--last {
+        display: inline-block; } }
+  .nci-car-locator .cl-inv-pagination-button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    float: none; }
+  .nci-car-locator .cl-inv-pagination-button--first,
+  .nci-car-locator .cl-inv-pagination-button--next,
+  .nci-car-locator .cl-inv-pagination-button--previous,
+  .nci-car-locator .cl-inv-pagination-button--last {
+    position: static;
+    border: none;
+    background-color: transparent;
+    color: #007bcd; }
+    .nci-car-locator .cl-inv-pagination-button--first:before,
+    .nci-car-locator .cl-inv-pagination-button--next:before,
+    .nci-car-locator .cl-inv-pagination-button--previous:before,
+    .nci-car-locator .cl-inv-pagination-button--last:before {
+      position: absolute;
+      top: 30px;
+      transform: translateY(-50%);
+      font-size: 50px;
+      line-height: 1; }
+      @media only screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inv-pagination-button--first:before,
+        .nci-car-locator .cl-inv-pagination-button--next:before,
+        .nci-car-locator .cl-inv-pagination-button--previous:before,
+        .nci-car-locator .cl-inv-pagination-button--last:before {
+          top: 35px; } }
+    .nci-car-locator .cl-inv-pagination-button--first:hover, .nci-car-locator .cl-inv-pagination-button--first:focus, .nci-car-locator .cl-inv-pagination-button--first:active,
+    .nci-car-locator .cl-inv-pagination-button--next:hover,
+    .nci-car-locator .cl-inv-pagination-button--next:focus,
+    .nci-car-locator .cl-inv-pagination-button--next:active,
+    .nci-car-locator .cl-inv-pagination-button--previous:hover,
+    .nci-car-locator .cl-inv-pagination-button--previous:focus,
+    .nci-car-locator .cl-inv-pagination-button--previous:active,
+    .nci-car-locator .cl-inv-pagination-button--last:hover,
+    .nci-car-locator .cl-inv-pagination-button--last:focus,
+    .nci-car-locator .cl-inv-pagination-button--last:active {
+      border: none;
+      background-color: transparent;
+      color: #007bcd; }
+  .nci-car-locator .cl-inv-pagination-button--first:before {
+    left: -1.5px; }
+  .nci-car-locator .cl-inv-pagination-button--last:before {
+    right: 0.5px; }
+  .nci-car-locator .cl-inv-pagination-button--next:before {
+    left: 7px; }
+  .nci-car-locator .cl-inv-pagination-button--previous:before {
+    left: 7px; }
+  .nci-car-locator .cl-inv-pagination-label-wrapper {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    z-index: -1;
+    width: 50%; }
+    @media screen and (min-width: 768px) {
+      .nci-car-locator .cl-inv-pagination-label-wrapper {
+        width: auto;
+        padding-left: 10px; } }
+  .nci-car-locator .cl-inv-pagination-label {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    cursor: default; }
+  .nci-car-locator ul#horizontal-list {
+    text-align: center; }
+    .nci-car-locator ul#horizontal-list li {
+      padding: 0 5px; }
+  .nci-car-locator #pagination_dot_1, .nci-car-locator #pagination_dot_2 {
+    padding-top: 0 !important; }
+  .nci-car-locator ul#horizontal-list li:not(.hidden) {
+    display: inline-block;
+    position: relative; }
+  .nci-car-locator ul#horizontal-list li a {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator ul#horizontal-list li a {
+        padding-left: 20px;
+        padding-right: 20px; } }
+  .nci-car-locator .c1-inv-pagination_link {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    padding-top: 25%;
+    padding-left: 50%;
+    color: #007bcd; }
+    .nci-car-locator .c1-inv-pagination_link:hover, .nci-car-locator .c1-inv-pagination_link:active, .nci-car-locator .c1-inv-pagination_link:focus {
+      color: #007bcd; }
+  .nci-car-locator .disabledPagination {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+    text-decoration: underline; }
+  .nci-car-locator .cl-inventory-filter-panel {
+    position: relative;
+    background-color: #fff;
+    user-select: none;
+    cursor: default;
+    width: 100%;
+    overflow: hidden; }
+    .nci-car-locator .cl-inventory-filter-panel .section-type-header {
+      text-align: left; }
+      .nci-car-locator .cl-inventory-filter-panel .section-type-header:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #dddddd;
+        margin-top: 5px;
+        text-transform: uppercase; }
+    .nci-car-locator .cl-inventory-filter-panel .section-type {
+      padding: 30px 0; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-filter-panel .section-type {
+          display: table-cell;
+          padding: 0 30px; }
+          .nci-car-locator .cl-inventory-filter-panel .section-type:first-child {
+            padding-left: 0; }
+          .nci-car-locator .cl-inventory-filter-panel .section-type:last-child {
+            padding-right: 0; } }
+    .nci-car-locator .cl-inventory-filter-panel .button-inventory-filter {
+      cursor: pointer;
+      padding: 20px 10px;
+      border: none;
+      line-height: 1;
+      margin: 0;
+      text-align: left;
+      position: relative;
+      background-color: transparent; }
+      .nci-car-locator .cl-inventory-filter-panel .button-inventory-filter:active, .nci-car-locator .cl-inventory-filter-panel .button-inventory-filter:hover, .nci-car-locator .cl-inventory-filter-panel .button-inventory-filter.active {
+        background-color: #dddddd;
+        border-radius: 10px;
+        -o-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px; }
+      .nci-car-locator .cl-inventory-filter-panel .button-inventory-filter:hover:not(.active) {
+        background-color: #f1f1f1; }
+    .nci-car-locator .cl-inventory-filter-panel .filter-list-item {
+      margin: 5px; }
+    .nci-car-locator .cl-inventory-filter-panel .filter-panel-wrapper {
+      overflow: hidden; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-wrapper {
+          height: 0;
+          position: relative;
+          transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1); } }
+    .nci-car-locator .cl-inventory-filter-panel .filter-panel-wrapper__animation_container {
+      overflow: hidden;
+      margin-top: -20000px; }
+      .nci-car-locator .cl-inventory-filter-panel .filter-panel-wrapper__animation_container.transitions-active {
+        transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1); }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-wrapper__animation_container {
+          margin-top: 0; } }
+    .nci-car-locator .cl-inventory-filter-panel .filter-panel-header,
+    .nci-car-locator .cl-inventory-filter-panel .filter-panel-nav,
+    .nci-car-locator .cl-inventory-filter-panel .filter-panel-footer {
+      margin: 0 auto;
+      padding: 10px; }
+      @media screen and (min-width: 768px) {
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-header,
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-nav,
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-footer {
+          max-width: 680px; } }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-header,
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-nav,
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-footer {
+          max-width: 939px; } }
+      @media screen and (min-width: 1280px) {
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-header,
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-nav,
+        .nci-car-locator .cl-inventory-filter-panel .filter-panel-footer {
+          max-width: 1280px; } }
+  .nci-car-locator .filter-panel-content-container {
+    text-align: center; }
+  @media screen and (min-width: 1024px) {
+    .nci-car-locator .filter-panel-content {
+      display: inline-block; } }
+  .nci-car-locator .filter-panel {
+    font-size: 0;
+    line-height: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ececec;
+    padding: 10px 10px; }
+    .nci-car-locator .filter-panel.closed {
+      background-color: #fff; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel {
+        background-color: #fff;
+        display: none; } }
+    .nci-car-locator .filter-panel.active {
+      display: block;
+      transition: all 0.3s;
+      visibility: visible;
+      opacity: 1; }
+  .nci-car-locator .filter-panel-sections__sort-by-price,
+  .nci-car-locator .filter-panel-sections__toggle-panels {
+    border-bottom: 1px solid #DDD;
+    height: 62px; }
+    @media only screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel-sections__sort-by-price,
+      .nci-car-locator .filter-panel-sections__toggle-panels {
+        display: none; } }
+  .nci-car-locator .cl-inventory-filter-panel .filter-panel-nav {
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+    display: none; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .cl-inventory-filter-panel .filter-panel-nav {
+        display: block; } }
+  .nci-car-locator .cl-inventory-filter-panel .filter-panel-nav__title {
+    margin-right: 40px;
+    vertical-align: middle;
+    padding: 13px 30px 11px 0;
+    display: inline-block; }
+  .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav {
+    padding: 13px 30px 11px 0;
+    border: none;
+    text-align: left;
+    position: relative;
+    letter-spacing: 0;
+    margin-right: 30px !important;
+    cursor: pointer;
+    vertical-align: middle; }
+    .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:last-child {
+      padding-right: 0;
+      margin-right: 0; }
+    .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:active, .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:hover, .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:focus {
+      color: #007bcd; }
+    .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:after {
+      display: block;
+      content: attr(title);
+      font-weight: bold;
+      height: 1px;
+      color: transparent;
+      overflow: hidden;
+      visibility: hidden;
+      margin-top: -1px; }
+    .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav.active {
+      color: #007bcd; }
+      .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav.active:after {
+        transition: all 0.1s linear; }
+      .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav.active:before {
+        right: 6px; }
+    .nci-car-locator .cl-inventory-filter-panel .button-filter-panel-nav:before {
+      position: absolute;
+      margin-top: 0;
+      right: 2px;
+      top: 14px;
+      display: block;
+      font-size: 1.5625rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      line-height: 1;
+      color: #007bcd;
+      font-size: 20px;
+      text-align: left; }
+  .nci-car-locator .cl-inventory-filter-panel .button-reset-filters {
+    float: right; }
+    .nci-car-locator .cl-inventory-filter-panel .button-reset-filters .hidden {
+      display: none; }
+  .nci-car-locator .filter-panel-footer {
+    width: 100%; }
+    .nci-car-locator .filter-panel-footer .hidden {
+      display: none; }
+    .nci-car-locator .filter-panel-footer .footer-buttons-wrapper {
+      width: 100%;
+      padding: 20px;
+      display: inline-block; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-footer .footer-buttons-wrapper {
+          padding: 0 10px 20px 10px;
+          text-align: right; } }
+    .nci-car-locator .filter-panel-footer .button-apply-filters {
+      display: inline; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-footer .button-apply-filters {
+          display: none; } }
+    .nci-car-locator .filter-panel-footer .button-clear-selection {
+      display: none; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-footer .button-clear-selection {
+          display: inline; } }
+    .nci-car-locator .filter-panel-footer .button-reset-filters {
+      position: inherit;
+      float: none;
+      padding: 0;
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 0;
+      margin-right: 0px;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .nci-car-locator .filter-panel-footer .button-reset-filters {
+          float: right;
+          width: auto;
+          margin-top: 7px; } }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-footer .button-reset-filters {
+          display: none; } }
+  .nci-car-locator .filter-panel-model {
+    margin: 0 auto; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel-model {
+        padding: 0 20px; } }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel-model .section-type {
+        min-width: 220px; } }
+    .nci-car-locator .filter-panel-model .model-list {
+      margin-top: 10px;
+      text-align: left; }
+    .nci-car-locator .filter-panel-model .two-columns {
+      background-color: transparent; }
+      @media screen and (min-width: 1280px) {
+        .nci-car-locator .filter-panel-model .two-columns {
+          -webkit-columns: 2;
+          -moz-columns: 2;
+          columns: 2; } }
+    .nci-car-locator .filter-panel-model .model-list-item {
+      margin: 0;
+      display: inline-block;
+      max-width: 48%; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-model .model-list-item {
+          width: auto;
+          display: inline;
+          margin: 0 5px 5px 5px; } }
+      @media screen and (min-width: 1280px) {
+        .nci-car-locator .filter-panel-model .model-list-item {
+          display: inherit; } }
+    .nci-car-locator .filter-panel-model .item-title {
+      display: inline-block;
+      margin: 0 0 5px 0;
+      padding: 5px 10px;
+      cursor: pointer; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-model .item-title {
+          padding: 5px 5px 5px 10px; } }
+    .nci-car-locator .filter-panel-model .title-small {
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      padding-top: 4px;
+      vertical-align: top;
+      max-width: 60px;
+      line-height: 14px; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-model .title-small {
+          max-width: inherit;
+          line-height: 20px; } }
+    .nci-car-locator .filter-panel-model img {
+      max-width: 100%;
+      display: block; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-model img {
+          max-width: none; } }
+    .nci-car-locator .filter-panel-model .button-model {
+      padding: 10px 10px 5px  0;
+      margin-bottom: 5px;
+      margin: 5px; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-model .button-model {
+          margin: 0px;
+          min-width: 185px; } }
+  .nci-car-locator .filter-panel-drivetrain {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto; }
+    .nci-car-locator .filter-panel-drivetrain.active {
+      display: table; }
+    .nci-car-locator .filter-panel-drivetrain img {
+      max-width: none; }
+    .nci-car-locator .filter-panel-drivetrain .filter-panel-content {
+      text-align: center; }
+    .nci-car-locator .filter-panel-drivetrain .button-drivetrain {
+      color: #414146;
+      background-repeat: no-repeat;
+      background-position: 15px center;
+      display: block;
+      width: 100%;
+      margin: 10px; }
+      .nci-car-locator .filter-panel-drivetrain .button-drivetrain.awd {
+        background-image: url("/Static/images/car-locator/filters/drivetrain_awd.png"); }
+      .nci-car-locator .filter-panel-drivetrain .button-drivetrain.fwd {
+        background-image: url("/Static/images/car-locator/filters/drivetrain_fwd.png"); }
+      @media screen and (min-width: 768px) {
+        .nci-car-locator .filter-panel-drivetrain .button-drivetrain {
+          display: inline; } }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-drivetrain .button-drivetrain {
+          width: auto;
+          margin: 5px 20px; } }
+    .nci-car-locator .filter-panel-drivetrain .drivetrain-wrapper {
+      display: inline-block;
+      padding: 20px; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-drivetrain .drivetrain-wrapper {
+          padding: 0; } }
+    .nci-car-locator .filter-panel-drivetrain .drivetrain-type,
+    .nci-car-locator .filter-panel-drivetrain .drivetrain-description {
+      margin-left: 58px;
+      display: block;
+      cursor: pointer; }
+  .nci-car-locator .filter-panel-colour .button-colour {
+    display: inherit;
+    line-height: 1;
+    min-width: 255px;
+    width: 100%; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel-colour .button-colour {
+        height: 68px; } }
+  .nci-car-locator .filter-panel-colour .colour-swatch {
+    cursor: pointer;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px #999 solid;
+    top: 10px;
+    left: 10px; }
+  .nci-car-locator .filter-panel-colour .group-set,
+  .nci-car-locator .filter-panel-colour .group-title {
+    display: block;
+    margin-left: 60px;
+    cursor: pointer; }
+  .nci-car-locator .filter-panel-colour .group-title {
+    margin-top: 5px; }
+  @media screen and (min-width: 1280px) {
+    .nci-car-locator .filter-panel-colour .group-set {
+      max-width: 255px; } }
+  .nci-car-locator .filter-panel-colour .colour-list {
+    margin: 0 auto;
+    text-align: left; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel-colour .colour-list {
+        max-width: 826px; } }
+    @media screen and (min-width: 1280px) {
+      .nci-car-locator .filter-panel-colour .colour-list {
+        max-width: 1100px; } }
+  .nci-car-locator .filter-panel-colour .colour-list-item {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 15px; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel-colour .colour-list-item {
+        margin: 10px;
+        padding: 0;
+        max-width: 255px; } }
+  .nci-car-locator .filter-panel-colour.interior-colour {
+    margin: 0 auto; }
+    .nci-car-locator .filter-panel-colour.interior-colour .button-colour {
+      min-width: 0; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .filter-panel-colour.interior-colour {
+        max-width: 975px; } }
+    @media screen and (min-width: 1280px) {
+      .nci-car-locator .filter-panel-colour.interior-colour {
+        max-width: 1260px; } }
+    .nci-car-locator .filter-panel-colour.interior-colour .colour-list {
+      margin: 0 auto;
+      max-width: none; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .colour-list {
+          margin-left: -13px;
+          max-width: 720px; } }
+      @media screen and (min-width: 1280px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .colour-list {
+          max-width: 1000px; } }
+    .nci-car-locator .filter-panel-colour.interior-colour .colour-list-item {
+      max-width: 230px;
+      display: inline-block;
+      padding: 0;
+      margin: 4px;
+      width: 47%; }
+      @media screen and (min-width: 399px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .colour-list-item {
+          width: 31%; } }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .colour-list-item {
+          width: 50%;
+          margin: 10px;
+          max-width: 220px; } }
+      @media screen and (min-width: 1280px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .colour-list-item {
+          width: 50%;
+          margin: 10px;
+          max-width: 229px; } }
+    .nci-car-locator .filter-panel-colour.interior-colour .button-interior-colour {
+      min-width: auto;
+      width: 100%; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .button-interior-colour {
+          min-width: 229px; } }
+      @media screen and (min-width: 1280px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .button-interior-colour {
+          min-width: 234px; } }
+    .nci-car-locator .filter-panel-colour.interior-colour .section-type {
+      padding: 10px 0; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .section-type {
+          padding: 0 10px; } }
+    .nci-car-locator .filter-panel-colour.interior-colour .group-title {
+      text-align: center;
+      margin-left: auto; }
+      @media screen and (min-width: 1024px) {
+        .nci-car-locator .filter-panel-colour.interior-colour .group-title {
+          text-align: left;
+          margin-left: 60px; } }
+  .nci-car-locator .interior-colour-image {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    border: 1px #999 solid;
+    margin-top: -5px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .interior-colour-image {
+        position: absolute;
+        top: 10px;
+        margin-top: 0; } }
+  .nci-car-locator .filter-panel-sections__sort-by-price__label {
+    position: relative;
+    display: inline;
+    height: 3.4375rem;
+    padding: 0 1.25rem;
+    border: 0;
+    padding-right: 5px; }
+  .nci-car-locator .filter-panel-sections__sort-by-price__button {
+    display: inline;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    padding: 15px;
+    line-height: 1;
+    margin: 5px;
+    text-align: left;
+    opacity: 0.7;
+    cursor: pointer; }
+    .nci-car-locator .filter-panel-sections__sort-by-price__button:active, .nci-car-locator .filter-panel-sections__sort-by-price__button:hover, .nci-car-locator .filter-panel-sections__sort-by-price__button.active {
+      opacity: 1;
+      background-color: #dddddd;
+      border: 1px solid #dddddd; }
+  .nci-car-locator .filter-panel-sections__toggle-panels__button {
+    position: relative;
+    display: inline;
+    padding: 5px 20px 0 20px;
+    border: 0;
+    padding-right: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: url("/Static/images/car-locator/icons/show_filters.gif") no-repeat right 20px center;
+    background-size: 24px 24px; }
+    .nci-car-locator .filter-panel-sections__toggle-panels__button:active, .nci-car-locator .filter-panel-sections__toggle-panels__button:hover {
+      color: #4d4e53;
+      background-color: transparent;
+      border: none; }
+    .nci-car-locator .filter-panel-sections__toggle-panels__button.active {
+      background-image: url("/Static/images/car-locator/icons/hide_filters.gif"); }
+  .nci-car-locator .toggle-panels-button-desktop {
+    display: none !important;
+    width: 55px;
+    height: 22px;
+    display: block;
+    cursor: pointer;
+    bottom: 0;
+    position: absolute;
+    left: -webkit-calc(50% - 22px);
+    left: -moz-calc(50% - 22px);
+    left: calc(50% - 22px); }
+    @media screen and (min-width: 1024px) {
+      .nci-car-locator .toggle-panels-button-desktop {
+        display: block !important; } }
+    .nci-car-locator .toggle-panels-button-desktop:before {
+      position: absolute;
+      color: #007bcd;
+      right: 15px;
+      top: 0px;
+      display: block;
+      font-size: 1.5625rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      line-height: 1;
+      text-align: left; }

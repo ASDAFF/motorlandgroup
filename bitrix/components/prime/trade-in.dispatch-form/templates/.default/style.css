@@ -1,0 +1,87 @@
+#form-for-trade-in-dispatch {
+    max-width: 880px;
+    margin: 0 auto;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+
+
+#form-for-trade-in-dispatch .input-text-wrapper {
+    display: inline-block;
+    height: 75px;
+    font-size: 0;
+    width: 49%;
+    vertical-align: top;
+}
+
+#form-for-trade-in-dispatch .input-text-wrapper input {
+    margin-bottom: 3px;
+}
+
+#form-for-trade-in-dispatch .input-text-wrapper label.error {
+    font-size: 11px;
+    border: none !important;
+}
+
+
+#form-for-trade-in-dispatch .input-text-wrapper.input-text-wrapper-second {
+    margin-left: 2%;
+}
+
+#form-for-trade-in-dispatch input {
+    font-size: 16px;
+}
+
+#form-for-trade-in-dispatch input[type=submit] {
+    margin: 0 auto;
+    display: block;
+}
+
+@media(max-width: 639px) {
+    #form-for-trade-in-dispatch {
+        padding: 0 15px;
+    }
+
+    #form-for-trade-in-dispatch .input-text-wrapper {
+        width: 100%;
+    }
+
+    #form-for-trade-in-dispatch .input-text-wrapper.input-text-wrapper-second {
+        margin-left: 0;
+    }
+
+}
+
+
+#files-for-trade-in-dispatch {
+    opacity: 0;
+}
+
+#files-for-trade-in-dispatch-styler {
+    width: 100%;
+    outline: none !important;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#files-for-trade-in-dispatch-styler .jq-file__name {
+    height: 50px;
+    line-height: 48px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    border-radius: 0;
+    color: #999;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+#files-for-trade-in-dispatch-styler .jq-file__name:hover {
+    border: 1px solid #5B7F95;
+}
+
+
+#files-for-trade-in-dispatch-styler .jq-file__browse {
+    height: 48px;
+    line-height: 46px;
+}

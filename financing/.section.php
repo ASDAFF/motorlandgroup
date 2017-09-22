@@ -1,0 +1,6 @@
+<?
+$sSectionName = "financing";
+$arDirProperties = Array(
+
+);
+?>

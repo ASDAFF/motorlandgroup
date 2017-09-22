@@ -1,0 +1,448 @@
+
+
+/* Start:/bitrix/templates/main_normal/components/prime/news.detail/responsive-offer/style.css?14594356062472*/
+.save-for-pdf a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.mPrint {
+	display: none;
+}
+
+@page {
+/*margin: 8px 0;*/
+margin: 0;
+}
+
+@media print {
+	.td-banner, .mLogoOnTopWithHover { display: none; }
+    #panel{display: none;}
+
+	.mPrint {
+		position: relative;
+		width: 100%;
+		display: block;
+        /*костыль part1*/
+        height: 1050px;
+	}
+
+    .mPrint table {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .mPrintHead:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+	.mPrintHead_Photo {
+		float: left;
+	}
+
+    .mPrintHead_Photo img {
+        height: 100px;
+        margin: 15px;
+    }
+	.mPrintHead_Header {
+		float: left;
+		text-align: right;
+		width: 250px;
+		color: black;
+	}
+	.mPrintHead_Header h1 {
+		text-transform: uppercase;
+		font-family: 'Volvo Broad', Arial, sans-serif;
+		font-weight: normal;
+		font-size: 36px;
+		line-height: 36px;
+	}
+	.mPrintHead_Header h2 {
+		font-size: 16px;
+		/*margin-top: 13px;*/
+        /*margin-top: 9px;*/
+        /*margin-bottom: 9px;*/
+        margin-top: 4px;
+        margin-bottom: 4px;
+	}
+	.mPrintHead_Logo {
+		float: right;
+	}
+
+    .mPrintHead_Logo a img {
+        width: 80px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .mPrint table {
+		width: 100%;
+		border-collapse: collapse;
+        margin: .75em 0;
+        border-spacing: 0;
+        table-layout: fixed;
+	}
+
+	.mPrint table tr:nth-child(even) {
+		background-color: #DCDDDE !important;
+	}
+	.mPrint table tr:nth-child(odd) {
+		background-color: #F3F3F3 !important;
+	}
+	.mPrint table td {
+		width: 50%;
+		padding: 5px 20px 5px 40px;
+		border-right: 2px solid #FFFFFF;
+		font-size: 12px;
+        border-bottom: 1px solid #DDD;
+	}
+	.mPrint table th, .mPrint table tr.mPrint_Price td {
+        font-family: arial, helvetica, sans-serif;
+		text-align: right;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	.mPrint table th {
+		background-color: #FFFFFF;
+		/*padding: 15px 20px 5px 20px;*/
+		/*padding: 10px 20px 5px 20px;*/
+		padding: 7px 20px 4px 20px;
+        border-bottom: 1px solid #b7b7b7;
+        text-align: left;
+        background-color: #F3F3F3;
+	}
+	.mPrint .mPrintFooter {
+		width: 100%;
+        /*костыль part2*/
+        bottom: 0;
+        position: absolute;
+	}
+    .mPrint .mPrintFooter table {
+        margin: 0;
+    }
+
+	.mPrint .mPrintFooter table tr:nth-child(even) {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	.mPrint table:last-child tr:last-child td {
+		font-size: 16px;
+		font-weight: bold;
+		color: #000000;
+  		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.mPrintFooter_End_Name {
+		text-transform: uppercase;
+		font-style: italic;
+	}
+}
+/* End */
+
+
+/* Start:/bitrix/components/prime/spetspredlozenia.list/templates/.default/style.css?14507137236195*/
+/*this styles are copied from previus ugly slider*/
+.mCarListCards {
+    /*
+        width: 915px;
+        margin: 0 auto;
+    */
+    padding: 0 26px;
+}
+
+.mCarListCards_Item {
+    width: 275px;
+    height: 305px;
+    margin: 0 30px 20px 0;
+    background-color: #FFFFFF;
+    float: left;
+    box-shadow: 1px 1px 1px 0px #CAC9C5;
+    border-radius: 2px;
+}
+
+.mCarListCards_Item:hover {
+    box-shadow: 1px 1px 2px 0px #CAC9C5;
+}
+
+.mCarListCards_Item_Info {
+    padding: 18px;
+}
+
+.mCarListCards_Item_Info_Name a {
+    font-weight: bold;
+    font-size: 17px;
+    /*color: #0F409D;*/
+    /*color: red;*/
+    color: #003057;
+}
+
+.mCarListCards_Item_Info_Btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    background-color: #0F409D;
+    text-align: center;
+    padding: 10px 0;
+    margin: 15px 0px 20px 0px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.mCarListCards_Item_Info_Btn a:hover {
+    background-color: #072470;
+}
+
+.mCarListCards_Item_Info_Props_Item_Name {
+    /*color: #A69E93;*/
+    float: left;
+    font-size: 14px;
+}
+
+.mCarListCards_Item_Info_Props_Item_Value {
+    color: #cf0600;
+    font-weight: bold;
+    float: right;
+    font-size: 14px;
+}
+
+.mCarListCards_Item_Info_Props_Item_Value span {
+    color: #A69E93;
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+/* end this styles are copied from previus ugly slider*/
+
+
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+
+/* Responsive2*/
+.super-offer {
+    background-color: #ECECEC;
+    overflow: hidden;
+}
+
+.super-offer h1 {
+
+    font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
+
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    color: #003057;
+    font-size: 80px;
+    font-weight: normal;
+}
+
+@media (max-width: 500px) {
+    .super-offer h1 {
+        font-size: 45px;
+    }
+}
+
+.super-offer .slick-track {
+    margin: 0 auto;
+}
+
+.super-offer-slider-giant {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 140px !important;
+    height: 520px;
+}
+
+.super-offer-slider-giant .slick-prev,
+.super-offer-slider-giant .slick-next {
+    width: 40px;
+    height: 40px;
+
+    z-index: 1;
+
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -ms-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+}
+.super-offer-slider-giant .slick-prev:before,
+.super-offer-slider-giant .slick-next:before {
+    font-size: 0;
+}
+
+.super-offer-slider-giant .slick-prev {
+    left: -40px;
+    background-image: url("../img/main-slider-prev2.png");
+}
+
+.super-offer-slider-giant .slick-prev:hover {
+    background-image: url("../img/main-slider-prev2.png");
+    background-position: 0 40px;
+}
+
+.super-offer-slider-giant .slick-next {
+    right: -40px;
+    background-image: url("../img/main-slider-next2.png");
+}
+.super-offer-slider-giant .slick-next:hover {
+    background-image: url("../img/main-slider-next2.png");
+    background-position: 0 40px;
+}
+
+@media (max-width: 949px) {
+    .super-offer-slider-giant .slick-prev {
+        left: -25px;
+    }
+    .super-offer-slider-giant .slick-next {
+        right: -25px;
+    }
+}
+
+@media (max-width: 699px) {
+    .super-offer-slider-giant .slick-prev {
+        left: -10px;
+    }
+    .super-offer-slider-giant .slick-next {
+        right: -10px;
+    }
+}
+
+.super-offer-slide-giant {
+    outline: none;
+}
+.super-offer-slide-giant .item {
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px #CAC9C5;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.super-offer-slide-giant > .item > a {
+    display: block;
+    position: relative;
+    height: 347px;
+    overflow: hidden;
+}
+
+.super-offer-slide-giant .item a img {
+    /*outline: 3px solid darkred;*/
+    /*min-width: 50px;*/
+    /*min-height: 50px;*/
+    /*background-color: #888;*/
+}
+
+.super-offer-slide-giant .item .mCarListCards_Item_Info_Name {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.super-offer-slide-giant .item .mCarListCards_Item_Info_Name a:hover{
+    text-decoration: none;
+}
+
+.super-offer-slide-giant .item .mCarListCards_Item_Info_Props {
+    margin-top: 35px;
+}
+
+.super-offer-slide-giant .item .mCarListCards_Item_Info_Props_Item_Name {
+    /*font-size: 19px;*/
+    font-size: 17px;
+}
+.super-offer-slide-giant .item .mCarListCards_Item_Info_Props_Item_Value {
+    /*font-size: 19px;*/
+    font-size: 17px;
+}
+.super-offer-slide-giant .item .mCarListCards_Item_Info_Props_Item_Value span{
+    /*font-size: 19px;*/
+    font-size: 17px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+@media (min-width: 1430px) and (max-width: 1749px) {
+    .super-offer-slider-giant {
+        height: 450px;
+    }
+    .super-offer-slide-giant .item {
+        width: 400px;
+    }
+
+    .super-offer-slide-giant > .item > a {
+        height: 277px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1169px) {
+    .super-offer-slider-giant {
+        height: 450px;
+    }
+    .super-offer-slide-giant .item {
+        width: 400px;
+    }
+    .super-offer-slide-giant > .item > a {
+        height: 277px;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 649px) {
+    .super-offer-slider-giant {
+        height: 450px;
+    }
+    .super-offer-slide-giant .item {
+        width: 400px;
+    }
+    .super-offer-slide-giant > .item > a {
+        height: 277px;
+    }
+}
+
+@media (max-width: 539px) {
+    .super-offer-slider-giant {
+        height: 340px;
+    }
+    .super-offer-slide-giant .item {
+        width: 275px;
+    }
+
+    .super-offer-slide-giant > .item > a {
+        height: 186px;
+    }
+
+    .super-offer-slide-giant .item .mCarListCards_Item_Info_Name {
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .super-offer-slide-giant .item .mCarListCards_Item_Info_Name a:hover{
+        text-decoration: none;
+    }
+
+    .super-offer-slide-giant .item .mCarListCards_Item_Info_Props {
+        margin-top: 15px;
+    }
+}
+
+/*��������������� Responsive2 end*/
+/* End */
+/* /bitrix/templates/main_normal/components/prime/news.detail/responsive-offer/style.css?14594356062472 */
+/* /bitrix/components/prime/spetspredlozenia.list/templates/.default/style.css?14507137236195 */

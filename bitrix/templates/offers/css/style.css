@@ -1,0 +1,199 @@
+.zzModalWrapper.visible .zzModalOverlay {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s, visibility 0.2s;
+
+}
+
+.zzModalWrapper.visible .zzModalBox {
+    display: block;
+
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+}
+
+.zzModalOverlay {
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.zzModalBox {
+    position: fixed;
+    display: block;
+    left: 50%;
+    top: 50%;
+    min-width: 290px;
+    min-height: 70px;
+    transform: translate(-50%, -50%) scale(0.2);
+    background-color: white;
+    z-index: 101;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+
+    -webkit-filter: blur(0);
+}
+.zzModalBox .zzModalBoxCross {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.zzModalBox .zzModalBoxCross i {
+    color: #fff;
+    text-align: right;
+    float: right;
+    margin-right: 4px;
+}
+
+.zzModalBox .zzModalContent {
+    overflow: hidden;
+}
+
+.zTestDriveThanks {
+    width: 640px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .zTestDriveThanks {
+        width: 290px;
+        margin: 0 auto;
+    }
+}
+
+.zTestDriveThanks .zImgText {
+    position: relative;
+    -webkit-perspective: 1000;
+
+    height: 240px;
+    /*outline: 1px solid darkred;*/
+
+    background-image: url('/bitrix/templates/offers/img/foto_salona.jpg');
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 768px) {
+    .zTestDriveThanks .zImgText {
+        height: 140px;
+    }
+}
+
+.zTestDriveThanks .zImgText:after {
+    background-color: rgba(0,0,0,0.3);
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.zTestDriveThanks .zImgText .zText {
+    color: white;
+    z-index: 1;
+    position: absolute;
+    text-shadow: 0px 0px 6px #111;
+    width: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+@media (max-width: 768px) {
+    .zTestDriveThanks .zImgText .zText {
+        width: 270px;
+    }
+}
+
+.zTestDriveThanks .zImgText .zText h2 {
+    font-size: 37px;
+    line-height: 45px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 17px;
+}
+@media (max-width: 768px) {
+    .zTestDriveThanks .zImgText .zText h2 {
+        line-height: 25px;
+        font-size: 25px;
+    }
+}
+
+.zTestDriveThanks .zImgText .zText p {
+    font-size: 18px;
+    line-height: 27px;
+}
+@media (max-width: 768px) {
+    .zTestDriveThanks .zImgText .zText p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
+
+.zTestDriveThanks .zMapsCont {
+    height: 240px;
+}
+@media (max-width: 768px) {
+    .zTestDriveThanks .zMapsCont {
+        height: 200px;
+    }
+}
+
+.zTestDriveThanks .zCont {
+    background-color: #222;
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    color: white;
+    padding: 10px 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .zTestDriveThanks .zCont {
+        width: 290px;
+        height: 200px;
+    }
+}
+
+.zTestDriveThanks .zCont p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 11px;
+}
+.zTestDriveThanks .zCont p a {
+    color: white;
+    border-bottom: 0;
+}
+
+.zTestDriveThanks .zMapTDThanks {
+    /*outline: 1px solid green;*/
+    display: inline-block;
+    width: 400px;
+    height: 240px;
+    background-image: url('/bitrix/templates/offers/img/address.png');
+}
+
+@media (max-width: 768px) {
+    .zTestDriveThanks .zMapTDThanks {
+        display: none;
+    }
+}

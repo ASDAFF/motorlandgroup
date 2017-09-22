@@ -1,0 +1,6 @@
+<?
+$sSectionName = "dispatch";
+$arDirProperties = Array(
+
+);
+?>

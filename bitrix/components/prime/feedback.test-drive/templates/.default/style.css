@@ -1,0 +1,185 @@
+.normal-form {
+    font-size: 16px;
+}
+
+.normal-form input[type='radio'] {
+    position: initial;
+    z-index: initial;
+    left: initial;
+    height: initial;
+    width: initial;
+    padding: initial;
+    box-sizing: initial;
+    overflow: initial;
+    border: initial;
+    margin: initial;
+    display: initial;
+    clip: initial;
+    line-height: initial;
+    font-size: initial;
+    font-family: initial;
+    font: initial;
+    color: initial;
+}
+
+.normal-form input[type=checkbox] {
+    position: initial;
+    z-index: initial;
+    left: initial;
+    height: initial;
+    width: initial;
+    padding: initial;
+    box-sizing: initial;
+    overflow: initial;
+    border: initial;
+    margin: initial;
+    display: initial;
+    clip: initial;
+    line-height: initial;
+    font-size: initial;
+    font-family: initial;
+    font: initial;
+    color: initial;
+}
+
+.form-wrapper {
+    /*outline: 1px solid black;*/
+    max-width: 700px !important;
+    margin: 0 auto;
+}
+
+.form-wrapper input[type=text],
+.form-wrapper select {
+    width: 300px;
+}
+
+.normal-form input[type='text']:disabled{
+    background-color: #eee;
+}
+
+.normal-form .form-row {
+    margin-bottom: 26px;
+}
+
+.form-row label.left {
+    float:left;
+    /*outline: 1px solid black;*/
+    width: 50%;
+    line-height: 50px;
+    height: 50px;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form-row .not-a-label {
+    float:right;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.form-row .not-a-label.cars8 {
+    height: 100%;
+}
+
+.form-row .not-a-label.spam-types {
+    height: 90px;
+}
+
+.form-row .not-a-label.for-textarea {
+    height: 190px;
+}
+
+.form-row .not-a-label textarea {
+    resize: none;
+}
+
+.form-row .not-a-label .not-a-label-text {
+    /*outline: 1px solid black;*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-row input[type=text],
+.form-row select {
+    height: 50px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.form-row .after {
+    content : "";
+    display: table;
+    clear: both;
+}
+
+
+/*********************/
+.normal-form label.radio-checkbox-inline {
+    position: relative;
+    padding-left: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 0;
+
+}
+.normal-form label.radio-checkbox-inline input {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 1px;
+}
+
+/**********************/
+span.star:before {
+    content: "*";
+}
+span.star.hiddenz {
+    opacity: 0;
+}
+
+/**********************/
+input[type=submit] {
+    color: white;
+    background-color: #415675;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 17px !important;
+    padding: 0 40px;
+}
+
+label.form-model-item {
+    margin-top: 5px;
+    width: 160px;
+}
+label.form-spam-type {
+    margin-top: 5px;
+    width: 230px;
+}
+
+.normal-form label.error {
+    border: none;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    form.normal-form {
+        transform: scale(0.9);
+    }
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.form-row label.left.rule{
+    line-height: 15px;
+}
+.form-row label.left.rule a{
+    text-decoration: underline;
+}

@@ -1,0 +1,1 @@
+<img src="/bitrix/templates/offers/img/foto_salona.jpg" class="" />
