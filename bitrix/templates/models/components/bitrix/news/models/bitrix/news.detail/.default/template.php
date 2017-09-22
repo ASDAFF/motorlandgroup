@@ -304,7 +304,6 @@ $this->setFrameMode(true);
 			</div>
 			<? endforeach; ?>
 
-
 			<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
 			<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 		</div>
@@ -452,7 +451,7 @@ $this->setFrameMode(true);
 
 					</div>
 				</div>
-				<a class="button button-small button-light button-semi-opaque w-link three-forms-exclude" href="#three-forms-on-model">Получить скидку на XC90</a>
+				<a class="button button-small button-light button-semi-opaque w-link three-forms-exclude" href="#three-forms-on-model">Получить скидку на <?=$arResult['NAME']?></a>
 			</div>
 			<div class="clearfix"></div>
 
