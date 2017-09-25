@@ -23,8 +23,7 @@ $this->setFrameMode(true);
 
 		<div class="bgImg" style="background-image: url('<?=CFile::ResizeImageGet($arItem["PROPERTIES"]["IMG"]["VALUE"][1], array('width'=>2000, 'height'=>2000), BX_RESIZE_IMAGE_EXACT, true)['src'];?>');"></div>
 		<div class="headerz">
-			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["VALUE"][0]?></p>
-			<? unset($arItem["PROPERTIES"]["TEXT"]["VALUE"][0]); ?>
+			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["ONE_TEXT"]?></p>
 			<? foreach($arItem["PROPERTIES"]["TEXT"]["VALUE"] as $text):?>
 				<p class="h2"><?=$text;?></p>
 			<? endforeach;?>
@@ -125,8 +124,7 @@ $this->setFrameMode(true);
 
 	<div class="s2">
 		<div class="headerz">
-			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["VALUE"][0]?></p>
-			<? unset($arItem["PROPERTIES"]["TEXT"]["VALUE"][0]); ?>
+			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["ONE_TEXT"]?></p>
 			<? foreach($arItem["PROPERTIES"]["TEXT"]["VALUE"] as $text):?>
 			<p class="h2"><?=$text;?></p>
 			<? endforeach;?>
@@ -233,8 +231,7 @@ $this->setFrameMode(true);
 
 	<div class="b2" style="background-image: url('<?=CFile::ResizeImageGet($arItem["PROPERTIES"]["IMG"]["VALUE"][1], array('width'=>415, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>');">
 		<div class="headerz">
-			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["VALUE"][0]?></p>
-			<? unset($arItem["PROPERTIES"]["TEXT"]["VALUE"][0]); ?>
+			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["ONE_TEXT"]?></p>
 			<? foreach($arItem["PROPERTIES"]["TEXT"]["VALUE"] as $text):?>
 				<p class="h2"><?=$text;?></p>
 			<? endforeach;?>
