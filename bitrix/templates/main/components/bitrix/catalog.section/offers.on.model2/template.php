@@ -22,20 +22,8 @@ if (!empty($arResult['ITEMS'])) {}?>
             </div>
             <div class="m-spec-left">
 
-                <!--old-->
-                <!--<a class="spec-image fancybox-thumbs"
-                   data-fancybox-group="thumb<?/*=$arItem["ID"]*/?>"
-                   href="<?/*=$arItem['DETAIL_PICTURE']["SRC"]*/?>"
-                   style="width:300px; height:220px; background-image:url(<?/*=$arItem["PICT"]["src"]*/?>);">
 
-                </a>
-                <?/*foreach($arItem["PROPERTIES"]["TEXT_IMG"]["VALUE"] as $arImg):*/?>
-                    <?/*$img=CFile::GetPath($arImg);*/?>
-                    <a class="spec-image-none fancybox-thumbs" data-fancybox-group="thumb<?/*=$arItem["ID"]*/?>" href="<?/*=$img*/?>"></a>
-                --><?/*endforeach;*/?>
-                <!--old end-->
 
-                <!--new-->
 
                 <?
                     $imagesBig = [];
@@ -44,29 +32,30 @@ if (!empty($arResult['ITEMS'])) {}?>
                     $imagesBig[]= CFile::ResizeImageGet(
                         $arItem['DETAIL_PICTURE']['ID'],
 //                        array("width" => 1024, "height" => 1024),
-                        array("width" => 800, "height" => 800),
-                        BX_RESIZE_IMAGE_PROPORTIONAL
+                        array("width" => 620, "height" => 350),
+                        BX_RESIZE_IMAGE_EXACT
                     )['src'];;
 
                     $imagesSmall[] = CFile::ResizeImageGet(
                         $arItem['DETAIL_PICTURE']['ID'],
                         array("width" => 100, "height" => 100),
-                        BX_RESIZE_IMAGE_PROPORTIONAL
+                        BX_RESIZE_IMAGE_EXACT
+
                     )['src'];
 
                     foreach($arItem["PROPERTIES"]["TEXT_IMG"]["VALUE"] as $arImg) {
                         $imagesBig[] = CFile::ResizeImageGet(
                             $arImg,
 //                            array("width" => 1200, "height" => 1200),
-                            array("width" => 800, "height" => 800),
-                            BX_RESIZE_IMAGE_PROPORTIONAL
+                            array("width" => 620, "height" => 350),
+                            BX_RESIZE_IMAGE_EXACT
                         )['src'];
 
 
                         $imagesSmall[] = CFile::ResizeImageGet(
                             $arImg,
                             array("width" => 100, "height" => 100),
-                            BX_RESIZE_IMAGE_PROPORTIONAL
+                            BX_RESIZE_IMAGE_EXACT
                         )['src'];
                     }
                 ?>
