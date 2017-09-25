@@ -32,6 +32,27 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.mask
 
         <input type="file" name="files[]" id="files-for-trade-in-dispatch" multiple="multiple">
 
+        <div class="rule_block">
+            <input type="checkbox" name="rule" id="sel-rule" checked>
+            <div class="left rule"><p>Я прочитал <a class="skyblue show-rules" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных</p></div>
+        </div>
+
+
         <input class="blue-button" type="submit" value="Отправить">
     </form>
+</div>
+
+<div class="rule_block" style="display: none">
+
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "",
+        Array(
+            "AREA_FILE_SHOW" => "file",
+            "AREA_FILE_SUFFIX" => "inc",
+            "EDIT_TEMPLATE" => "",
+            "PATH" => "/include/rule.php"
+        )
+    );?>
+
 </div>

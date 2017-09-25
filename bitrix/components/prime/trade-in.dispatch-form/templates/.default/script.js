@@ -21,7 +21,11 @@ $(document).ready(function() {
             },
             phone: {
                 required: true,
+            },
+            rule: {
+                required: true,
             }
+
         },
         submitHandler: function(form) {
             var myFormData = new FormData(form);
@@ -45,4 +49,7 @@ $(document).ready(function() {
 
 $(function(){
     $("input[name='phone']").mask("+7 (999) 999-99-99");
+    $('.show-rules').click(function(){
+        zzModal.show($('.rule_block').html());
+    });
 });

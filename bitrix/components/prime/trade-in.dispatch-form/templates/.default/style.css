@@ -85,3 +85,23 @@
     height: 48px;
     line-height: 46px;
 }
+
+
+.left.rule{
+    display: inline-block;
+    margin: 10px;
+}
+.left.rule a{
+    text-decoration: underline;
+}
+.rule_block{
+    position: relative;
+}
+.rule_block label{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 14px;
+    left: -2px;
+    z-index: -1;
+}
