@@ -177,6 +177,36 @@ $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
 
     <div class="clear"></div>
 
+<?
+if (CModule::IncludeModule("iblock")):
+    $arSelect = Array("ID", "IBLOCK_ID", "NAME", "PREVIEW_TEXT","PREVIEW_PICTURE","DETAIL_PAGE_URL","PROPERTY_*");
+    $arFilter = Array("IBLOCK_ID" => 28, "ACTIVE" => "Y");
+    $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
+    if($res->result->num_rows):
+        ?>
+        <h1 style="text-align: center;margin-top: 100px; margin-bottom: 10px;"><?=CIBlock::GetByID(28)->GetNext()['NAME'];?></h1>
+        <div class="model-seo-text">
+            <?
+            while($ob = $res->GetNextElement()):
+                $arFields = $ob->GetFields();
+                ?>
+                <div class="model-seo-text-item">
+                    <a href="<?=$arFields['DETAIL_PAGE_URL']?>">
+                        <div class="model-seo-text-item-text">
+                            <div class="model-seo-text-item-text-wrapper">
+                                <h2><?=$arFields['NAME']?></h2>
+                                <p><?=$arFields['PREVIEW_TEXT']?></p>
+                            </div>
+                        </div>
+                        <div class="model-seo-text-item-image delme" style="display: block; background-image: url('<?=CFile::GetPath($arFields['PREVIEW_PICTURE']);?>');"></div>
+                    </a>
+                </div>
+            <? endwhile; ?>
+        </div>
+    <?endif;?>
+<?endif;?>
+
+    <div class="clear"></div>
 
 
     <style>
