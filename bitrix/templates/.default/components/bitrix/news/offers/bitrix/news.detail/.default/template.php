@@ -212,6 +212,11 @@ $this->setFrameMode(true);
 					<div class="col-xs-12 col-md-4">
 						<p class="hheeaadd">ЦЕНА ДАННОГО<br>АВТОМОБИЛЯ</p>
 						<p class="hheeaadd"><strong><?=$arResult["PROPERTIES"]["OLD_PRICE"]["VALUE"];?></strong></p>
+						<? if($arResult["PROPERTIES"]["PDF"]["VALUE"]): ?>
+						<a class="mtr-btn mtr-btn-red mtr-btn-big-letters" target="_blank" href="<?=CFile::GetPath($arResult["PROPERTIES"]["PDF"]["VALUE"]);?>" title="Посмотреть в PDF" style="margin-top: 10px;">
+							Посмотреть в PDF
+						</a>
+						<? endif; ?>
 						<br class="visible-xs-block visible-sm-block">
 						<br class="visible-xs-block visible-sm-block">
 					</div>
