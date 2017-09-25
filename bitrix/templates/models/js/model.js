@@ -89,6 +89,14 @@ function add_test_in() {
     data.modelName = $('select[name=model]').val();
     data.user_name = $('input[name=fio_t]').val();
     data.user_phone = $('input[name=telephone_t]').val();
+    data.user_rule = $('input[name=rule_t]').prop('checked');
+
+    if(!data.user_rule){
+        $('input[name=rule_t]').addClass("error");
+        mist=mist+1;
+    }else{
+        $('input[name=rule_t]').removeClass("error");
+    }
 
     if(data.user_name == ''){
         $('input[name=fio_t]').addClass("error");
@@ -96,12 +104,14 @@ function add_test_in() {
     }else{
         $('input[name=fio_t]').removeClass("error");
     }
+
     if(data.user_phone == ''){
         $('input[name=telephone_t]').addClass("error");
         mist=mist+1;
     }else{
         $('input[name=telephone_t]').removeClass("error");
     }
+
     if(mist==0){
         $.ajax({
             type: "POST",
@@ -124,6 +134,14 @@ function get_discount() {
     var data = {};
     data.user_name = $('input[name=fio_d]').val();
     data.user_phone = $('input[name=telephone_d]').val();
+    data.user_rule = $('input[name=rule_d]').prop('checked');
+
+    if(!data.user_rule){
+        $('input[name=rule_d]').addClass("error");
+        mist=mist+1;
+    }else{
+        $('input[name=rule_d]').removeClass("error");
+    }
 
     if(data.user_name == ''){
         $('input[name=fio_d]').addClass("error");
@@ -159,6 +177,14 @@ function add_phone() {
     var data = {};
     data.user_name = $('input[name=fio_p]').val();
     data.user_phone = $('input[name=telephone_p]').val();
+    data.user_rule = $('input[name=rule_p]').prop('checked');
+
+    if(!data.user_rule){
+        $('input[name=rule_p]').addClass("error");
+        mist=mist+1;
+    }else{
+        $('input[name=rule_p]').removeClass("error");
+    }
 
     if(data.user_name == ''){
         $('input[name=fio_p]').addClass("error");

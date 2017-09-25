@@ -1900,16 +1900,8 @@ input[type=checkbox]:checked~label:before,input[type=checkbox]:checked~label:hov
     background-image:url(../img/checkbox.png);
     background-repeat:no-repeat
 }
-input[type=checkbox]
-{
-    position:absolute;
-    z-index:-1000;
-    left:-1000px;
-    overflow:hidden;
-    height:1px;
-    width:1px;
-    padding:0
-}
+
+
 input[type=checkbox]:checked~label:before,input[type=checkbox]:checked~label:hover:before,input[type=checkbox]~label:before,input[type=checkbox]~label:hover:before
 {
     display:block;

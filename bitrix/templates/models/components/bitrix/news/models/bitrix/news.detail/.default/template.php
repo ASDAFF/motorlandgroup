@@ -468,6 +468,10 @@ $this->setFrameMode(true);
 						<div class="inputcontainer">
 							<input type="text" placeholder="Укажите свой номер" class="p_phone" id="telephone_4" name="telephone_t">
 						</div>
+						<div class="inputcontainer">
+							<input type="checkbox" class="p_rule" id="" name="rule_t" value="1" style="float: left" checked>
+							<label style="position: unset;padding-left: 18px;display: block;line-height: 13px">Я прочитал <a class="skyblue show-rules" style="text-decoration: underline" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных</label>
+						</div>
 						<select  name="model" style="display:none">
 							<option value="XC90">XC90</option>
 						</select>
@@ -494,6 +498,10 @@ $this->setFrameMode(true);
 						<div class="inputcontainer">
 							<input type="text" placeholder="Укажите свой номер" class="p_phone" id="telephone_2" name="telephone_p">
 						</div>
+						<div class="inputcontainer">
+							<input type="checkbox" class="p_rule" id="" name="rule_p" value="1" style="float: left" checked>
+							<label style="position: unset;padding-left: 18px;display: block;line-height: 13px">Я прочитал <a class="skyblue show-rules" style="text-decoration: underline" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных</label>
+						</div>
 
 						<span onclick="add_phone(); return false;" class="stage_text">Заказать обратный звонок</span>
 
@@ -517,6 +525,10 @@ $this->setFrameMode(true);
 						<div class="inputcontainer">
 							<input type="text" placeholder="Укажите свой номер" class="p_phone" id="telephone_3" name="telephone_d">
 						</div>
+						<div class="inputcontainer">
+							<input type="checkbox" class="p_rule" id="" name="rule_d" value="1" style="float: left" checked>
+							<label style="position: unset;padding-left: 18px;display: block;line-height: 13px">Я прочитал <a class="skyblue show-rules" style="text-decoration: underline" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных</label>
+						</div>
 						<span onclick="get_discount(); return false;" class="stage_text">Получить скидку на <?=$arResult['NAME']?></span>
 
 					</form>
@@ -530,6 +542,8 @@ $this->setFrameMode(true);
 	</div>
 
 
+
+
 	<div class="white_bg">
 		<div class="main_map">
 
@@ -537,6 +551,11 @@ $this->setFrameMode(true);
 				<script charset="utf-8">
 
 					$(function(){
+
+						$('.show-rules').click(function(){
+							zzModal.show($('.rule_block').html());
+						});
+
 						ymaps.ready(function () {
 
 							var pageWidth = $(window).innerWidth();
@@ -602,6 +621,22 @@ $this->setFrameMode(true);
 	<div class="photo">
 		<img src="/bitrix/templates/offers/img/foto_salona.jpg" class="" />
 	</div>
+</div>
+
+
+<div class="rule_block" style="display: none">
+
+	<?$APPLICATION->IncludeComponent(
+		"bitrix:main.include",
+		"",
+		Array(
+			"AREA_FILE_SHOW" => "file",
+			"AREA_FILE_SUFFIX" => "inc",
+			"EDIT_TEMPLATE" => "",
+			"PATH" => "/include/rule.php"
+		)
+	);?>
+
 </div>
 
 
