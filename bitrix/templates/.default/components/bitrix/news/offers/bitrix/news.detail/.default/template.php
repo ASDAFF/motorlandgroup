@@ -287,24 +287,38 @@ $this->setFrameMode(true);
 					url = '/ajax/add_test.php';
 					}
 
-					if(!pattern.test($("#user_email").val())){
-						$("#user_email").css("border","1px solid #ff2400");
-						$(".fon_it_car").css("background",bgBad);
-						var erv = 1;
-					}else if($("#user_name").val() == ""){
-						$("#user_name").css("border","1px solid #ff2400");
-						$(".fon_it_car").css("background",bgBad);
-						var erv = 1;
-					}else if($("#user_phone").val() == ""){
-						$("#user_phone").css("border","1px solid #ff2400");
-						$(".fon_it_car").css("background",bgBad);
-						var erv = 1;
-					}else{
-						$("#user_name").css("border","1px solid #a0c63a");
-						$("#user_phone").css("border","1px solid #a0c63a");
+					if(pattern.test($("#user_email").val())){
 						$("#user_email").css("border","1px solid #a0c63a");
-						$(".fon_it_car").css("background",bgGood);
 						var erv = 2;
+					}
+					if($("#user_name").val()){
+						$("#user_name").css("border","1px solid #a0c63a");
+						var erv = 2;
+					}
+					if($("#user_phone").val()){
+						$("#user_phone").css("border","1px solid #a0c63a");
+						var erv = 2;
+					}
+
+
+					if(!pattern.test($("#user_email").val())){
+						$("#user_email").css("border","2px solid #ff2400");
+						$(".fon_it_car").css("background",bgBad);
+						var erv = 1;
+					}
+					if($("#user_name").val() == ""){
+						$("#user_name").css("border","2px solid #ff2400");
+						$(".fon_it_car").css("background",bgBad);
+						var erv = 1;
+					}
+					if($("#user_phone").val() == ""){
+						$("#user_phone").css("border","2px solid #ff2400");
+						$(".fon_it_car").css("background",bgBad);
+						var erv = 1;
+					}
+
+					if(pattern.test($("#user_email").val()) && $("#user_name").val() && $("#user_phone").val()){
+						$(".fon_it_car").css("background",bgGood);
 					}
 
 					if(erv == 1){ return false; }
