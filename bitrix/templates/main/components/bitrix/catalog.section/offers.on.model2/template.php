@@ -32,7 +32,7 @@ if (!empty($arResult['ITEMS'])) {}?>
                     $imagesBig[]= CFile::ResizeImageGet(
                         $arItem['DETAIL_PICTURE']['ID'],
 //                        array("width" => 1024, "height" => 1024),
-                        array("width" => 620, "height" => 350),
+                        array("width" => 620, "height" => 400),
                         BX_RESIZE_IMAGE_EXACT
                     )['src'];;
 
@@ -47,7 +47,7 @@ if (!empty($arResult['ITEMS'])) {}?>
                         $imagesBig[] = CFile::ResizeImageGet(
                             $arImg,
 //                            array("width" => 1200, "height" => 1200),
-                            array("width" => 620, "height" => 350),
+                            array("width" => 620, "height" => 400),
                             BX_RESIZE_IMAGE_EXACT
                         )['src'];
 
