@@ -42,7 +42,7 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.mask
     </form>
 </div>
 
-<div class="rule_block" style="display: none">
+<div class="rule_blocks" style="display: none">
 
     <?$APPLICATION->IncludeComponent(
         "bitrix:main.include",
