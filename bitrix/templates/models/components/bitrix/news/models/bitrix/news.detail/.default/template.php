@@ -300,7 +300,7 @@ $this->setFrameMode(true);
 		<div id="gellery">
 			<? foreach($arResult['PROPERTIES']['PHOTOGALL']['VALUE'] as $img): ?>
 			<div class="item">
-				<img class="" src="<?=CFile::GetPath($img);?>" alt="<?=$arResult['NAME'];?>" />
+				<img class="" src="<?=CFile::ResizeImageGet($img, array('width'=>1920, 'height'=>560), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" alt="<?=$arResult['NAME'];?>" />
 			</div>
 			<? endforeach; ?>
 
@@ -311,7 +311,7 @@ $this->setFrameMode(true);
 			<? foreach($arResult['PROPERTIES']['PHOTOGALL']['VALUE'] as $img): ?>
 			<li class="slidesjs-pagination-item">
 				<a href="#">
-					<img class="" src="<?=CFile::GetPath($img);?>" alt="<?=$arResult['NAME'];?>" />
+					<img class="" src="<?=CFile::ResizeImageGet($img, array('width'=>180, 'height'=>80), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" alt="<?=$arResult['NAME'];?>" />
 				</a>
 			</li>
 			<? endforeach; ?>
