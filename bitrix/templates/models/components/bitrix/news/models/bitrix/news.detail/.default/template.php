@@ -287,9 +287,9 @@ $this->setFrameMode(true);
 		<?endif;?>
 
 	</div>
-
-	<div id="test"></div>
+	
 	<? if($arResult['PROPERTIES']['test_video']['VALUE']): ?>
+	<div id="test"></div>
 	<div class="white_bg">
 		<div class="models-video">
 			<? foreach($arResult['PROPERTIES']['test_video']['VALUE'] as $test_video): ?>
