@@ -1419,10 +1419,8 @@ dl dt,label,legend,th
     font-size:2.8125em;
     letter-spacing:1px
 }
-blockquote,h2
-{
-    letter-spacing:-1px
-}
+
+
 .innovations-header html[lang=ja-JP] .serif h3,html[lang=ja-JP] .serif .innovations-header h3,html[lang=ja-JP] .serif h1
 {
     font-family:"Volvo Serif Regular",Georgia,Cambria,"Times New Roman",Times,Meiryo,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",serif
@@ -1575,10 +1573,8 @@ h6
 {
     margin-bottom:0
 }
-blockquote,hr
-{
-    margin:1.5em 0
-}
+
+
 strong
 {
     font-family:"Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
@@ -1653,14 +1649,8 @@ del
 {
     color:#005aa4
 }
-blockquote
-{
-    font-family:"Volvo Serif Italic",Georgia,Cambria,"Times New Roman",Times,serif;
-    line-height:1.5;
-    font-size:1.25em;
-    padding:0;
-    text-align:center
-}
+
+
 html[lang=ja-JP] blockquote
 {
     font-family:"Volvo Serif Italic",Georgia,Cambria,"Times New Roman",Times,Meiryo,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3",serif
@@ -1684,7 +1674,7 @@ html[lang=ko-KR] blockquote
 html[lang=ru-RU] blockquote
 {
     font-family:"Volvo Serif Italic",Georgia,Cambria,"Times New Roman",Times,Georgia,Cambria,"Times New Roman",Times,serif;
-    font-size:1.75em
+
 }
 html[lang=ru-ru] blockquote
 {
@@ -2306,10 +2296,8 @@ dl dd
 }
 @media screen and (min-width:481px)
 {
-    blockquote
-    {
-        font-size:2.25em
-    }
+
+
     cite
     {
         font-size:.45em
