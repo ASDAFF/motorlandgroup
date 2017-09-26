@@ -100,7 +100,7 @@ $this->setFrameMode(true);
 
 
 	<div class="img-one">
-		<img class="delme" src="<?=CFile::GetPath($arResult['PROPERTIES']['BANNER']['VALUE']);?>"/>
+		<img class="delme" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['BANNER']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
 		<div class="banner-text">
 			<?
 			$arBannerDesc = explode('~',$arResult['PROPERTIES']['BANNER']['DESCRIPTION']);
@@ -196,6 +196,8 @@ $this->setFrameMode(true);
 
 	?>
 	<div class="price">
+
+		<? if($arResult['COMPLECT_AND_PRICE']): ?>
 		<div class="extf-body">
 			<h2 class="complects-and-prices">Комплектации и цены</h2>
 		</div>
@@ -236,11 +238,13 @@ $this->setFrameMode(true);
 		<div style="height:5px;">&nbsp;</div>
 		<div style="height:3px;">&nbsp;</div>
 		<? endforeach; ?>
+		<?endif;?>
 
 
 		<br />
 
 
+		<? if($arResult['COMPLECT']): ?>
 		<div style="height:5px;">&nbsp;</div>
 		<p>Основные комплектации Volvo  XC90.</p>
 		<div style="height:3px;">&nbsp;</div>
@@ -280,10 +284,12 @@ $this->setFrameMode(true);
 		<div style="height:5px;">&nbsp;</div>
 		<div style="height:3px;">&nbsp;</div>
 		<? endforeach; ?>
+		<?endif;?>
 
 	</div>
 
 	<div id="test"></div>
+	<? if($arResult['PROPERTIES']['test_video']['VALUE']): ?>
 	<div class="white_bg">
 		<div class="models-video">
 			<? foreach($arResult['PROPERTIES']['test_video']['VALUE'] as $test_video): ?>
@@ -292,15 +298,17 @@ $this->setFrameMode(true);
 		</div>
 		<div id="gallery_"></div>
 	</div>
+	<?endif;?>
 
 
 
 
+	<? if($arResult['PROPERTIES']['PHOTOGALL']['VALUE']): ?>
 	<div class="gellery">
 		<div id="gellery">
 			<? foreach($arResult['PROPERTIES']['PHOTOGALL']['VALUE'] as $img): ?>
 			<div class="item">
-				<img class="" src="<?=CFile::ResizeImageGet($img, array('width'=>1920, 'height'=>560), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" alt="<?=$arResult['NAME'];?>" />
+				<img class="" src="<?=CFile::ResizeImageGet($img, array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" alt="<?=$arResult['NAME'];?>" />
 			</div>
 			<? endforeach; ?>
 
@@ -317,11 +325,12 @@ $this->setFrameMode(true);
 			<? endforeach; ?>
 		</ul>
 	</div>
+	<?endif;?>
 
 
 
+	<? if($arResult['PROPERTIES']['configurator']['VALUE']): ?>
 	<div class="standard-hero hero">
-
 		<div class="hero-background" data-scale-method="crop" data-alignment="0.5,1" data-video="">
 			<img alt="" src="<?=CFile::GetPath($arResult['PROPERTIES']['configurator']['VALUE']);?>" sizes="100vw"/>
 		</div>
@@ -332,15 +341,17 @@ $this->setFrameMode(true);
 					<h1><?=$arResult['PROPERTIES']['configurator']['DESCRIPTION']?></h1>
 					<ul class="hero-ctas">
 						<li>
-							<a class="button button-small button-light button-semi-opaque" href="/configurator/?model=<?=$arResult['CODE']?>" target="_blank">Создать</a>
+							<a class="button button-small button-light button-semi-opaque" href="http://www.volvocars.com/ru/configurator-volvo" target="_blank">Создать</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<?endif;?>
 
 
+	<? if($arResult['PROPERTIES']['TABS_SLIDER']['VALUE']): ?>
 	<div id="all-new-xc90-landing-story-carousel" class="story-carousel theme-dark component">
 		<div class="shared-content-container">
 			<div class="shared-content">
@@ -380,8 +391,10 @@ $this->setFrameMode(true);
 			<?endforeach;?>
 		</ul>
 	</div>
+	<?endif;?>
 
 
+	<? if($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE']): ?>
 	<div class="standard-hero hero">
 
 		<div class="hero-background" data-scale-method="crop" data-alignment="0.5,1" data-video="">
@@ -402,9 +415,10 @@ $this->setFrameMode(true);
 			</div>
 		</div>
 	</div>
+	<?endif;?>
 
 
-
+	<? if($arResult['PAZZLE']): ?>
 	<div class="model-seo-text">
 
 		<? foreach($arResult['PAZZLE'] as $pazz):?>
@@ -419,10 +433,10 @@ $this->setFrameMode(true);
 		</div>
 		<? endforeach; ?>
 
-
 	</div>
-
+	<?endif;?>
 	<div class="clear"></div>
+
 
 	<div class="items-list-wrapper theme-dark component" id="model-forms">
 		<div class="extf-body step_h">
