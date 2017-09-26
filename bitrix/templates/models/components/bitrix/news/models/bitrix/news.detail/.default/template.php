@@ -351,7 +351,7 @@ $this->setFrameMode(true);
 	<?endif;?>
 
 
-	<? if($arResult['PROPERTIES']['TABS_SLIDER']['VALUE']): ?>
+	<? if($arResult['PROPERTIES']['TABS_SLIDER']['VALUE'][0]): ?>
 	<div id="all-new-xc90-landing-story-carousel" class="story-carousel theme-dark component">
 		<div class="shared-content-container">
 			<div class="shared-content">
