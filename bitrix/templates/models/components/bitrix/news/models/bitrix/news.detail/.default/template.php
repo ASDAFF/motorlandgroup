@@ -302,7 +302,7 @@ $this->setFrameMode(true);
 	<div class="white_bg">
 		<div class="models-video">
 			<? foreach($arResult['PROPERTIES']['test_video']['VALUE'] as $test_video): ?>
-			<iframe style="border-bottom: 2px solid #000;display: block" width="100%" height="600" src="https://www.youtube.com/embed/<?=$test_video;?>" frameborder="0" allowfullscreen></iframe>
+			<iframe style="margin:0 auto;border-bottom: 2px solid #000;display: block" width="1000" height="600" src="https://www.youtube.com/embed/<?=$test_video;?>" frameborder="0" allowfullscreen></iframe>
 			<? endforeach; ?>
 		</div>
 		<div id="gallery_"></div>
