@@ -529,7 +529,7 @@ $this->setFrameMode(true);
 							<input type="checkbox" class="p_rule" id="" name="rule_d" value="1" style="float: left" checked>
 							<label style="position: unset;padding-left: 18px;display: block;line-height: 13px">Я прочитал <a class="skyblue show-rules" style="text-decoration: underline" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных</label>
 						</div>
-						<span onclick="get_discount(); return false;" class="stage_text">Получить скидку на <?=$arResult['NAME']?></span>
+						<span onclick="get_discount(); return false;" class="stage_text">Получить скидку на <?=$arResult['PROPERTIES']['NAME_SHORT']['VALUE']?></span>
 
 					</form>
 				</div>
