@@ -27,18 +27,23 @@ $this->setFrameMode(true);
 
 	<div class="subnav-content">
 		<div class="subnav-items">
+			<? if($arResult['COMPLECT_AND_PRICE']): ?>
 			<a class="subnav-item " href="#price" >
 				Комплектация цены
 				<small class="subnav-desc"></small>
 			</a>
+			<?endif;?>
+
+			<? if($arResult['PROPERTIES']['PHOTOGALL']['VALUE']): ?>
 			<a class="subnav-item " href="#gallery_" >
 				Галерея
 				<small class="subnav-desc"></small>
 			</a>
+			<?endif;?>
 
 
 			<ul class="har_menu no_m">
-				<a class="subnav-item " href="/har/?model=<?=$arResult['CODE']?>" >
+				<a class="subnav-item" href="#" >
 					Характеристики
 					<small class="subnav-desc"></small>
 				</a>
@@ -75,8 +80,12 @@ $this->setFrameMode(true);
 				<select name="" id="subnav-select-input">
 
 					<option selected value="#gallery_"><?=$arResult['NAME']?> Обзор</option>
+					<? if($arResult['COMPLECT_AND_PRICE']): ?>
 					<option value="#price" data-target="">Комплектация цены</option>
+					<?endif;?>
+					<? if($arResult['PROPERTIES']['PHOTOGALL']['VALUE']): ?>
 					<option value="#gallery_" data-target="">Галерея</option>
+					<?endif;?>
 					<option value="#spec" data-target="">Спецпредложения</option>
 					<option value="#model-forms"  data-target="">Тест-драйв</option>
 
@@ -287,7 +296,7 @@ $this->setFrameMode(true);
 		<?endif;?>
 
 	</div>
-	
+
 	<? if($arResult['PROPERTIES']['test_video']['VALUE']): ?>
 	<div id="test"></div>
 	<div class="white_bg">
