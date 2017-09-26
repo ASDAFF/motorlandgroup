@@ -72,7 +72,7 @@
 
 <nav id="nav" class="nav force-sticky-nav transparent nav-fallback">
     <a class="nav-logo" href="/">
-        <img src="http://motorlandgroup.ru/img/volvo-logo-scaled.png" alt="" />
+        <img src="/img/volvo-logo-scaled.png" alt="" />
     </a>
 
     <div class="nav-list nav-list-prim">

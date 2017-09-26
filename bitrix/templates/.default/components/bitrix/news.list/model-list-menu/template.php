@@ -18,9 +18,8 @@ $this->setFrameMode(true);
 		<h3><?=$arItem['NAME']?></h3>
 	</a>
 	<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="nav-drop-body-item-img-link">
-
-		<img src="<?=CFile::GetPath($arItem['PROPERTIES']['FOTO_1']['VALUE']);?>" alt="<?=$arItem['NAME']?>"  sizes="" class="nav-drop-body-item-img--default"/>
-		<img src="<?=CFile::GetPath($arItem['PROPERTIES']['FOTO_2']['VALUE']);?>" alt="<?=$arItem['NAME']?>"  sizes="" class="nav-drop-body-item-img--hover"/>
+		<img src="<?=CFile::ResizeImageGet($arItem['PROPERTIES']['FOTO_1']['VALUE'], array('width'=>196, 'height'=>71), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" alt="<?=$arItem['NAME']?>"  sizes="" class="nav-drop-body-item-img--default"/>
+		<img src="<?=CFile::ResizeImageGet($arItem['PROPERTIES']['FOTO_2']['VALUE'], array('width'=>196, 'height'=>71), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" alt="<?=$arItem['NAME']?>"  sizes="" class="nav-drop-body-item-img--hover"/>
 	</a>
 	<div class="nav-drop-body-item-links">
 		<a href="/configurator/?model=<?=$arItem['CODE']?>">Создайте</a><span class="sep"></span>

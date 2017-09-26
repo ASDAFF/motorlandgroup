@@ -17818,6 +17818,7 @@ div.news-list img.preview_picture
     height: 32px;
     display: block;
     transition: background-image 1s;
+    background-image: url(/img/bestdiler.png);
 }
 
 html.nav-drop-on .nav.force-sticky-nav .bestdealerOnHat{
