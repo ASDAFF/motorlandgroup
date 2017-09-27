@@ -434,7 +434,7 @@ $this->setFrameMode(true);
 		<div class="model-seo-text-item">
 			<div class="model-seo-text-item-text">
 				<div class="model-seo-text-item-text-wrapper">
-					<h2><?=$pazz['NAME']?></h2>
+				<!--<h2>--><?//=$pazz['NAME']?><!--</h2>-->
 					<p><?=$pazz['PREVIEW_TEXT']?></p>
 				</div>
 			</div>
