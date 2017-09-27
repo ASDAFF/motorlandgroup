@@ -340,7 +340,7 @@ $this->setFrameMode(true);
 
 	<? if($arResult['PROPERTIES']['configurator']['VALUE']): ?>
 	<div class="standard-hero hero">
-		<div class="hero-background" data-scale-method="crop" data-alignment="0.5,1" data-video="">
+		<div class="hero-background" data-video="">
 			<img alt="" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['configurator']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" />
 		</div>
 
@@ -382,8 +382,8 @@ $this->setFrameMode(true);
 			<? foreach($arResult['PROPERTIES']['TABS_SLIDER']['VALUE'] as $key => $slider):?>
 			<li id="<?=$arResult['PROPERTIES']['TABS_SLIDER']['CODE'].$key?>" class="carousel-item <?if($key < 1):?>carousel-item-active<?endif;?>">
 				<div class="hero">
-					<div class="hero-background" data-scale-method="crop" data-alignment="0.5,0.5">
-						<img src="<?=$slider['path'];?>" alt="<?=$arResult['NAME']?>" sizes="100vw">
+					<div class="hero-background">
+						<img src="<?=$slider['path'];?>" alt="<?=$arResult['NAME']?>" >
 					</div>
 				</div>
 				<div class="story-content-container">
