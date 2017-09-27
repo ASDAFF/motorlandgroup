@@ -21,7 +21,9 @@ $this->setFrameMode(true);
 	<div class="subnav-header subnav-header-has-subtitle">
 		<h2 class="subnav-title"><?=$arResult["NAME"]?></h2>
 		<div class="subnav-subtitle">
+			<? if($arResult['PROPERTIES']['price_r']['VALUE']):?>
             <span style="font-size:15px;">Рекомендованная цена <strong><?=$arResult['PROPERTIES']['price_r']['VALUE']?></strong>
+			<?endif;?>
 		</div>
 	</div>
 
@@ -108,7 +110,7 @@ $this->setFrameMode(true);
 <div class="lineup_block" style="background-color: #222;color: white;">
 
 
-	<div class="img-one">
+	<div class="img-one one">
 		<img class="delme" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['BANNER']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
 		<div class="banner-text">
 			<?
@@ -119,11 +121,7 @@ $this->setFrameMode(true);
 		</div>
 	</div>
 
-	<script>
-		$(function(){
-			$('.img-one').css('height',$('.img-one img').height());
-		});
-	</script>
+
 
 	<div id="spec"></div>
 
@@ -336,25 +334,12 @@ $this->setFrameMode(true);
 	</div>
 	<?endif;?>
 
-
-
 	<? if($arResult['PROPERTIES']['configurator']['VALUE']): ?>
-	<div class="standard-hero hero">
-		<div class="hero-background" data-video="">
-			<img alt="" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['configurator']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" />
-		</div>
-
-		<div class="hero-content adaptived">
-			<div class="hero-content-align">
-				<div class="hero-content-box">
-					<h1><?=$arResult['PROPERTIES']['configurator']['DESCRIPTION']?></h1>
-					<ul class="hero-ctas">
-						<li>
-							<a class="button button-small button-light button-semi-opaque" href="http://www.volvocars.com/ru/configurator-volvo" target="_blank">Создать</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+	<div class="img-one two" style="top: 0">
+		<img class="delme" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['configurator']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
+		<div class="banner-text">
+			<p><?=$arResult['PROPERTIES']['configurator']['DESCRIPTION']?></p>
+			<a class="button button-small button-light button-semi-opaque" href="http://www.volvocars.com/ru/configurator-volvo" target="_blank">Создать</a>
 		</div>
 	</div>
 	<?endif;?>
@@ -404,25 +389,13 @@ $this->setFrameMode(true);
 
 
 	<? if($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE']): ?>
-	<div class="standard-hero hero">
-
-		<div class="hero-background" data-scale-method="crop" data-alignment="0.5,1" data-video="">
-			<img alt="" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" />
-		</div>
-
-		<div class="hero-content adaptived">
-			<div class="hero-content-align">
-				<div class="hero-content-box">
-					<h1><?=$arResult['PROPERTIES']['WRITE_TEST_DRIVE']['DESCRIPTION'];?></h1>
-					<ul class="hero-ctas">
-						<li>
-							<a class="button button-small button-light button-semi-opaque" href="#model-forms">Записаться на тест-драйв</a>
-						</li>
-					</ul>
-				</div>
+		<div class="img-one three" style="top: 0">
+			<img class="delme" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
+			<div class="banner-text">
+				<p><?=$arResult['PROPERTIES']['WRITE_TEST_DRIVE']['DESCRIPTION']?></p>
+				<a class="button button-small button-light button-semi-opaque" href="#model-forms">Записаться на тест-драйв</a>
 			</div>
 		</div>
-	</div>
 	<?endif;?>
 
 
@@ -573,6 +546,11 @@ $this->setFrameMode(true);
 				<script charset="utf-8">
 
 					$(function(){
+
+						$('.img-one.one').css('height',$('.img-one.one img').height());
+						$('.img-one.two').css('height',$('.img-one.two img').height());
+						$('.img-one.three').css('height',$('.img-one.three img').height());
+
 
 						$('.show-rules').click(function(){
 							zzModal.show($('.rule_block').html());
