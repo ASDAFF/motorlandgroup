@@ -211,7 +211,7 @@ $this->setFrameMode(true);
 			<h2 class="complects-and-prices">Комплектации и цены</h2>
 		</div>
 
-		<p>Предлагаем вам ознакомиться с рекомендованными розничными ценами на модель Volvo XC90.</p>
+		<p>Предлагаем вам ознакомиться с рекомендованными розничными ценами на модель Volvo <?=$arResult['NAME']?>.</p>
 
 		<div style="height:3px;">&nbsp;</div>
 
@@ -255,7 +255,7 @@ $this->setFrameMode(true);
 
 		<? if($arResult['COMPLECT']): ?>
 		<div style="height:5px;">&nbsp;</div>
-		<p>Основные комплектации Volvo  XC90.</p>
+		<p>Основные комплектации Volvo  <?=$arResult['NAME']?>.</p>
 		<div style="height:3px;">&nbsp;</div>
 
 		<? foreach($arResult['COMPLECT'] as $com):?>
