@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("service");
-$img = CFile::ResizeImageGet(2, array('width'=>310, 'height'=>210), BX_RESIZE_IMAGE_EXACT, true)['src'];
-$img2 = CFile::ResizeImageGet(2, array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src'];
+$img = CFile::ResizeImageGet(30, array('width'=>310, 'height'=>210), BX_RESIZE_IMAGE_EXACT, true)['src'];
+$img2 = CFile::ResizeImageGet(30, array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src'];
 
 ?>
 
@@ -49,7 +49,7 @@ $img2 = CFile::ResizeImageGet(2, array('width'=>520, 'height'=>360), BX_RESIZE_I
                             <li><a href="#">Чистка картера вентиляционных газов</a></li>
                         </ul>
                         <ul>
-                            <li><img src="<?=CFile::ResizeImageGet(2, array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
+                            <li><img src="<?=CFile::ResizeImageGet(30, array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
                             <li><a href="#">Подробнее...</a></li>
 
                         </ul>
