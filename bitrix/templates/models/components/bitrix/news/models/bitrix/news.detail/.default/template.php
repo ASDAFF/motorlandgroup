@@ -336,7 +336,7 @@ $this->setFrameMode(true);
 
 	<? if($arResult['PROPERTIES']['configurator']['VALUE']): ?>
 	<div class="img-one two" style="top: 0">
-		<img class="delme" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['configurator']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
+		<img class="delme" style="opacity: .65;" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['configurator']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
 		<div class="banner-text">
 			<p><?=$arResult['PROPERTIES']['configurator']['DESCRIPTION']?></p>
 			<a class="button button-small button-light button-semi-opaque" href="http://www.volvocars.com/ru/configurator-volvo" target="_blank">Создать</a>
@@ -390,7 +390,7 @@ $this->setFrameMode(true);
 
 	<? if($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE']): ?>
 		<div class="img-one three" style="top: 0">
-			<img class="delme" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
+			<img class="delme" style="opacity: .65;" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>"/>
 			<div class="banner-text">
 				<p><?=$arResult['PROPERTIES']['WRITE_TEST_DRIVE']['DESCRIPTION']?></p>
 				<a class="button button-small button-light button-semi-opaque" href="#model-forms">Записаться на тест-драйв</a>
