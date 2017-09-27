@@ -22,7 +22,8 @@ $(function () {
     //console.dir('transferred model');
 
     $('#gellery').slidesjs({
-        height: 300,
+        width: 1903,
+        height: 733,
         navigation: false
     });
 
