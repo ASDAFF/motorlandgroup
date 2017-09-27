@@ -341,7 +341,7 @@ $this->setFrameMode(true);
 	<? if($arResult['PROPERTIES']['configurator']['VALUE']): ?>
 	<div class="standard-hero hero">
 		<div class="hero-background" data-scale-method="crop" data-alignment="0.5,1" data-video="">
-			<img alt="" src="<?=CFile::GetPath($arResult['PROPERTIES']['configurator']['VALUE']);?>" sizes="100vw"/>
+			<img alt="" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['configurator']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" />
 		</div>
 
 		<div class="hero-content adaptived">
@@ -407,8 +407,7 @@ $this->setFrameMode(true);
 	<div class="standard-hero hero">
 
 		<div class="hero-background" data-scale-method="crop" data-alignment="0.5,1" data-video="">
-
-			<img alt="" src="<?=CFile::GetPath($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE']);?>" sizes="100vw"/>
+			<img alt="" src="<?=CFile::ResizeImageGet($arResult['PROPERTIES']['WRITE_TEST_DRIVE']['VALUE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" />
 		</div>
 
 		<div class="hero-content adaptived">
