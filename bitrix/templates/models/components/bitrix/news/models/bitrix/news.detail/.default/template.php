@@ -49,7 +49,7 @@ $this->setFrameMode(true);
 				</a>
 				<ul class="nav-drop-body-row">
 					<? foreach($arResult['PROPERTIES']['LINK_HAR']['VALUE'] as $key => $desc):?>
-					<li class="nav-drop-body-item"><a class="nav-drop-body-item-link" href="<?=$desc;?>"><?=$arResult['PROPERTIES']['LINK_HAR']['DESCRIPTION'][$key]?></a></li>
+					<li class="nav-drop-body-item"><a target="_blank" class="nav-drop-body-item-link" href="<?=$desc;?>"><?=$arResult['PROPERTIES']['LINK_HAR']['DESCRIPTION'][$key]?></a></li>
 					<? endforeach; ?>
 				</ul>
 
