@@ -19,3 +19,16 @@ div.news-detail img.detail_picture
 .models-video{
 	background: #000;
 }
+
+
+.hero-background img{
+	opacity: .65!important;
+	width: 1920px;
+	height: 660px;
+	left: 0px;
+	top: 0px;
+}
+.hero-content-box{
+	-webkit-animation: content-pop-in 1s .2s ease-out both;
+	animation: content-pop-in 1s .2s ease-out both;
+}
