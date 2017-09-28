@@ -14,9 +14,9 @@ div.news-detail img.detail_picture
 
 .img-one .banner-text{
 	position: absolute;
-	top: 20%;
-	left: 70%;
-	margin: 0px auto;
+	top: 20% !important;
+	left: 70% !important;
+	margin: 0px auto!important;
 	font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
 	width: 100%;
 	color: #003057;
