@@ -21,6 +21,7 @@ div.news-detail img.detail_picture
 	width: 100%;
 	color: #003057;
 	font-size: 3vw;
+	text-align: unset!important;
 }
 .img-one .banner-text p,span{
 	font-size: 3vw;
