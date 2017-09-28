@@ -1,0 +1,227 @@
+.container > h1{
+	text-align: center;
+	margin: 40px;
+	font-size: 40px;
+	color: #000;
+}
+
+.margin-50{
+	height: 50px;
+}
+.service-box{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.service-box img{
+	margin-bottom: 25px;
+}
+
+.service-box .banner-text-h1{
+	font-size: 20px;
+}
+
+.service-box a.button{
+	width: 100%;
+	margin: 0;
+}
+
+.service-banner{
+	height: 660px;
+	position: relative;
+	overflow: hidden;
+	background: #000;
+}
+.service-banner img{
+	opacity: .65;
+}
+
+.banner-text{
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	color: #dadada;
+	text-align: right;
+}
+.banner-text-two{
+	position: absolute;
+	top: 35%;
+	right: 20%;
+	color: #dadada;
+	text-align: right;
+}
+.banner-text-two p{
+	margin: 0;
+}
+.banner-text-two .phone{
+	font-size: 30px;
+	font-weight: 100;
+}
+.banner-text > h1,
+.banner-text-two > h1
+{
+	font-family: "Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue","Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif"!important;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+.banner-text > p{
+	margin: 0;
+	font-size: 14px;
+}
+.banner-text > a.button,.banner-text-two > a.button{
+	color: #fff;
+	border-color: #fff;
+	margin-top: 20px;
+}
+
+
+
+.banner-icons{
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	transform: rotate(-25deg);
+}
+.banner-icons .banner-icon{
+	display: inline-block;
+	width: 80px;
+	margin-right: 50px;
+	transform: rotate(25deg);
+}
+.banner-icons .banner-icon i{
+	margin-bottom: 15px;
+}
+.banner-icons .banner-icon .icon-text p:first-child{
+	border-bottom: 1px solid #fff;
+	margin: 0;
+}
+
+
+
+.service-menu{
+	position: fixed;
+	width: 100%;
+	top: 70px;
+	background-color: rgba(22,22,24,.9);
+	z-index: 800;
+}
+.service-menu ul{
+	margin: 0;
+	padding: 0;
+}
+.service-menu ul li{
+	list-style: none;
+}
+.service-menu > ul > li{
+	padding: 0px 20px;
+	display: inline-block;
+	min-width: 100px;
+	min-height: 50px;
+}
+.service-menu ul li.active{
+	background: #fff;
+}
+.service-menu ul li.active a{
+	color: #333;
+}
+.service-menu ul li a{
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin: 17px auto;
+}
+
+.service-menu ul li .service-menu-sub{
+	display: none;
+}
+
+.service-menu ul li.active .service-menu-sub{
+	position: absolute;
+	display: block;
+	background: #fff;
+	padding: 15px;
+	width: 50%;
+}
+
+
+
+.service-one-articles ul{
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+}
+.service-one-articles ul:first-child li a{
+	font-size: 18px;
+	text-align: left;
+}
+.service-one-articles ul:first-child li a:hover{
+	color: #3E6070;
+	text-decoration: underline;
+}
+.service-one-articles ul:last-child{
+	padding-right: unset;
+}
+
+
+.service-menu-sub .service-one-articles.detail ul:last-child li{
+	margin-bottom: 10px;
+}
+.service-menu-sub .service-one-articles.detail ul:last-child li:last-child{
+	margin-bottom: 0px;
+}
+
+
+.service-one-articles.detail ul:first-child{
+	width: 37%;
+}
+.service-one-articles.detail ul:last-child{
+	width: 63%;
+}
+
+.service-menu-sub .service-one-articles ul li h1{
+	font-size: 23px;
+}
+
+.service-menu-sub .service-one-articles.detail ul li a,
+.service-menu-sub.offer .service-one-articles ul li a,
+.service-menu-sub .service-one-articles ul:last-child li a
+{
+	text-align: center;
+	border: 1px solid #062858;
+	color: #062858;
+	font-size: 18px;
+	padding: 15px;
+	width: 250px;
+}
+.service-menu-sub .service-one-articles.detail ul li a:hover,
+.service-menu-sub.offer .service-one-articles ul li a:hover,
+.service-menu-sub .service-one-articles ul:last-child li a:hover
+{
+	background: #062858;
+	color: #fff;
+}
+
+.service-menu-sub .service-one-articles.category ul:last-child li a{
+	margin: auto;
+	margin-top: 15px;
+}
+
+.service-menu-sub .service-one-articles.detail ul li a,
+.service-menu-sub.offer .service-one-articles ul li a
+{
+	margin: auto 0;
+}
+
+.service-menu-sub.offer .service-one-articles ul{
+	padding: 0 20px;
+	text-align: center;
+}
+.service-menu-sub.offer .service-one-articles ul li{
+	margin-bottom: 15px;
+}
+.service-menu-sub.offer .service-one-articles ul li:last-child{
+	margin-bottom: 0px;
+}

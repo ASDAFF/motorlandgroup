@@ -1,0 +1,67 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+.img-one .banner-text{
+	position: absolute;
+	top: 35%;
+	text-align: center;
+	margin: 0px auto;
+	font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
+	width: 100%;
+	color: #ffffff;
+	font-size: 3vw;
+}
+.img-one .banner-text p,span{
+	font-size: 3vw;
+	margin: 0px auto;
+}
+
+.img-one{
+	height: 660px;
+	background: #000;
+}
+
+.img-one img{
+	opacity: .65;
+}
+
+.container > h1{
+	text-align: center;
+	margin: 50px;
+	color: #000;
+	font-size: 45px;
+}
+
+.margin-bottom-70{
+	margin-bottom: 70px;
+}
+
+.offer-text .offer-blue{
+	color: #003057;
+	font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
+	font-size: 22px;
+}
+.offer-text h1{
+	color: #000;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.offer-text a.button{
+	border: 1px solid #003057;
+	margin: 0;
+	font-size: 14px;
+	padding: 13px 60px;
+}
+.offer-text{
+	padding: 5px;
+}
