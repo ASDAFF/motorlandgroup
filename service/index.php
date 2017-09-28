@@ -204,7 +204,7 @@ $APPLICATION->SetTitle("service");
                             <img src="<?=CFile::ResizeImageGet($arFields['PREVIEW_PICTURE'], array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>">
                             <p class="banner-text-h1"><?=$arFields['NAME']?></p>
                             <p><?=TruncateText($arFields['PREVIEW_TEXT'], 70);?></p>
-                            <a class="button" href="<?=$arFields['CODE']?>">Узнать подробнее</a>
+                            <a class="button" href="<?=$arFields['DETAIL_PAGE_URL']?>">Узнать подробнее</a>
                         </div>
                     </div>
                     <?
