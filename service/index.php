@@ -51,7 +51,8 @@ $APPLICATION->SetTitle("service");
                 0 => "",
                 1 => "SHOW_ELEMENT_30",
                 2 => "SHOW_ELEMENT_32",
-                3 => "TYPE_MENU",
+                3 => "SHOW_ELEMENT_33",
+                4 => "TYPE_MENU",
             ),
             "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
             "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
