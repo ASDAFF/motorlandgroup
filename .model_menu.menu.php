@@ -15,15 +15,22 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Volvo vs ...", 
-		"/volvo-vs/", 
+		"Сдать в Трейд-ин", 
+		"/trade-in/dispatch/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Сдать в Трейд-ин", 
-		"/trade-in/dispatch/", 
+		"Авто с пробегом", 
+		"/trade-in/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Запрос Предложения", 
+		"/feedback/offer-request/", 
 		Array(), 
 		Array(), 
 		"" 

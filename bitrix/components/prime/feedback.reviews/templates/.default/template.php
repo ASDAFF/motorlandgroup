@@ -8,9 +8,9 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.mask
 <div class="review-form" style="display: block;background-image: url('/img/service.jpg');">
     <div class="container-form">
         <div class="text-form-rev">
-            <h2>Помогите нам улучшить наш сервис</h2>
-            <p>Наша компания Наша компания Наша компания</p>
-            <p>Наша компания Наша компания Наша компания компания</p>
+            <h2>Помогите нам улучшить наш сервис!</h2>
+            <p>Наша компания стремится улучшить свой сервис для вас, наших клиентов.</p>
+            <p>Поэтому мы собираем отзывы и предложения которые помогу нам стать ещё лучше.</p>
 
         </div>
 

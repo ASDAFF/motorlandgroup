@@ -97,7 +97,7 @@
         </div>
 
         <div class="n-top-phone-box">
-            <a href="/reviews/">Отзывы</a>
+            <a href="/reviews/">ОТЗЫВЫ</a>
         </div>
 
         <div class="n-bestdiler-logo">

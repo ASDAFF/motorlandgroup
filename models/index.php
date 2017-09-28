@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Купить Volvo XC90 (Вольво ХС90) в Воронеже - цена качества");
 $APPLICATION->SetTitle("Модельный ряд");
 ?>
 <?$APPLICATION->IncludeComponent("bitrix:news", "models", Array(

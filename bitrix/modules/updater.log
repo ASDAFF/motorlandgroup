@@ -1,0 +1,9 @@
+2017-09-25 11:03:06 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1506326586/artrix.imageoptimizer/updater1.0.1.php': CopyDirFiles(install/tools, /bitrix/tools)
+2017-09-25 11:03:11 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1506326591/artrix.imageoptimizer/updater1.0.4.php': CopyDirFiles(install/tools, /bitrix/tools)
+2017-09-25 11:03:11 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1506326591/artrix.imageoptimizer/updater1.0.4.php': CopyDirFiles(install/css, /bitrix/css)
+2017-09-26 16:11:29 -  - exec CUpdateClient::GetUpdatesList
+2017-09-26 16:11:29 -  - exec CUpdateClient::CollectRequestData
+2017-09-26 16:11:29 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=17.0.7&VERSION=17.0.9&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=new.motorlandgroup.ru&CHHB=new.motorlandgroup.ru&CSAB=188.166.108.34&SUID=8f8d3e74bc5757c6cd3ae706c31e8f8c&CANGZIP=Y&CLIENT_PHPVER=5.4.43&stable=Y&NGINX=Y&rerere=Y&bitm_main=17.0.9&bitm_fileman=17.5.0&bitm_perfmon=17.0.0&bitm_clouds=17.0.0&bitm_search=17.0.1&bitm_compression=16.0.0&bitm_socialservices=17.1.4&bitm_translate=15.0.0&bitm_iblock=17.0.9&bitm_b24connector=17.0.1&bitm_highloadblock=17.0.2&bitm_seo=17.0.6&bitm_bitrixcloud=17.0.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y
+2017-09-26 16:11:29 -  - exec CUpdateClient::GetHTTPPage
+2017-09-26 16:11:29 -  - TIME GetUpdatesList(request) 0.283 sec
+2017-09-26 16:11:29 -  - exec CUpdateClient::ParseServerData

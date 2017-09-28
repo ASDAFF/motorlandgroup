@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Официальный дилер Volvo в Воронеже - автосалон Вольво. Все комплектации и цены ");
 $APPLICATION->SetTitle("");
 ?>
 

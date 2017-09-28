@@ -16,14 +16,42 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Финансовые Услуги", 
-		"/buy/design-and-buy/financing/", 
+		"/financing/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Корпоративные Продажи", 
-		"/cars/fleet-sales/", 
+		"/fleet-sales/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Трейд-ин", 
+		"/trade-in/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Бонусная программа", 
+		"/bonus/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сервис Volvo", 
+		"/service/spetspredlozheniya/", 
 		Array(), 
 		Array(), 
 		"" 
