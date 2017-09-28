@@ -11,14 +11,17 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
+
 ?>
 
+<? if($arResult['DETAIL_PICTURE']): ?>
 <div class="img-one">
 	<img class="w-lazy delme" src="<?=CFile::ResizeImageGet($arResult['DETAIL_PICTURE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>">
 	<div class="banner-text">
 		<?=$arResult['DETAIL_PICTURE']['DESCRIPTION']?>
 	</div>
 </div>
+<? endif; ?>
 
 <div class="container">
 
