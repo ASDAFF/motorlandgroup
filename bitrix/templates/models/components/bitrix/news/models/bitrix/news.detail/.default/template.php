@@ -259,7 +259,7 @@ $this->setFrameMode(true);
 		<? foreach($arResult['COMPLECT'] as $com):?>
 		<div class="z">
 			<div class="tech">
-				<strong><?=$com['NAME']?></strong>
+				<strong><?=explode('_',$com['NAME'])[0];?></strong>
 			</div>
 		</div>
 		<div class="t" style="text-align: justify;">
