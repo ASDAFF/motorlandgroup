@@ -56,6 +56,16 @@
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/w-modal.js"></script>
 <script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/function.js"></script>
 
+<?$APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "",
+    Array(
+        "AREA_FILE_SHOW" => "file",
+        "AREA_FILE_SUFFIX" => "inc",
+        "EDIT_TEMPLATE" => "",
+        "PATH" => "/include/scripts.php"
+    )
+);?>
 
 </body>
 </html>

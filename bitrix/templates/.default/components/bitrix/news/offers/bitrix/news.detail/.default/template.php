@@ -477,6 +477,21 @@ $this->setFrameMode(true);
 
 	</div>
 
+	<!-- Rating@Mail.ru counter dynamic remarketing appendix -->
+	<script type="text/javascript">
+		var _tmr = _tmr || [];
+		_tmr.push({
+			type: 'itemView',
+			productid: '<?=$arResult['ID'];?>',
+			pagetype: '<?=$arResult['CODE'];?>',
+			list: 1,
+			totalvalue: '<?=$arResult["PROPERTIES"]["NEW_PRICE"]["VALUE"];?>'
+		});
+	</script>
+	<!-- // Rating@Mail.ru counter dynamic remarketing appendix -->
+
+
+
 
 
 	<!-- .mPrint -->
