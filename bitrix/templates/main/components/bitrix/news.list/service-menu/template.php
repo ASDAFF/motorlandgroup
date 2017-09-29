@@ -18,15 +18,10 @@ $this->setFrameMode(true);
 	<ul>
 
 		<?foreach($arResult["ITEMS"] as $arItem):?>
+
 		<li class="ser-menu">
-			<?
-			if($arItem['CODE']){
-				$url = $arItem['CODE'];
-			}else{
-				$url = "javascript:void(0)";
-			}
-			?>
-			<a href="<?=$url;?>"><?=$arItem['NAME']?></a>
+
+			<a href="javascript:void(0);"><?=$arItem['NAME']?></a>
 
 
 			<?if($arItem['PROPERTIES']['TYPE_MENU']['VALUE'] == 'offer'):?>
@@ -63,6 +58,19 @@ $this->setFrameMode(true);
 						<li><a href="<?=$arItem[$code][0]['LIST_PAGE_URL']?>">Узнать подробнее</a></li>
 						<? break; ?>
 						<?endforeach;?>
+					</ul>
+				</div>
+			</div>
+			<?else:?>
+			<div class="service-menu-sub">
+				<div class="service-one-articles detail">
+					<ul>
+						<li><img src="<?=CFile::ResizeImageGet($arItem['DETAIL_PICTURE'], array('width'=>310, 'height'=>210), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
+					</ul>
+					<ul>
+						<li><h1><?=$arItem['NAME']?></h1></li>
+						<li><p><?=$arItem['DETAIL_TEXT']?></p></li>
+						<li><a class="" href="<?=$arItem['CODE']?>">Узнать подробнее</a></li>
 					</ul>
 				</div>
 			</div>

@@ -12,6 +12,16 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/service-menu.php"
+	)
+);?>
 
 <div class="img-one">
 	<img class="w-lazy delme" src="<?=CFile::ResizeImageGet($arResult['PICTURE'], array('width'=>1920, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>">

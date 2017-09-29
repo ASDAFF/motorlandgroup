@@ -20,7 +20,7 @@
     "DISPLAY_TOP_PAGER" => "N",	// Выводить над списком
     "FIELD_CODE" => array(	// Поля
         0 => "",
-        1 => "",
+        1 => "DETAIL_PICTURE",
     ),
     "FILTER_NAME" => "",	// Фильтр
     "HIDE_LINK_WHEN_NO_DETAIL" => "N",	// Скрывать ссылку, если нет детального описания
@@ -45,7 +45,9 @@
         1 => "SHOW_ELEMENT_30",
         2 => "SHOW_ELEMENT_32",
         3 => "SHOW_ELEMENT_33",
-        4 => "TYPE_MENU",
+        4 => "SHOW_ELEMENT_34",
+        5 => "SHOW_ELEMENT_35",
+        6 => "TYPE_MENU",
     ),
     "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
     "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы

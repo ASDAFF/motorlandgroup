@@ -120,18 +120,16 @@ $APPLICATION->SetTitle("service");
         </div>
 
 
-        <div class="service-banner">
-
-            <img src="/img/service.jpg">
-            <div class="banner-text-two">
-                <h1>Текст Текст Текст</h1>
-                <p>Текст Текст ТекстТекстТекст Текст Текст Текст</p>
-                <p class="phone">9 (800) 555-55-44</p>
-                <p>Текст Текст ТекстТекст</p>
-                <a href="" class="button">Позвоните мне</a>
-            </div>
-
-        </div>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:main.include",
+            "",
+            Array(
+                "AREA_FILE_SHOW" => "file",
+                "AREA_FILE_SUFFIX" => "inc",
+                "EDIT_TEMPLATE" => "",
+                "PATH" => "/include/service-banner.php"
+            )
+        );?>
 
 
         <div class="container">

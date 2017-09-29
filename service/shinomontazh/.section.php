@@ -1,0 +1,6 @@
+<?
+$sSectionName = "shinomontazh";
+$arDirProperties = Array(
+
+);
+?>
