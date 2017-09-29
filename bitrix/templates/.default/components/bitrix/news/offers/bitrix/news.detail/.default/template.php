@@ -249,6 +249,9 @@ $this->setFrameMode(true);
 					</div>
 
 				</div>
+				<div class="callAndTD row check">
+					<input type="checkbox" name="rule" id="sel-rule" checked><span> Я прочитал <a class="skyblue show-rules" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных.</span>
+				</div>
 
 				<div class="line"></div>
 
@@ -265,8 +268,26 @@ $this->setFrameMode(true);
 
 		</div>
 
+		<div class="rule_blocks" style="display: none">
+
+			<?$APPLICATION->IncludeComponent(
+				"bitrix:main.include",
+				"",
+				Array(
+					"AREA_FILE_SHOW" => "file",
+					"AREA_FILE_SUFFIX" => "inc",
+					"EDIT_TEMPLATE" => "",
+					"PATH" => "/include/rule.php"
+				)
+			);?>
+
+		</div>
+
 		<script>
 			$(document).ready(function(){
+				$('.show-rules').click(function(){
+					zzModal.show($('.rule_blocks').html());
+				});
 
 				var bgGood = 'rgba(0,0,0, 0.3)';
 				var bgBad = 'rgba(0,0,0, 0.6)';
@@ -299,6 +320,10 @@ $this->setFrameMode(true);
 						$("#user_phone").css("border","1px solid #a0c63a");
 						var erv = 2;
 					}
+					if($("#sel-rule").is(':checked')){
+						$("#sel-rule").parent().find('span').css("color","#fff");
+						var erv = 2;
+					}
 
 
 					if(!pattern.test($("#user_email").val())){
@@ -313,6 +338,11 @@ $this->setFrameMode(true);
 					}
 					if($("#user_phone").val() == ""){
 						$("#user_phone").css("border","2px solid #ff2400");
+						$(".fon_it_car").css("background",bgBad);
+						var erv = 1;
+					}
+					if(!$("#sel-rule").is(':checked')){
+						$("#sel-rule").parent().find('span').css("color","red");
 						$(".fon_it_car").css("background",bgBad);
 						var erv = 1;
 					}

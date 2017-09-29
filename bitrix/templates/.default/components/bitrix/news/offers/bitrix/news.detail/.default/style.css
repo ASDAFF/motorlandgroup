@@ -11,3 +11,18 @@ div.news-detail img.detail_picture
 {
 	color:#486DAA;
 }
+
+body.new-offers .formAndOther .callAndTD.check input[type='checkbox']{
+	height: 13px;
+	position: relative;
+}
+body.new-offers .formAndOther .callAndTD.check{
+	padding: 0px 15px;
+}
+body.new-offers .formAndOther .callAndTD.check span{
+	color: #fff;
+	position: relative;
+}
+body.new-offers .formAndOther .callAndTD.check span a{
+	text-decoration: underline;
+}

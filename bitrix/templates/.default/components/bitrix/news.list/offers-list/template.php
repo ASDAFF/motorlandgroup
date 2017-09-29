@@ -35,8 +35,8 @@ $this->setFrameMode(true);
 							<div class="mCarListCards_Item_Info_Props_Item">
 								<div class="mCarListCards_Item_Info_Props_Item_Name">Цена</div>
 								<div class="mCarListCards_Item_Info_Props_Item_Value">
-									<span><?=$arItem['PROPERTIES']['OLD_PRICE']['VALUE'];?></span>
-									<br><?=$arItem['PROPERTIES']['NEW_PRICE']['VALUE'];?>
+									<span><?=str_replace('руб','&#8381;',$arItem['PROPERTIES']['OLD_PRICE']['VALUE']);?></span>
+									<br><?=str_replace('руб','&#8381;',$arItem['PROPERTIES']['NEW_PRICE']['VALUE']);?>
 								</div>
 							</div>
 							<div class="clear"></div>
