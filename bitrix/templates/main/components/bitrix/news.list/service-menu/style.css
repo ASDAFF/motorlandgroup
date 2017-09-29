@@ -9,6 +9,7 @@
 	height: 50px;
 }
 .service-box{
+	cursor: pointer;
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -218,6 +219,7 @@
 .service-menu-sub.offer .service-one-articles ul{
 	padding: 0 20px;
 	text-align: center;
+	cursor: pointer;
 }
 .service-menu-sub.offer .service-one-articles ul li{
 	margin-bottom: 15px;

@@ -48,7 +48,12 @@ $this->setFrameMode(true);
 			<div class="col-md-6">
 				<div class="offer-text">
 					<h1><?=$arItem['NAME']?></h1>
-					<p class="offer-blue"><?=$arItem['PROPERTIES']['SALE_END']['VALUE']?></p>
+					<?
+					if($arItem['DATE_ACTIVE_TO'] and $arItem['DATE_ACTIVE_FROM']):
+					$diff = (strtotime(explode(' ',$arItem['DATE_ACTIVE_TO'])[0])-strtotime(explode(' ',$arItem['DATE_ACTIVE_FROM'])[0]))/(60*60*24);
+					?>
+					<p class="offer-blue">До конца акции осталось <?=$diff;?> дн.</p>
+					<?endif?>
 					<p><?=$arItem['PREVIEW_TEXT']?></p>
 					<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="button">Узнать подробнее</a>
 				</div>

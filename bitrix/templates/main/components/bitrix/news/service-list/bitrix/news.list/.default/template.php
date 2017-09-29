@@ -43,7 +43,7 @@ $this->setFrameMode(true);
 
 		<?foreach($arResult["ITEMS"] as $arItem):?>
 			<div class="col-md-4">
-				<div class="service-box">
+				<div class="service-box" onclick="window.location.href='<?=$arItem['DETAIL_PAGE_URL']?>'">
 					<img src="<?=CFile::ResizeImageGet($arItem['PREVIEW_PICTURE'], array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>">
 					<p class="banner-text-h1"><?=$arItem['NAME']?></p>
 					<p><?=TruncateText($arItem['PREVIEW_TEXT'], 70);?></p>
@@ -87,7 +87,7 @@ $this->setFrameMode(true);
 			$arFields = $ob->GetFields();
 			?>
 			<div class="col-md-4">
-				<div class="service-box">
+				<div class="service-box" onclick="window.location.href='<?=$arFields['DETAIL_PAGE_URL']?>'">
 					<img src="<?=CFile::ResizeImageGet($arFields['PREVIEW_PICTURE'], array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>">
 					<p class="banner-text-h1"><?=$arFields['NAME']?></p>
 					<p><?=TruncateText($arFields['PREVIEW_TEXT'], 70);?></p>

@@ -102,7 +102,7 @@ $APPLICATION->SetTitle("service");
                     $arFields = $ob->GetFields();
                     ?>
                     <div class="col-md-4">
-                        <div class="service-box">
+                        <div class="service-box" onclick="window.location.href='<?=$arFields['CODE']?>'">
                             <img src="<?=CFile::ResizeImageGet($arFields['PREVIEW_PICTURE'], array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>">
                             <p class="banner-text-h1"><?=$arFields['NAME']?></p>
                             <p><?=TruncateText($arFields['PREVIEW_TEXT'], 70);?></p>
@@ -146,7 +146,7 @@ $APPLICATION->SetTitle("service");
                     $arFields = $ob->GetFields();
                     ?>
                     <div class="col-md-4">
-                        <div class="service-box">
+                        <div class="service-box" onclick="window.location.href='<?=$arFields['DETAIL_PAGE_URL']?>'">
                             <img src="<?=CFile::ResizeImageGet($arFields['PREVIEW_PICTURE'], array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>">
                             <p class="banner-text-h1"><?=$arFields['NAME']?></p>
                             <p><?=TruncateText($arFields['PREVIEW_TEXT'], 70);?></p>

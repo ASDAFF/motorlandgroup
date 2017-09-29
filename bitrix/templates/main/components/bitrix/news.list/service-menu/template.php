@@ -31,7 +31,7 @@ $this->setFrameMode(true);
 
 					<? foreach($arItem['DISPLAY_PROPERTIES_E'] as $code):?>
 						<? foreach($arItem[$code] as $key => $offer):?>
-						<ul>
+						<ul onclick="window.location.href='<?=$offer['DETAIL_PAGE_URL']?>'">
 							<li><img src="<?=CFile::ResizeImageGet($offer['PREVIEW_PICTURE'], array('width'=>310, 'height'=>210), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
 							<li><p><?=$offer['NAME']?></p></li>
 							<li><a href="<?=$offer['DETAIL_PAGE_URL']?>">Узнать подробнее</a></li>
@@ -54,7 +54,7 @@ $this->setFrameMode(true);
 					</ul>
 					<ul>
 						<? foreach($arItem['DISPLAY_PROPERTIES_E'] as $code):?>
-						<li><img src="<?=CFile::ResizeImageGet($arItem[$code][0]['PREVIEW_PICTURE'], array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
+						<li><img src="<?=CFile::ResizeImageGet($arItem['DETAIL_PICTURE'], array('width'=>520, 'height'=>360), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
 						<li><a href="<?=$arItem[$code][0]['LIST_PAGE_URL']?>">Узнать подробнее</a></li>
 						<? break; ?>
 						<?endforeach;?>
