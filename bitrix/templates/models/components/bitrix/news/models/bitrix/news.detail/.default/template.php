@@ -267,7 +267,7 @@ $this->setFrameMode(true);
 				<tbody>
 				<tr id="bx_565502798_1889">
 					<td style="text-align: left;">
-						<p><strong><?=$com['NAME']?></strong></p>
+						<p><strong><?=explode('_',$com['NAME'])[0];?></strong></p>
 					</td>
 				</tr>
 
