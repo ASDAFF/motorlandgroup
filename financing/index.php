@@ -37,7 +37,7 @@ $APPLICATION->SetTitle("Финансовые услуги");
             <div class="sub-nav-wrap">
                 <div class="pdp-model-wrap">
                     <div class="pdp-model-name">
-                        <a class="subnav-toggle subnav-click" data-href="/ru/buy/design-and-buy/financing">
+                        <a class="subnav-toggle subnav-click" data-href="/financing/">
                             <span></span>
                             Финансовые услуги<i class="icon v2nav-icon-angle-down subnav-toggle-icon"></i>                        </a>
                     </div>
@@ -130,32 +130,7 @@ $APPLICATION->SetTitle("Финансовые услуги");
     </style>
 
 
-    <div id="inlinedealer" class="oxp-inlineDealerLocator">
-        <div class="inline-dealer-locator  component">
-            <div>
-                <h2 class="h2">Поиск дилера</h2>
-                <div class="idl-search-field">
-                    <span></span>
-                    <form action="http://www.volvocars.com/ru/buy/design-and-buy/find-a-dealer" target="_blank" method="GET">
-                        <input name="q" type="search" placeholder="Введите название города">
-                        <div class="search-field-button">
-                            <button type="submit"><i class="icon icon-search"></i></button>
-                        </div>
-                    </form>
-                    <p class="link-sec">или
-                        <span> <a class="link" href="/ru/buy/design-and-buy/find-a-dealer">Найдите ближайшего к вам</a></span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-
-
-
-    <style>
-        #inlinedealer{padding-bottom: 0!important}
-    </style>
 
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -9,16 +9,19 @@
             <li class="footer-list-item"><a href="/contacts/">Контакты</a></li>
             <li class="footer-list-item footer-list-item-row">
                 <div class="footer-socials">
-                    <a href="http://vk.com/volvocarsrus" target="_blank" rel="publisher">
+                    <a href="https://vk.com/volvovrn" target="_blank" rel="publisher">
                         <i class="icon icon-vkontakte"></i>
                     </a>
-                    <a href="https://www.facebook.com/VolvoCarsRus" target="_blank" rel="publisher">
+                    <a href="https://www.ok.ru/group/53434904477900" target="_blank" rel="publisher">
+                        <i class="fa fa-odnoklassniki-square" style="font-size: 25px;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/volvovrn/" target="_blank" rel="publisher">
                         <i class="icon icon-facebook"></i>
                     </a>
-                    <a href="https://www.youtube.com/user/VolvoCarsRussia" target="_blank" rel="publisher">
+                    <a href="https://www.youtube.com/channel/UCmJtpJxq5PaEpCGgSEbJnsg" target="_blank" rel="publisher">
                         <i class="icon icon-youtube"></i>
                     </a>
-                    <a href="https://www.instagram.com/volvocarsrus/" target="_blank" rel="publisher">
+                    <a href="https://www.instagram.com/volvo_voronezh_motorland/" target="_blank" rel="publisher">
                         <i class="icon icon-instagram"></i>
                     </a>
                 </div>

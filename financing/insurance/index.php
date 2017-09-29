@@ -165,11 +165,6 @@ $APPLICATION->SetTitle("insurance");
                         <p class="body">Чтобы рассчитать стоимость КАСКО для вашего автомобиля, пожалуйста, обратитесь к своему дилеру.</p>
                     </div>
 
-                    <ul class="hero-ctas">
-                        <li>
-                            <a class="ctaWhite cta-button button buttonSecondary button-small button-light button-semi-opaque">Поиск дилера</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

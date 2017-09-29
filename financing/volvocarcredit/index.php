@@ -63,7 +63,8 @@ $APPLICATION->SetTitle("volvocarcredit");
 
 
                     <div class="extf-content">Комфортный кредит. По-шведски</div>
-                    <a class="link" href="/ru/buy/design-and-buy/financing/volvocarcredit/credit-volvo">Подробнее</a>                                            </div>
+
+                </div>
 
             </div>
         </div>
@@ -137,5 +138,13 @@ $APPLICATION->SetTitle("volvocarcredit");
         </div>
 
     </div>
+    <script type="text/javascript">
+
+
+        var AnchorlinkList = '#VideoplayerLink, #storygridlink, #storycarousellink, #inlinedealer, #itemList, #editorialQuote, #exteriorFeatureOne, #exteriorFeatureTwo, #gallery, #galleryOld, #slider, #specsAtAglance, #standardHero, #reviews';
+        var AnimationSpeed = '2000';
+
+
+    </script>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
