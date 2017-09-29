@@ -1,0 +1,35 @@
+
+.form-new-detail .input-service{
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+
+
+
+.form-new-detail{
+    text-align: center;
+    margin: 20px auto;
+}
+.form-new-detail > h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+
+}
+
+.form-new-detail p a{
+    text-decoration: underline;
+}
+
+input.blue-button {
+    display: inline-block;
+    border: 1px solid #003057;
+    color: #003057;
+    background-color: rgba(255,255,255,0.2);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 13px 30px 11px;
+    font-weight: bold;
+    font-family: "Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
+    transition: color 0.2s, background-color 0.2s;
+}

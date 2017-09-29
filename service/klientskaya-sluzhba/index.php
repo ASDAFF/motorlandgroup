@@ -43,50 +43,50 @@ $APPLICATION->SetTitle("kalkulyator-to");
 
                 <div class="col-xs-12 strange-page-content">
                     <div class="page">
-                        <h2>Программы технического обслуживания автомобилей Volvo</h2>
-                        <div class="optional-service-form">
-                            <ul class="contact-list">
-                                <li class="active">
-                                    <div class="slider">
-                                        <span class="offer-form-title">Клиентская служба</span>
-                                        <?$APPLICATION->IncludeComponent("mystery:feedback.all.ajax", "page.feedback.form", array(
-                                            "IBLOCK_TYPE" => "Feedback",
-                                            "IBLOCK_ID" => "19",
-                                            "ACTIVED" => "Y",
-                                            "ID_POPUP" => "feedback2",
-                                            "DESC_TEXT" => "Все поля отмеченные *, обязательны для заполнения",
-                                            "OK_TEXT" => "Спасибо, ваше сообщение принято.",
-                                            "EMAIL_TO" => "zhukov@motorlandgroup.ru, savvina@motorlandgroup.ru, obrazhnikov@motorlandgroup.ru",
-                                            "FIELDS" => array(
-                                                0 => "NAME",
-                                                1 => "PHONE",
-                                                2 => "EMAIL",
-                                                3 => "TIME",
-                                                4 => "MODEL",
-                                            ),
-                                            "REQUIRED_FIELDS" => array(
-                                                0 => "NAME",
-                                                1 => "PHONE",
-                                                2 => "EMAIL",
-                                            ),
-                                            "EVENT_MESSAGE_ID" => array(
-                                                0 => "8",
-                                            ),
-                                            "USE_CAPTCHA" => "N",
-                                            "CAPTCHA_WIDTH" => "",
-                                            "CAPTCHA_HEIGHT" => "",
-                                            "AJAX_MODE" => "Y",
-                                            "AJAX_OPTION_JUMP" => "N",
-                                            "AJAX_OPTION_STYLE" => "N",
-                                            "AJAX_OPTION_HISTORY" => "N",
-                                            "AJAX_OPTION_ADDITIONAL" => ""
-                                        ),
-                                            false
-                                        );?>
-                                    </div>
-                                </li>
-                            </ul>
+
+                        <div class="row">
+                            <div class="form-new-detail">
+                                <h1>Клиентская служба</h1>
+                                <?$APPLICATION->IncludeComponent("mystery:feedback.all.ajax", "page.feedback.form", array(
+                                    "IBLOCK_TYPE" => "Feedback",
+                                    "IBLOCK_ID" => "19",
+                                    "ACTIVED" => "Y",
+                                    "ID_POPUP" => "feedback2",
+                                    "DESC_TEXT" => "Все поля отмеченные *, обязательны для заполнения",
+                                    "OK_TEXT" => "Спасибо, ваше сообщение принято.",
+                                    "EMAIL_TO" => "zhukov@motorlandgroup.ru, savvina@motorlandgroup.ru, obrazhnikov@motorlandgroup.ru",
+                                    "FIELDS" => array(
+                                        0 => "NAME",
+                                        1 => "PHONE",
+                                        2 => "EMAIL",
+                                        3 => "TIME",
+                                        4 => "MODEL",
+                                    ),
+                                    "REQUIRED_FIELDS" => array(
+                                        0 => "NAME",
+                                        1 => "PHONE",
+                                        2 => "EMAIL",
+                                    ),
+                                    "EVENT_MESSAGE_ID" => array(
+                                        0 => "8",
+                                    ),
+                                    "USE_CAPTCHA" => "N",
+                                    "CAPTCHA_WIDTH" => "",
+                                    "CAPTCHA_HEIGHT" => "",
+                                    "AJAX_MODE" => "Y",
+                                    "AJAX_OPTION_JUMP" => "N",
+                                    "AJAX_OPTION_STYLE" => "N",
+                                    "AJAX_OPTION_HISTORY" => "N",
+                                    "AJAX_OPTION_ADDITIONAL" => ""
+                                ),
+                                    false
+                                );?>
+                            </div>
                         </div>
+
+                        <h2>Программы технического обслуживания автомобилей Volvo</h2>
+
+
 
                         <style>
                             .page > p {

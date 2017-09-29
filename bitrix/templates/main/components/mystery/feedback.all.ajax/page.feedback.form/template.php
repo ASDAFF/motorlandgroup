@@ -1,6 +1,7 @@
 <? if (!defined ( "B_PROLOG_INCLUDED" ) || B_PROLOG_INCLUDED !== true) {
     die();
 }
+$APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.maskedinput.js"></script>',true);
 ?>
 
 <?if (!empty($arResult["ERROR_MESSAGE"])) {
@@ -28,26 +29,23 @@ if (strlen ( $arResult["OK_MESSAGE"] ) > 0) {
 <?
 }
 ?>
+
+
+
+
 <form action="<?=POST_FORM_ACTION_URI;?>" class="new-form" method="post" id="form_<?= $arParams['ID_POPUP'] ?>" enctype="multipart/form-data">
     <?=bitrix_sessid_post ()?>
     <input type="hidden" value="<?= $arResult['PARAMS_HASH'] ?>" name="PARAMS_HASH"><?
-    // @TODO
-    /* ?><input type="hidden" value="<?=$APPLICATION->GetCurPage();?>" name="backurl"><? */
     if (!empty($_GET))
     {
         foreach ($_GET as $key => $value)
         {
-            ?><input type="hidden" value="<?=$value;?>" name="<?=$key;?>"><?
+            ?>
+                <input type="hidden" value="<?=$value;?>" name="<?=$key;?>">
+            <?
         }
     }
     $arText = $arParams['FIELDS_NAME'];
-    foreach ($arText as $key => $val) {
-        /*if (in_array ( $key,
-                       $arParams["REQUIRED_FIELDS"] )
-        ) {
-            $arText[$key] = $arText[$key].'*';
-        }*/
-    }
     $arTextVal = $arText;
 
     foreach ($arParams['FORM_PARAMS'] as $key => $value) {
@@ -55,15 +53,17 @@ if (strlen ( $arResult["OK_MESSAGE"] ) > 0) {
             $arTextVal[$key] = $value;
         }
     }
-
     ?>
-    <fieldset>
-        <div class="hold">
+
+
             <?
+            $css_100 = count($arParams['FIELDS_NAME']);
+            $i = 1;
             foreach ($arParams['FIELDS_NAME'] as $key => $value) {
                 ?>
-                <div class="row">
-                    <label for="id<?= $key ?>"><?=$arText[$key]?> <?if($key!="COMMENT"){?>*<?}?></label>
+
+        <div class="input-service" <?if($css_100 == $i):?>style="width: 100%"<?endif;?>>
+<!--                    <label for="id--><?//= $key ?><!--">--><?//=$arText[$key]?><!-- --><?//if($key!="COMMENT"){?><!--*--><?//}?><!--</label>-->
                     <?
                     if ($arParams['FIELDS_TYPE'][$key] == 'SHTML') {
                         ?>
@@ -75,14 +75,19 @@ if (strlen ( $arResult["OK_MESSAGE"] ) > 0) {
                     <?
                     } else {
                         ?>
-                        <input type="text" id="id<?= $key ?>" value="<?= $arTextVal[$key] ?>" name="<?= $key ?>" class="text">
+                        <input type="text" id="id<?= $key ?>" placeholder="<?= $arTextVal[$key] ?>" value="" name="<?= $key ?>" class="text">
                     <?
                     }
                     ?>
-                </div>
+        </div>
+
             <?
+                $i++;
             }
             ?>
+    <div class="clear"></div>
+
+
             <?
             if ($arParams["USE_CAPTCHA"] == "Y") {
                 ?>
@@ -100,10 +105,34 @@ if (strlen ( $arResult["OK_MESSAGE"] ) > 0) {
             <?
             }
             ?>
-        </div>
-<!--        <input type="image" class="btn-send" src="/img/btn-send.gif" alt="отправить" onclick="$(this).next().click();return false;">-->
-<!--        <input type="image" class="btn-send"  onclick="$(this).next().click();return false;">-->
-        <input type="button" value="Отправить" class="btn-send"  onclick="$(this).next().click();return false;">
+
+    <p>Я прочитал <a class="skyblue show-rules" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных</p>
+
+        <input type="button" value="Отправить" class="blue-button"  onclick="$(this).next().click();return false;">
         <input class="btn-send" type="submit" name="submit" value="Отправить сообщение" style="display: none;">
-    </fieldset>
+
 </form>
+
+<div class="rule_blocks" style="display: none">
+
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "",
+        Array(
+            "AREA_FILE_SHOW" => "file",
+            "AREA_FILE_SUFFIX" => "inc",
+            "EDIT_TEMPLATE" => "",
+            "PATH" => "/include/rule.php"
+        )
+    );?>
+
+</div>
+
+<script>
+    $(function(){
+        $("input[name='PHONE']").mask("+7 (999) 999-99-99");
+        $('.show-rules').click(function(){
+            zzModal.show($('.rule_blocks').html());
+        });
+    });
+</script>
