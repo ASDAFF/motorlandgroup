@@ -96,7 +96,7 @@ $APPLICATION->SetTitle("service");
                 <?
                 $arSelect = Array("ID", "NAME", "DETAIL_PAGE_URL","PREVIEW_TEXT","PREVIEW_PICTURE");
                 $arFilter = Array("IBLOCK_ID" => 29,"ACTIVE"=>"Y");
-                $res = CIBlockElement::GetList(Array(), $arFilter, false, false, $arSelect);
+                $res = CIBlockElement::GetList(Array("SORT"=>"ASC"), $arFilter, false, false, $arSelect);
                 while($ob = $res->GetNextElement())
                 {
                     $arFields = $ob->GetFields();
