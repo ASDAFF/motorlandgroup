@@ -65,7 +65,7 @@ div.news-list img.preview_picture
 .model-reviews-text-item-text {
 	width: 50%;
 	float: left;
-	height: 20vw;
+	height: 30vw;
 	/*background-color: darkblue;*/
 	overflow: hidden;
 	position: relative;
@@ -107,7 +107,7 @@ div.news-list img.preview_picture
 .model-reviews-text-item-image {
 	width: 50%;
 	float: left;
-	height: 20vw;
+	height: 30vw;
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 50px;
@@ -134,7 +134,7 @@ div.news-list img.preview_picture
 
 		width: 100%;
 		z-index: 1;
-		height: 410px;
+		height: 710px;
 	}
 
 
