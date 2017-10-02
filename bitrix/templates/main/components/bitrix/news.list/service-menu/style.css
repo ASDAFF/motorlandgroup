@@ -228,3 +228,12 @@
 	margin-bottom: 0px;
 }
 
+.service-menu-sub.offer .service-one-articles ul{
+	float: unset;
+	display: inline-block;
+}
+.service-menu-sub.offer{
+	height: 360px;
+	overflow-x: auto;
+	white-space: nowrap;
+}
