@@ -21,7 +21,7 @@ $this->setFrameMode(true);
 
 		<li class="ser-menu">
 
-			<a href="javascript:void(0);"><?=$arItem['NAME']?></a>
+			<a href="<?=$arItem['CODE']?>"><?=$arItem['NAME']?></a>
 
 
 			<?if($arItem['PROPERTIES']['TYPE_MENU']['VALUE'] == 'offer'):?>
@@ -79,10 +79,13 @@ $this->setFrameMode(true);
 		</li>
 		<?endforeach;?>
 
+
 	</ul>
+	<div class="more">Ещё</div>
 
 	<div class="clear"></div>
 </div>
+
 
 
 
@@ -112,6 +115,29 @@ $this->setFrameMode(true);
 				$(this).removeClass('active');
 			}
 		);
+
+
+		$('.service-menu .more').click(function(){
+
+			if($(this).hasClass('clicked')){
+				$(this).parent().css({
+					height: '50px',
+					overflow:'hidden'
+				});
+				$(this).removeClass('clicked');
+			}else{
+				$(this).parent().css({
+					height: 'unset',
+					overflow:'unset'
+				});
+				$(this).addClass('clicked');
+			}
+
+		});
+
+
+
+
 	});
 </script>
 

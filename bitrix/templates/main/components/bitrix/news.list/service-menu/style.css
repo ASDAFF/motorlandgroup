@@ -244,16 +244,31 @@
 	overflow-y: hidden;
 	white-space: nowrap;
 }
+.service-menu .more{
+	display: none;
+}
+
+
 
 
 @media (max-width: 768px){
 
 	.service-menu{
+		height: 50px;
+		overflow: hidden;
+		width: 100%;
 		top: 50px;
 	}
+	.service-menu .more{
+		display: block;
+		position: absolute;
+		top: 17px;
+		color: #fff;
+		right: 20px;
+		cursor: pointer;
+	}
 	.service-menu ul li.active .service-menu-sub{
-		width: 100%;
-		left: 0px!important;
+		display: none;
 	}
 	.service-menu-sub .service-one-articles.detail ul li a, .service-menu-sub.offer .service-one-articles ul li a, .service-menu-sub .service-one-articles ul:last-child li a{
 		width: 199px;
