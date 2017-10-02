@@ -244,3 +244,16 @@
 	overflow-y: hidden;
 	white-space: nowrap;
 }
+
+
+@media (max-width: 768px){
+
+	.service-menu{
+		top: 50px;
+	}
+	.service-menu ul li.active .service-menu-sub{
+		width: 100%;
+		left: 0px!important;
+	}
+
+}

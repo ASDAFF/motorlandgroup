@@ -1,1 +1,16 @@
 
+@media (max-width: 768px){
+
+
+    .banner-icons{
+        display: none;
+    }
+    .service-banner{
+        height: 100%;
+    }
+    .service-banner img{
+        max-width: 1950px;
+    }
+
+}
+
