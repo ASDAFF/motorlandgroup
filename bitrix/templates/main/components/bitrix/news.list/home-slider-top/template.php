@@ -145,7 +145,7 @@ $this->setFrameMode(true);
 				<div class="triple-menu-offers">
 					<p class="hSlimLine">Спецпредложения</p>
 					<nav>
-						<ul>
+						<ul style="padding: 0">
 
 							<?$APPLICATION->IncludeComponent(
 								"bitrix:news.list",
