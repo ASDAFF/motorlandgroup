@@ -67,7 +67,7 @@ if (strlen ( $arResult["OK_MESSAGE"] ) > 0) {
                     <?
                     if ($arParams['FIELDS_TYPE'][$key] == 'SHTML') {
                         ?>
-                        <textarea rows="10" id="id<?= $key ?>" cols="30" class="area" name="<?= $key ?>"><?=$arTextVal[$key]?></textarea>
+                        <textarea rows="10" id="id<?= $key ?>" cols="30" class="area" name="<?= $key ?>" placeholder="<?=$arTextVal[$key]?>"></textarea>
                     <?
                     } elseif ($arParams['FIELDS_TYPE'][$key] == 'F') {
                         ?>
