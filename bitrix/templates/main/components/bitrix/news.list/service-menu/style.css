@@ -255,5 +255,8 @@
 		width: 100%;
 		left: 0px!important;
 	}
+	.service-menu-sub .service-one-articles.detail ul li a, .service-menu-sub.offer .service-one-articles ul li a, .service-menu-sub .service-one-articles ul:last-child li a{
+		width: 199px;
+	}
 
 }
