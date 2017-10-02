@@ -97,7 +97,7 @@ $this->setFrameMode(true);
 
 				if($(this).find('.service-menu-sub').hasClass('offer')) {
 					$(this).find('.service-menu-sub').css({'left':'0%','width':'100%'});
-					$(this).find('.service-menu-sub ul').css({'width':'16.6%'});
+					$(this).find('.service-menu-sub ul').css({'width':'310px','height':'320px'});
 				}else{
 					var offset = $(this).offset();
 					var left = (100 * (offset.left) / $('body').width());
