@@ -235,8 +235,11 @@
 .service-menu-sub.offer .service-one-articles ul li p{
 	white-space: normal;
 }
+.service-menu-sub.offer .service-one-articles ul li.min-h-title{
+	min-height: 54px;
+}
 .service-menu-sub.offer{
-	height: 360px;
+	height: 370px;
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: nowrap;

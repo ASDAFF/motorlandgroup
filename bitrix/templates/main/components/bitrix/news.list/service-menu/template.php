@@ -33,7 +33,7 @@ $this->setFrameMode(true);
 						<? foreach($arItem[$code] as $key => $offer):?>
 						<ul onclick="window.location.href='<?=$offer['DETAIL_PAGE_URL']?>'">
 							<li><img src="<?=CFile::ResizeImageGet($offer['PREVIEW_PICTURE'], array('width'=>310, 'height'=>210), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
-							<li><p><?=$offer['NAME']?></p></li>
+							<li class="min-h-title"><p><?=$offer['NAME']?></p></li>
 							<li><a href="<?=$offer['DETAIL_PAGE_URL']?>">Узнать подробнее</a></li>
 						</ul>
 						<?endforeach;?>
