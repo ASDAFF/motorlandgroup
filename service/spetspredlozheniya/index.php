@@ -52,7 +52,7 @@ $APPLICATION->SetTitle("offers-articles");
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "РќРѕРІРѕСЃС‚Рё",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"SEF_FOLDER" => "/service/offers-articles/",
+		"SEF_FOLDER" => "/service/spetspredlozheniya/",
 		"SEF_MODE" => "Y",
 		"SEF_URL_TEMPLATES" => Array("detail"=>"#ELEMENT_CODE#/","news"=>"","section"=>""),
 		"SET_LAST_MODIFIED" => "N",

@@ -13,10 +13,10 @@ $arUrlRewrite = array(
 		"PATH" => "/service/tyuning-polestar/index.php",
 	),
 	array(
-		"CONDITION" => "#^/service/offers-articles/#",
+		"CONDITION" => "#^/service/spetspredlozheniya/#",
 		"RULE" => "",
 		"ID" => "bitrix:news",
-		"PATH" => "/service/offers-articles/index.php",
+		"PATH" => "/service/spetspredlozheniya/index.php",
 	),
 	array(
 		"CONDITION" => "#^/service/kuzovnoy-remont/#",
