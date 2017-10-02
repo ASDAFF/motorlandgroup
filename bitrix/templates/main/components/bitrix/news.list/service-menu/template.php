@@ -81,7 +81,7 @@ $this->setFrameMode(true);
 
 
 	</ul>
-	<div class="more">Ещё</div>
+	<div class="more">Ещё&nbsp; &#8744;</div>
 
 	<div class="clear"></div>
 </div>
@@ -124,12 +124,14 @@ $this->setFrameMode(true);
 					height: '50px',
 					overflow:'hidden'
 				});
+				$(this).html('Ещё&nbsp; &#8744;');
 				$(this).removeClass('clicked');
 			}else{
 				$(this).parent().css({
 					height: 'unset',
 					overflow:'unset'
 				});
+				$(this).html('Ещё&nbsp; &#8743;');
 				$(this).addClass('clicked');
 			}
 

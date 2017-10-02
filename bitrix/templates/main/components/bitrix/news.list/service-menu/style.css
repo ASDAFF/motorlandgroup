@@ -250,13 +250,13 @@
 
 
 
-@media (max-width: 768px){
+@media (max-width: 1590px){
 
 	.service-menu{
 		height: 50px;
 		overflow: hidden;
 		width: 100%;
-		top: 50px;
+		top: 70px;
 	}
 	.service-menu .more{
 		display: block;
@@ -273,4 +273,10 @@
 		width: 199px;
 	}
 
+}
+
+@media (max-width: 540px){
+	.service-menu{
+		top: 50px;
+	}
 }
