@@ -228,10 +228,3 @@
 	margin-bottom: 0px;
 }
 
-.service-menu-sub.offer{
-	height: 360px;
-	overflow: -webkit-paged-x;
-	overflow: -o-paged-x;
-	overflow: -moz-paged-x;
-	overflow: -paged-x;
-}
