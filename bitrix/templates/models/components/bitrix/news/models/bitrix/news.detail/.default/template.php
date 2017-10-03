@@ -298,9 +298,9 @@ $this->setFrameMode(true);
 	<? if($arResult['PROPERTIES']['test_video']['VALUE']): ?>
 	<div id="test"></div>
 	<div class="white_bg">
-		<div class="models-video">
+		<div class="models-video" style="">
 			<? foreach($arResult['PROPERTIES']['test_video']['VALUE'] as $test_video): ?>
-			<iframe style="margin:0 auto;border-bottom: 2px solid #000;display: block" width="1000" height="600" src="https://www.youtube.com/embed/<?=$test_video;?>" frameborder="0" allowfullscreen></iframe>
+			<iframe style="margin:0 auto;border-bottom: 2px solid #000;display: block" width="70%" height="600" src="https://www.youtube.com/embed/<?=$test_video;?>" frameborder="0" allowfullscreen></iframe>
 			<? endforeach; ?>
 		</div>
 		<div id="gallery_"></div>
@@ -551,6 +551,11 @@ $this->setFrameMode(true);
 						$('.img-one.two').css('height',$('.img-one.two img').height());
 						$('.img-one.three').css('height',$('.img-one.three img').height());
 
+						$(window).resize(function(){
+							$('.img-one.one').css('height',$('.img-one.one img').height());
+							$('.img-one.two').css('height',$('.img-one.two img').height());
+							$('.img-one.three').css('height',$('.img-one.three img').height());
+						});
 
 						$('.show-rules').click(function(){
 							zzModal.show($('.rule_block').html());
