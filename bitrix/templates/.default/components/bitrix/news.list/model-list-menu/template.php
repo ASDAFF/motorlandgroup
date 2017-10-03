@@ -15,7 +15,7 @@ $this->setFrameMode(true);
 <?foreach($arResult["ITEMS"] as $arItem):?>
 <li class="nav-drop-body-item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
 	<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="nav-drop-body-item-title small-after clearfix">
-		<h3><?=$arItem['NAME']?></h3>
+		<div class="h3"><?=$arItem['NAME']?></div>
 	</a>
 	<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="nav-drop-body-item-img-link">
 		<img src="<?=CFile::ResizeImageGet($arItem['PROPERTIES']['FOTO_1']['VALUE'], array('width'=>196, 'height'=>71), BX_RESIZE_IMAGE_EXACT, true)['src'];?>" alt="<?=$arItem['NAME']?>"  sizes="" class="nav-drop-body-item-img--default"/>

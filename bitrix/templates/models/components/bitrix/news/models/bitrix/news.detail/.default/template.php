@@ -19,10 +19,10 @@ $this->setFrameMode(true);
 <div class="subnav subnav_model">
 	<a href="#" title="Наверх" class="scroll-top js-scroll-top">Наверх</a>
 	<div class="subnav-header subnav-header-has-subtitle">
-		<h2 class="subnav-title"><?=$arResult["NAME"]?></h2>
+		<div class="subnav-title h2"><?=$arResult["NAME"]?></div>
 		<div class="subnav-subtitle">
 			<? if($arResult['PROPERTIES']['price_r']['VALUE']):?>
-            <span style="font-size:15px;">Рекомендованная цена <strong><?=$arResult['PROPERTIES']['price_r']['VALUE']?></strong>
+            <span style="font-size:15px;">Рекомендованная цена <div class="strong"><?=$arResult['PROPERTIES']['price_r']['VALUE']?></div>
 			<?endif;?>
 		</div>
 	</div>
@@ -206,7 +206,7 @@ $this->setFrameMode(true);
 
 		<? if($arResult['COMPLECT_AND_PRICE']): ?>
 		<div class="extf-body">
-			<h2 class="complects-and-prices">Комплектации и цены</h2>
+			<span class="complects-and-prices h2">Комплектации и цены</span>
 		</div>
 
 		<p>Предлагаем вам ознакомиться с рекомендованными розничными ценами на модель Volvo <?=$arResult['NAME']?>.</p>
@@ -216,7 +216,7 @@ $this->setFrameMode(true);
 		<? foreach($arResult['COMPLECT_AND_PRICE'] as $price_com):?>
 		<div class="z">
 			<div class="tech">
-				<strong><?=$price_com['NAME']?></strong>
+				<div class="strong"><?=$price_com['NAME']?></div>
 			</div>
 		</div>
 		<div class="t" style="text-align: justify;">
@@ -259,7 +259,7 @@ $this->setFrameMode(true);
 		<? foreach($arResult['COMPLECT'] as $com):?>
 		<div class="z">
 			<div class="tech">
-				<strong><?=explode('_',$com['NAME'])[0];?></strong>
+				<div class="strong"><?=explode('_',$com['NAME'])[0];?></div>
 			</div>
 		</div>
 		<div class="t" style="text-align: justify;">
@@ -267,14 +267,14 @@ $this->setFrameMode(true);
 				<tbody>
 				<tr id="bx_565502798_1889">
 					<td style="text-align: left;">
-						<p><strong><?=explode('_',$com['NAME'])[0];?></strong></p>
+						<p><div class="strong"><?=explode('_',$com['NAME'])[0];?></div></p>
 					</td>
 				</tr>
 
 				<tr>
 					<td style="text-align: left;">
 						<? foreach($com['ITEM'] as $name => $value):?>
-						<p><strong><?=$name?></strong></p>
+						<p><div class="strong"><?=$name?></div></p>
 						<ul>
 							<?
 							foreach($value as $com_val):?>
@@ -421,7 +421,7 @@ $this->setFrameMode(true);
 
 	<div class="items-list-wrapper theme-dark component" id="model-forms">
 		<div class="extf-body step_h">
-			<h2 class="adapted">Ваш следующий шаг</h2>
+			<span class="adapted h2">Ваш следующий шаг</span>
 		</div>
 		<div class="items-list" id="">
 			<div class="subnav-buttons tab_step adaptived">

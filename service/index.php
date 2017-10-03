@@ -86,7 +86,7 @@ $APPLICATION->SetTitle("service");
 
         <div class="container">
 
-            <h1 style="">Сервисный центр</h1>
+            <div class="h1_serv" style="">Сервисный центр</div>
 
             <p style="text-align: center;margin-bottom: 25px">Решения Sensus включают в себя самые современные возможности доступа к информации и развлечениям. Встроенная точка доступа обеспечивает вам и вашему XC90 постоянную связь с Интернетом.123</p>
 

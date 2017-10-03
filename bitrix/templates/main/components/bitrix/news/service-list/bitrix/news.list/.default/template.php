@@ -33,7 +33,7 @@ $this->setFrameMode(true);
 
 <div class="container">
 
-	<h1 style=""><?=$arResult['NAME']?></h1>
+	<div class="h1_serv" style=""><?=$arResult['NAME']?></div>
 
 <!--	<p style="text-align: center;margin-bottom: 25px">Решения Sensus включают в себя самые современные возможности доступа к информации и развлечениям. Встроенная точка доступа обеспечивает вам и вашему XC90 постоянную связь с Интернетом.123</p>-->
 

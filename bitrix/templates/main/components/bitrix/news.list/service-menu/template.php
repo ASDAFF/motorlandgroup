@@ -68,7 +68,7 @@ $this->setFrameMode(true);
 						<li><img src="<?=CFile::ResizeImageGet($arItem['DETAIL_PICTURE'], array('width'=>310, 'height'=>210), BX_RESIZE_IMAGE_EXACT, true)['src']?>"></li>
 					</ul>
 					<ul>
-						<li><h1><?=$arItem['NAME']?></h1></li>
+						<li><div class="h1_serv"><?=$arItem['NAME']?></div></li>
 						<li><p><?=$arItem['DETAIL_TEXT']?></p></li>
 						<li><a class="" href="<?=$arItem['CODE']?>">Узнать подробнее</a></li>
 					</ul>

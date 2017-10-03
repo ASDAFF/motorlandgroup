@@ -33,7 +33,7 @@ $this->setFrameMode(true);
 
 <div class="container">
 
-	<h1><?=$arResult['NAME']?></h1>
+	<div class="h1_serv"><?=$arResult['NAME']?></div>
 
 	<?foreach($arResult["ITEMS"] as $arItem):?>
 	<div class="row margin-bottom-70">
@@ -47,7 +47,7 @@ $this->setFrameMode(true);
 
 			<div class="col-md-6">
 				<div class="offer-text">
-					<h1><?=$arItem['NAME']?></h1>
+					<div class="h1"><?=$arItem['NAME']?></div>
 					<?
 					if($arItem['DATE_ACTIVE_TO'] and $arItem['DATE_ACTIVE_FROM']):
 					$diff = (strtotime(explode(' ',$arItem['DATE_ACTIVE_TO'])[0])-strtotime(explode(' ',$arItem['DATE_ACTIVE_FROM'])[0]))/(60*60*24);

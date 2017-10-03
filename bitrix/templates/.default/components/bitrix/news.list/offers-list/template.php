@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 <div class="super-offer">
 
 	<div class="spec">
-		<h1 style="text-align: center; margin-bottom: 10px;"><?=$arResult['NAME']?></h1>
+		<div class="h1" style="text-align: center; margin-bottom: 10px;"><?=$arResult['NAME']?></div>
 
 		<div class="super-offer-slider-giant">
 			<?foreach($arResult["ITEMS"] as $arItem):?>

@@ -51,10 +51,12 @@ div.news-list img.preview_picture
 	font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
 	font-size: 22px;
 }
-.offer-text h1{
+.offer-text .h1{
 	color: #000;
 	font-size: 40px;
+	margin-top: 0;
 	margin-bottom: 20px;
+	font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
 }
 .offer-text a.button{
 	border: 1px solid #003057;

@@ -31,7 +31,7 @@ $this->setFrameMode(true);
 
 	</div>
 	<div class="banner-text">
-		<h1><?=$arItem['NAME']?></h1>
+		<div class="h1_b"><?=$arItem['NAME']?></div>
 		<?=$arItem['PREVIEW_TEXT']?>
 		<?if($arItem['CODE']):?>
 		<a href="<?=$arItem['CODE']?>" class="button">Скачать прайс</a>

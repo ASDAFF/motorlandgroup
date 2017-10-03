@@ -1,4 +1,4 @@
-.container > h1{
+.container > .h1_serv{
 	text-align: center;
 	margin: 40px;
 	font-size: 40px;
@@ -56,6 +56,13 @@
 .banner-text-two .phone{
 	font-size: 30px;
 	font-weight: 100;
+}
+.banner-text > .h1_b,
+.banner-text-two > .h1_b
+{
+	font-family: "Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue","Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif"!important;
+	font-size: 40px;
+	margin-bottom: 15px;
 }
 .banner-text > h1,
 .banner-text-two > h1
@@ -181,7 +188,7 @@
 	width: 63%;
 }
 
-.service-menu-sub .service-one-articles ul li h1{
+.service-menu-sub .service-one-articles ul li .h1_serv{
 	font-size: 23px;
 }
 
@@ -273,6 +280,10 @@
 		width: 199px;
 	}
 
+}
+
+.h1_serv{
+	font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
 }
 
 @media (max-width: 540px){

@@ -10,3 +10,18 @@ div.news-list img.preview_picture
 .news-date-time {
 	color:#486DAA;
 }
+
+.super-offer .h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.super-offer .h1 {
+	font-family: "Volvo Broad","Volvo Sans Medium","Volvo Sans Regular","Arial Narrow","Helvetica Neue",Helvetica,Roboto,Arial,Arial,Helvetica,sans-serif;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	color: #003057;
+	font-size: 80px;
+	font-weight: normal;
+}
