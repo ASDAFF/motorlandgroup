@@ -2,6 +2,7 @@
 <div class="cn_block" style="width: 100%; max-width: none; padding: 0;">
 
 
+
     <footer class="footer">
         <div class="container">
             <div class="footer-row">
@@ -42,7 +43,13 @@
 </div>
 
 
-
+<script>
+    var func = function(){
+        $('.img-one').css('height',$('.img-one img').height());
+    }
+    window.onresize = func;
+    window.onload   = func;
+</script>
 
 
 <!--///SCRIPTS///-->
