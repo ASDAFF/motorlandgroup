@@ -211,7 +211,7 @@ if (CModule::IncludeModule("iblock")):
 
 
 
-    <div class="main-page-content-wrapper" style="display: block; background-image: url('http://motorlandgroup.ru/images/big-banners/15fe7c18db68e201371bcad26226c230.jpg');">
+    <div class="main-page-content-wrapper" style="display: block; background-image: url('/img/home-par.jpg');">
         <div class="main-page-content">
             <?$APPLICATION->IncludeComponent(
                 "bitrix:main.include",
