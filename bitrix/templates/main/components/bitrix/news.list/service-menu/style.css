@@ -246,8 +246,8 @@
 }
 .service-menu-sub.offer{
 	height: 370px;
-	overflow-x: auto;
-	overflow-y: hidden;
+	/*overflow-x: auto;*/
+	/*overflow-y: hidden;*/
 	white-space: nowrap;
 }
 .service-menu .more{
