@@ -223,7 +223,7 @@
 
                 <li id="nav-drop-item-about" class="nav-drop-item nav-drop-cars">
                     <div class="nav-drop-body nav-drop-car">
-                        <img src="http://motorlandgroup.ru/img/foto_salona.jpg" class="w-lazy"/>
+                        <img src="/img/foto_salona.jpg" class="w-lazy"/>
                     </div>
                     <div class="nav-drop-body">
                         <?$APPLICATION->IncludeComponent("bitrix:menu", "model-and-about-menu", Array(
