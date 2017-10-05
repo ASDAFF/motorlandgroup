@@ -216,10 +216,12 @@
 	margin-top: 15px;
 }
 
-.service-menu-sub .service-one-articles.detail ul li a,
-.service-menu-sub.offer .service-one-articles ul li a
+.service-menu-sub .service-one-articles.detail ul li a
 {
 	margin: auto 0;
+}
+.service-menu-sub.offer .service-one-articles ul li a{
+	margin: 0 auto;
 }
 
 .service-menu-sub.offer .service-one-articles ul{
