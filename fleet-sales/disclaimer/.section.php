@@ -1,0 +1,6 @@
+<?
+$sSectionName = "disclaimer";
+$arDirProperties = Array(
+
+);
+?>
