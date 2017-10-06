@@ -1475,6 +1475,8 @@ BX.Kanban.Column.prototype =
 			columnContainer.style.removeProperty("transition");
 			columnContainer.style.removeProperty("transform");
 		}
+
+		this.getGrid().adjustEars();
 	},
 
 	/**
@@ -1683,6 +1685,8 @@ BX.Kanban.Pagination.prototype = {
 			this.getTopButton().style.top = this.getColumn().getBody().offsetTop + "px";
 		}
 
+		jsDD.refreshDestArea();
+
 		var loader = this.getLoader();
 		if (!this.loadingInProgress && column.hasLoading() && loader.offsetTop < scrollTop + offsetHeight)
 		{
@@ -1725,14 +1729,21 @@ BX.Kanban.Pagination.prototype = {
 		}
 
 		var column = this.getColumn();
-		var grid = column.getGrid();
 		column.freezeTotal();
+
+		column.getGrid().setRenderStatus(false);
+		var scrollTop = column.getBody().scrollTop;
 
 		for (var i = 0; i < result.length; i++)
 		{
 			var item = result[i];
-			grid.addItem(item);
+			column.getGrid().addItem(item);
 		}
+
+		column.render();
+		column.getBody().scrollTop = scrollTop;
+
+		column.getGrid().setRenderStatus(true);
 
 		column.unfreezeTotal();
 		column.refreshTotal();
@@ -1860,7 +1871,6 @@ BX.Kanban.Pagination.prototype = {
 		this.timer = setInterval(BX.delegate(function()
 		{
 			this.getColumn().getBody().scrollTop -= 10;
-			jsDD.refreshDestArea();
 		}, this), 20);
 	},
 
@@ -1874,7 +1884,6 @@ BX.Kanban.Pagination.prototype = {
 		this.timer = setInterval(BX.delegate(function()
 		{
 			this.getColumn().getBody().scrollTop += 10;
-			jsDD.refreshDestArea();
 		}, this), 20);
 	},
 

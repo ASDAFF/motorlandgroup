@@ -42,6 +42,10 @@ class CatalogSectionComponent extends ElementList
 			return $params;
 		}
 
+		$params['SECTION_ID_VARIABLE'] = (isset($params['SECTION_ID_VARIABLE']) ? trim($params['SECTION_ID_VARIABLE']) : '');
+		if ($params['SECTION_ID_VARIABLE'] == '' || !preg_match(self::PARAM_TITLE_MASK, $params['SECTION_ID_VARIABLE']))
+			$params['SECTION_ID_VARIABLE'] = 'SECTION_ID';
+
 		$params['SHOW_ALL_WO_SECTION'] = isset($params['SHOW_ALL_WO_SECTION']) && $params['SHOW_ALL_WO_SECTION'] === 'Y';
 		$params['USE_MAIN_ELEMENT_SECTION'] = isset($params['USE_MAIN_ELEMENT_SECTION']) && $params['USE_MAIN_ELEMENT_SECTION'] === 'Y';
 
@@ -574,11 +578,11 @@ class CatalogSectionComponent extends ElementList
 		if ($this->isEnableCompatible() && empty($this->arResult['NAV_RESULT']))
 		{
 			$this->initNavString(\CIBlockElement::GetList(
-				$this->sortFields,
+				array(),
 				array_merge($this->globalFilter, $this->filterFields + array('IBLOCK_ID' => $this->arParams['IBLOCK_ID'])),
 				false,
 				array('nTopCount' => 1),
-				$this->selectFields
+				array('ID')
 			));
 			$this->arResult['NAV_RESULT']->NavNum = Main\Security\Random::getString(6);
 		}

@@ -1,7 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?if ($arResult["PLAYER_TYPE"] == "flv"): // Attach Flash Player?>
 
-	<div id="<?=$arResult["ID"]?>_div" style="width: <?= $arParams['WIDTH']?>px; height: <?= $arParams['HEIGHT']?>px;"><?= GetMessage('PLAYER_LOADING')?></div>
+	<div id="<?=$arResult["ID"]?>_div" style="max-width: <?= $arParams['WIDTH']?>px; height: <?= $arParams['HEIGHT']?>px;"><?= GetMessage('PLAYER_LOADING')?></div>
 	<script>
 		window.bxPlayerOnload<?=$arResult["ID"]?> = function(config)
 		{
@@ -95,7 +95,6 @@
 		{
 			var init_player_<?=$arResult["ID"];?> = function ()
 			{
-				// delete previous object to allow reinitializing
 				if (videojs.players['<?=$arResult["ID"];?>'])
 				{
 					delete videojs.players['<?=$arResult["ID"];?>'];
@@ -110,7 +109,7 @@
 					player_<?=$arResult["ID"];?>.volume (<?=floatval($arResult["VOLUME"]);?>);
 					player_<?=$arResult["ID"];?>.hasStarted(true);
 				});
-			}
+			};
 			if (typeof videojs == 'undefined')
 			{
 				window.videojs_player_timout = true;
@@ -124,7 +123,7 @@
 				{
 					setTimeout(function()
 					{
-						init_player_<?=$arResult["ID"];?>()
+						init_player_<?=$arResult["ID"];?>();
 					}, 100);
 				});
 				<?}?>

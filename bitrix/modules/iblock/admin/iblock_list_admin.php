@@ -648,11 +648,7 @@ if($lAdmin->EditAction())
 						$arCatalogProduct['QUANTITY_TRACE'] = $arFields['CATALOG_QUANTITY_TRACE'];
 					if (isset($arFields['CATALOG_MEASURE']) && is_string($arFields['CATALOG_MEASURE']) && (int)$arFields['CATALOG_MEASURE'] > 0)
 						$arCatalogProduct['MEASURE'] = $arFields['CATALOG_MEASURE'];
-					if ('Y' != $strUseStoreControl)
-					{
-						if (isset($arFields['CATALOG_QUANTITY']) && '' != $arFields['CATALOG_QUANTITY'])
-							$arCatalogProduct['QUANTITY'] = $arFields['CATALOG_QUANTITY'];
-					}
+
 					if ($catalogPurchasInfoEdit)
 					{
 						if (
@@ -665,7 +661,17 @@ if($lAdmin->EditAction())
 						}
 					}
 
-					if (!Catalog\ProductTable::isExistProduct($ID))
+					if ($strUseStoreControl != 'Y')
+					{
+						if (isset($arFields['CATALOG_QUANTITY']) && '' != $arFields['CATALOG_QUANTITY'])
+							$arCatalogProduct['QUANTITY'] = $arFields['CATALOG_QUANTITY'];
+					}
+
+					$product = Catalog\ProductTable::getList(array(
+						'select' => array('ID', 'SUBSCRIBE_ORIG'),
+						'filter' => array('=ID' => $ID)
+					))->fetch();
+					if (empty($product))
 					{
 						$arCatalogProduct['ID'] = $ID;
 						CCatalogProduct::Add($arCatalogProduct, false);
@@ -673,31 +679,32 @@ if($lAdmin->EditAction())
 					else
 					{
 						if (!empty($arCatalogProduct))
+						{
+							if ($strUseStoreControl != 'Y')
+								$arCatalogProduct['SUBSCRIBE'] = $product['SUBSCRIBE_ORIG'];
 							CCatalogProduct::Update($ID, $arCatalogProduct);
+						}
 					}
+					unset($product);
 
-					if (isset($arFields['CATALOG_MEASURE_RATIO']) && '' != trim($arFields['CATALOG_MEASURE_RATIO']))
+					if (isset($arFields['CATALOG_MEASURE_RATIO']))
 					{
-						$intRatioID = 0;
-						$rsRatios = CCatalogMeasureRatio::getList(
-							array(),
-							array('PRODUCT_ID' => $ID),
-							false,
-							false,
-							array('ID', 'PRODUCT_ID')
-						);
-						if ($arRatio = $rsRatios->Fetch())
+						$newValue = trim($arFields['CATALOG_MEASURE_RATIO']);
+						if ($newValue != '')
 						{
-							$intRatioID = intval($arRatio['ID']);
+							$intRatioID = 0;
+							$ratio = Catalog\MeasureRatioTable::getList(array(
+								'select' => array('ID', 'PRODUCT_ID'),
+								'filter' => array('=PRODUCT_ID' => $ID, '=IS_DEFAULT' => 'Y'),
+							))->fetch();
+							if (!empty($ratio))
+								$intRatioID = (int)$ratio['ID'];
+							if ($intRatioID > 0)
+								$ratioResult = CCatalogMeasureRatio::update($intRatioID, array('RATIO' => $newValue));
+							else
+								$ratioResult = CCatalogMeasureRatio::add(array('PRODUCT_ID' => $ID, 'RATIO' => $newValue, 'IS_DEFAULT' => 'Y'));
 						}
-						if (0 < $intRatioID)
-						{
-							CCatalogMeasureRatio::update($intRatioID, array('RATIO' => trim($arFields['CATALOG_MEASURE_RATIO'])));
-						}
-						else
-						{
-							CCatalogMeasureRatio::add(array('PRODUCT_ID' => $ID, 'RATIO' => trim($arFields['CATALOG_MEASURE_RATIO'])));
-						}
+						unset($newValue);
 					}
 				}
 			}
@@ -1554,7 +1561,7 @@ if($bCatalog)
 	$arHeader[] = array(
 		"id" => "SUBSCRIPTIONS",
 		"content" => GetMessage("IBLOCK_FIELD_SUBSCRIPTIONS"),
-		"default" => true,
+		"default" => false,
 	);
 }
 
@@ -1760,7 +1767,8 @@ $arElemID = array();
 $arProductIDs = array();
 $arCatalogRights = array();
 
-
+$mainEntityEdit = false;
+$mainEntityEditPrice = false;
 
 // List build
 while($arRes = $rsData->NavNext(true, "f_"))
@@ -1824,7 +1832,11 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	{
 		$bReadOnly = !CIBlockElementRights::UserHasRightTo($IBLOCK_ID, $f_ID, "element_edit");
 		$boolEditPrice = CIBlockElementRights::UserHasRightTo($IBLOCK_ID, $f_ID, "element_edit_price");
+		if ($boolEditPrice)
+			$mainEntityEditPrice = true;
 	}
+	if (!$bReadOnly)
+		$mainEntityEdit = true;
 
 	if ($bCatalog && 'E' == $f_TYPE)
 	{
@@ -3120,9 +3132,6 @@ if ($bCatalog)
 		{
 			if (!empty($existOffers[$intProductID]))
 			{
-/*				$arRows['E'.$intProductID]->arRes['CATALOG_TYPE'] = CCatalogProduct::TYPE_SKU;
-				if (isset($arVisibleColumnsMap['CATALOG_QUANTITY_RESERVED']))
-					$arRows['E'.$intProductID]->arRes['CATALOG_QUANTITY_RESERVED'] = ''; */
 				if (!$showCatalogWithOffers)
 				{
 					$arRows['E'.$intProductID]->AddViewField('CATALOG_QUANTITY', ' ');
@@ -3180,9 +3189,9 @@ if ($bCatalog)
 	{
 		foreach ($arElemID as &$intOneElemID)
 		{
-			if ($showCatalogWithOffers || $arRows['E'.$intOneElemID]->arRes['CATALOG_TYPE'] != CCatalogProduct::TYPE_SKU)
+			if ($showCatalogWithOffers || $arRows['E'.$intOneElemID]->arRes['CATALOG_TYPE'] != Catalog\ProductTable::TYPE_SKU)
 			{
-				if (isset($arCatalogRights[$intOneElemID]) && $arCatalogRights[$intOneElemID] && $arRows['E'.$intOneElemID]->arRes['CATALOG_TYPE'] != CCatalogProduct::TYPE_SET)
+				if (isset($arCatalogRights[$intOneElemID]) && $arCatalogRights[$intOneElemID] && $arRows['E'.$intOneElemID]->arRes['CATALOG_TYPE'] != Catalog\ProductTable::TYPE_SET)
 				{
 					$arRows['E'.$intOneElemID]->AddSelectField('CATALOG_MEASURE', $measureList);
 				}
@@ -3206,24 +3215,23 @@ if ($bCatalog)
 	if (isset($arVisibleColumnsMap['CATALOG_MEASURE_RATIO']) && !empty($arElemID))
 	{
 		$arRatioList = array();
-		$rsRatios = CCatalogMeasureRatio::getList(
-			array(),
-			array('@PRODUCT_ID' => $arElemID),
-			false,
-			false,
-			array('ID', 'PRODUCT_ID', 'RATIO')
-		);
-		while ($arRatio = $rsRatios->Fetch())
+		$iterator = Catalog\MeasureRatioTable::getList(array(
+			'select' => array('ID', 'PRODUCT_ID', 'RATIO'),
+			'filter' => array('@PRODUCT_ID' => $arRowKeys, '=IS_DEFAULT' => 'Y')
+		));
+		while ($row = $iterator->fetch())
 		{
-			$arRatio['PRODUCT_ID'] = (int)$arRatio['PRODUCT_ID'];
-			$arRatioList[$arRatio['PRODUCT_ID']] = $arRatio['RATIO'];
+			$id = (int)$row['PRODUCT_ID'];
+			$arRatioList[$id] = $row['RATIO'];
+			unset($id);
 		}
+		unset($row, $iterator);
 		if (!empty($arRatioList))
 		{
 			foreach ($arElemID as &$intOneElemID)
 			{
-				$arRows['E'.$intOneElemID]->arRes['CATALOG_MEASURE_RATIO'] = (isset($arRatioList[$intOneElemID]) ? $arRatioList[$intOneElemID] : 1);
-				if ($showCatalogWithOffers || $arRows['E'.$intOneElemID]->arRes['CATALOG_TYPE'] != CCatalogProduct::TYPE_SKU)
+				$arRows['E'.$intOneElemID]->arRes['CATALOG_MEASURE_RATIO'] = (isset($arRatioList[$intOneElemID]) ? $arRatioList[$intOneElemID] : ' ');
+				if ($showCatalogWithOffers || $arRows['E'.$intOneElemID]->arRes['CATALOG_TYPE'] != Catalog\ProductTable::TYPE_SKU)
 				{
 					if (isset($arCatalogRights[$intOneElemID]) && $arCatalogRights[$intOneElemID])
 						$arRows['E'.$intOneElemID]->AddInputField('CATALOG_MEASURE_RATIO');
@@ -3235,8 +3243,7 @@ if ($bCatalog)
 					$arRows['E'.$intOneElemID]->AddViewField('CATALOG_MEASURE_RATIO', ' ');
 				}
 			}
-			if (isset($intOneElemID))
-				unset($intOneElemID);
+			unset($intOneElemID);
 		}
 	}
 
@@ -3269,39 +3276,43 @@ $lAdmin->AddFooter(
 // Action bar
 if(true)
 {
-	$arActions = array(
-		"delete" => GetMessage("MAIN_ADMIN_LIST_DELETE"),
-		"activate" => GetMessage("MAIN_ADMIN_LIST_ACTIVATE"),
-		"deactivate" => GetMessage("MAIN_ADMIN_LIST_DEACTIVATE"),
-		'clear_counter' => strtolower(GetMessage('IBLIST_A_CLEAR_COUNTER'))
-	);
+	$arActions = array();
 	$arParams = array();
-
-	if($arIBTYPE["SECTIONS"] == "Y")
+	if ($mainEntityEdit)
 	{
-		$sections = '<div id="section_to_move" style="display:none"><select name="section_to_move">';
-		$sections .= '<option value="">'.GetMessage("MAIN_NO").'</option>';
-		$sections .= '<option value="0">'.GetMessage("IBLOCK_UPPER_LEVEL").'</option>';
-		$rsSections = CIBlockSection::GetTreeList(Array("IBLOCK_ID"=>$IBLOCK_ID), array("ID", "NAME", "DEPTH_LEVEL"));
-		while($ar = $rsSections->GetNext())
-		{
-			$sections .= '<option value="'.$ar["ID"].'">'.str_repeat(" . ", $ar["DEPTH_LEVEL"]).$ar["NAME"].'</option>';
-		}
-		$sections .= '</select></div>';
+		$arActions = array(
+			"delete" => GetMessage("MAIN_ADMIN_LIST_DELETE"),
+			"activate" => GetMessage("MAIN_ADMIN_LIST_ACTIVATE"),
+			"deactivate" => GetMessage("MAIN_ADMIN_LIST_DEACTIVATE"),
+			'clear_counter' => strtolower(GetMessage('IBLIST_A_CLEAR_COUNTER'))
+		);
 
-		$arActions["section"] = GetMessage("IBLIST_A_MOVE_TO_SECTION");
-		$arActions["add_section"] = GetMessage("IBLIST_A_ADD_TO_SECTION");
-		if ($bCatalog && $USER->CanDoOperation('catalog_price'))
+		if ($arIBTYPE["SECTIONS"] == "Y")
+		{
+			$sections = '<div id="section_to_move" style="display:none"><select name="section_to_move">';
+			$sections .= '<option value="">'.GetMessage("MAIN_NO").'</option>';
+			$sections .= '<option value="0">'.GetMessage("IBLOCK_UPPER_LEVEL").'</option>';
+			$rsSections = CIBlockSection::GetTreeList(Array("IBLOCK_ID" => $IBLOCK_ID), array("ID", "NAME", "DEPTH_LEVEL"));
+			while ($ar = $rsSections->GetNext())
+			{
+				$sections .= '<option value="'.$ar["ID"].'">'.str_repeat(" . ", $ar["DEPTH_LEVEL"]).$ar["NAME"].'</option>';
+			}
+			$sections .= '</select></div>';
+
+			$arActions["section"] = GetMessage("IBLIST_A_MOVE_TO_SECTION");
+			$arActions["add_section"] = GetMessage("IBLIST_A_ADD_TO_SECTION");
+			$arActions["section_chooser"] = array("type" => "html", "value" => $sections);
+			$arParams["select_onchange"] = "BX('section_to_move').style.display = (this.value == 'section' || this.value == 'add_section'? 'block':'none');";
+		}
+
+		if ($bCatalog && $USER->CanDoOperation('catalog_price') && $mainEntityEditPrice)
 		{
 			$arActions["change_price"] = array(
 				"action" => "CreateDialogChPrice()",
 				"value" => "change_price",
-				"name" => GetMessage("IBLOCK_CHANGE_PRICE"));
+				"name" => GetMessage("IBLOCK_CHANGE_PRICE")
+			);
 		}
-		$arActions["section_chooser"] = array("type" => "html", "value" => $sections);
-
-		$arParams["select_onchange"] = "BX('section_to_move').style.display = (this.value == 'section' || this.value == 'add_section'? 'block':'none');";
-
 	}
 
 	if($bWorkFlow)
