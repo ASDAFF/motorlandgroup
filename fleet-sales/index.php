@@ -295,7 +295,7 @@ $APPLICATION->SetPageProperty("title", "Финансовые Услуги");
                     <div class="extf-content">Наше приложение Volvo On&nbsp;Call позволяет дистанционно управлять климат-контролем вашего автомобиля со&nbsp;смартфона. Это одна из&nbsp;маленьких деталей повседневной роскоши от&nbsp;Volvo.
 
                     </div>
-                    <a class="link" onclick="window.location.href='/financing/leasing/'; return false;" href="/financing/leasing/">Узнайте больше</a>
+                    <a class="link" onclick="window.location.href='/fleet-sales/volvo-on-call/'; return false;" href="/fleet-sales/volvo-on-call/">Узнайте больше</a>
                 </div>
 
             </div>
