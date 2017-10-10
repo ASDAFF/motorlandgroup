@@ -406,10 +406,14 @@ $this->setFrameMode(true);
 				<th>&nbsp;</th>
 				<th><?=$arResult['PROPERTIES']['STANDART']['NAME']?></th>
 			</tr>
-			<?foreach ($arResult["PROPERTIES"]["STANDART"]["VALUE"] as $desc => $prop):?>
+			<?
+			$chunk = ceil(count($arResult["PROPERTIES"]["STANDART"]["VALUE"])/2);
+			$standart = array_chunk($arResult["PROPERTIES"]["STANDART"]["VALUE"], $chunk);
+			?>
+			<?foreach ($standart[0] as $key => $prop):?>
 			<tr>
 				<td><?=$prop;?></td>
-				<td><?=$arResult["PROPERTIES"]["STANDART"]["DESCRIPTION"][$desc]?></td>
+				<td><?=$standart[1][$key]?></td>
 			</tr>
 			<? endforeach; ?>
 
@@ -425,11 +429,15 @@ $this->setFrameMode(true);
 				<th></th>
 				<th><?=$arResult['PROPERTIES']['OPTIONS']['NAME']?></th>
 			</tr>
-			<?foreach ($arResult["PROPERTIES"]["OPTIONS"]["VALUE"] as $desc => $prop):?>
-			<tr>
-				<td><?=$prop;?></td>
-				<td><?=$arResult["PROPERTIES"]["OPTIONS"]["DESCRIPTION"][$desc]?></td>
-			</tr>
+			<?
+			$chunk = ceil(count($arResult["PROPERTIES"]["OPTIONS"]["VALUE"])/2);
+			$options = array_chunk($arResult["PROPERTIES"]["OPTIONS"]["VALUE"], $chunk);
+			?>
+			<?foreach ($options[0] as $key => $prop):?>
+				<tr>
+					<td><?=$prop;?></td>
+					<td><?=$options[1][$key]?></td>
+				</tr>
 			<? endforeach; ?>
 
 			<tr class="mPrint_Price">
@@ -447,11 +455,15 @@ $this->setFrameMode(true);
 				<th></th>
 				<th><?=$arResult['PROPERTIES']['DOP']['NAME']?></th>
 			</tr>
-			<?foreach ($arResult["PROPERTIES"]["DOP"]["VALUE"] as $desc => $prop):?>
-			<tr>
-				<td><?=$prop;?></td>
-				<td><?=$arResult["PROPERTIES"]["DOP"]["DESCRIPTION"][$desc]?></td>
-			</tr>
+			<?
+			$chunk = ceil(count($arResult["PROPERTIES"]["DOP"]["VALUE"])/2);
+			$dop = array_chunk($arResult["PROPERTIES"]["DOP"]["VALUE"], $chunk);
+			?>
+			<?foreach ($dop[0] as $key => $prop):?>
+				<tr>
+					<td><?=$prop;?></td>
+					<td><?=$dop[1][$key]?></td>
+				</tr>
 			<? endforeach; ?>
 
 			<tr class="mPrint_Price">
