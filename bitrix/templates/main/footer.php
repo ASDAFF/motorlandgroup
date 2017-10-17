@@ -4,7 +4,7 @@
 
 
     <footer class="footer">
-        <div class="container">
+        <div class="container" style="margin-top: 0px;">
             <div class="footer-row">
                 <small class="footer-copyright">
                     Copyright © 2017&nbsp;МОТОР ЛЕНД официальный дилер Вольво (Volvo) в Воронеже			</small>
