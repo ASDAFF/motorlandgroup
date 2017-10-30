@@ -1,4 +1,3 @@
-
 <!-- Rating@Mail.ru counter -->
 <script type="text/javascript">
     var _tmr = window._tmr || (window._tmr = []);
@@ -46,3 +45,6 @@
 
 <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
 <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=89de4acf99703ae1e85fba6b3ebf1585" charset="UTF-8" async></script>
+
+<!-- perezvoni.com -->
+<script type="text/javascript" src="//cdn.perezvoni.com/widget/js/przv.js?przv_code=1394-ea-a21cafae-f0a21cafae-7-0ff0a21cafae-fae-e7989e2e" ></script>
