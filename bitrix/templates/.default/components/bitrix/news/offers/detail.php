@@ -69,6 +69,13 @@ $this->setFrameMode(true);
 	$component
 );?>
 
+<?
+if($ElementID == 0){
+	LocalRedirect("/offers/",false,302);
+}
+
+?>
+
 <?if($arParams["USE_RATING"]=="Y" && $ElementID):?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:iblock.vote",

@@ -53,7 +53,6 @@ $APPLICATION->SetTitle("Спецпредложения");
 			0 => "NEW_PRICE",
 			1 => "OLD_PRICE",
 			2 => "",
-			3 => "",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "META_DESCRIPTION",
@@ -86,6 +85,7 @@ $APPLICATION->SetTitle("Спецпредложения");
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
 		"COMPONENT_TEMPLATE" => "offers",
+		"FILE_404" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",

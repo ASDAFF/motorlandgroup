@@ -7,16 +7,16 @@ $arUrlRewrite = array(
 		"PATH" => "/service/remont-i-obsluzhivanie/index.php",
 	),
 	array(
-		"CONDITION" => "#^/service/tyuning-polestar/#",
-		"RULE" => "",
-		"ID" => "bitrix:news",
-		"PATH" => "/service/tyuning-polestar/index.php",
-	),
-	array(
 		"CONDITION" => "#^/service/spetspredlozheniya/#",
 		"RULE" => "",
 		"ID" => "bitrix:news",
 		"PATH" => "/service/spetspredlozheniya/index.php",
+	),
+	array(
+		"CONDITION" => "#^/service/tyuning-polestar/#",
+		"RULE" => "",
+		"ID" => "bitrix:news",
+		"PATH" => "/service/tyuning-polestar/index.php",
 	),
 	array(
 		"CONDITION" => "#^/service/kuzovnoy-remont/#",
