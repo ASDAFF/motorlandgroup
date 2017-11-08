@@ -7,8 +7,9 @@
         <div class="container" style="margin-top: 0px;">
             <div class="footer-row">
                 <small class="footer-copyright">
-                    Copyright © 2017&nbsp;МОТОР ЛЕНД официальный дилер Вольво (Volvo) в Воронеже			</small>
-
+                    Copyright © 2017&nbsp;МОТОР ЛЕНД официальный дилер Вольво (Volvo) в Воронеже			<br>
+					<a href="/upload/politics.pdf" target="_blank" style="color: #fff;">Политика конфиденциальности. </a> 
+                <a href="/upload/compliance.pdf" target="_blank" style="color: #fff;">Согласие на обработку персональных данных.</a></small>
                 <ul class="footer-list footer-list-sep footer-list-legal" style="padding: 0">
                     <li class="footer-list-item"><a href="/">Главная</a></li>
                     <li class="footer-list-item"><a href="/contacts/">Контакты</a></li>

@@ -41,7 +41,9 @@
         </ul>
 
         <div class="footer-row">
-            <small class="footer-copyright">Copyright © 2017 МОТОР ЛЕНД официальный дилер Вольво (Volvo) в Воронеже</small>
+            <small class="footer-copyright">Copyright © 2017 МОТОР ЛЕНД официальный дилер Вольво (Volvo) в Воронеже<br>
+				<a href="/upload/politics.pdf" target="_blank" style="color: #fff;">Политика конфиденциальности. </a> 
+                <a href="/upload/compliance.pdf" target="_blank" style="color: #fff;">Согласие на обработку персональных данных.</a></small>
         </div>
 
 
