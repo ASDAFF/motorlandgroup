@@ -87,21 +87,23 @@
 }
 
 
-.left.rule{
-    display: inline-block;
-    margin: 10px;
-}
 .left.rule a{
     text-decoration: underline;
 }
 .rule_block{
     position: relative;
+    margin-bottom: 20px;
 }
 .rule_block label{
     position: absolute;
     width: 16px;
     height: 16px;
-    top: 14px;
-    left: -2px;
+    top: 5px;
+    left: 5px;
     z-index: -1;
+}
+
+#sel-rule{
+    float: left;
+    margin: 7px;
 }

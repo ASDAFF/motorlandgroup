@@ -61,6 +61,9 @@ $(function(){
             },
             phone: {
                 required: true,
+            },
+            rule: {
+                required: true,
             }
         },
         submitHandler: function(form) {
@@ -89,6 +92,9 @@ $(function(){
                 required: true,
             },
             phone: {
+                required: true,
+            },
+            rule: {
                 required: true,
             }
         },

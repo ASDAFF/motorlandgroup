@@ -48,6 +48,10 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.vali
                     <div class="input-error-wrapper">
                         <textarea name="question" id=""  rows="5" placeholder="Вопрос"></textarea>
                     </div>
+                    <div class="input-error-wrapper" style="color: white">
+                        <input type="checkbox" name="rule" value="Y" id="sel-rule" checked>
+                        Нажимая на эту кнопку, я даю свое согласие на <a style="color: #99cef9" href="/upload/compliance.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a style="color: #99cef9" href="/upload/politics.pdf" target="_blank">политики конфиденциальности</a>.*
+                    </div>
                     <input class="blue2-button" type="submit" value="Отправить">
 
                 </form>
@@ -73,6 +77,10 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.vali
                     </div>
                     <div class="input-error-wrapper">
                         <input type="text" name="year" placeholder="Год Выпуска">
+                    </div>
+                    <div class="input-error-wrapper" style="color: white">
+                        <input type="checkbox" name="rule" value="Y" id="sel-rule" checked>
+                        Нажимая на эту кнопку, я даю свое согласие на <a style="color: #99cef9" href="/upload/compliance.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a style="color: #99cef9" href="/upload/politics.pdf" target="_blank">политики конфиденциальности</a>.*
                     </div>
                     <input class="blue2-button" type="submit" value="Отправить">
                 </form>

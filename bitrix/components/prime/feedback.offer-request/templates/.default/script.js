@@ -25,6 +25,8 @@
                 errorPlacement: function (error, element) {
                     if(element.attr("name") == "modelid[]"){
                         error.insertAfter("#place-one-model-error-here");
+                    }else if(element.attr("name") == "rule"){
+                        error.appendTo(element.parent().parent().find('.not-a-label'));
                     } else {
                         error.insertAfter(element);
                     }

@@ -250,7 +250,10 @@ $this->setFrameMode(true);
 
 				</div>
 				<div class="callAndTD row check">
-					<input type="checkbox" name="rule" id="sel-rule" checked><span> Я прочитал <a class="skyblue show-rules" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных.</span>
+					<input type="checkbox" name="rule" id="sel-rule" checked>
+					<span>
+						Нажимая на эту кнопку, я даю свое согласие на <a href="/upload/compliance.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="/upload/politics.pdf" target="_blank">политики конфиденциальности</a>.*
+					</span>
 				</div>
 
 				<div class="line"></div>

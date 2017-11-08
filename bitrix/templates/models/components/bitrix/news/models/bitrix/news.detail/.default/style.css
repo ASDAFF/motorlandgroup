@@ -32,3 +32,7 @@ div.news-detail img.detail_picture
 	-webkit-animation: content-pop-in 1s .2s ease-out both;
 	animation: content-pop-in 1s .2s ease-out both;
 }
+
+.popup_form label a{
+	color: #bcbcda;
+}

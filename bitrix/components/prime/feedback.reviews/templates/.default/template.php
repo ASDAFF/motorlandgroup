@@ -20,7 +20,10 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.mask
                 <input type="text" name="surname" placeholder="Ваше имя" value="">
                 <input type="text" name="phone" id="sel-phone" placeholder="Ваш номер телефона" value="">
                 <textarea rows="10" name="text" placeholder="Текст сообщения"></textarea>
-                <p>Отправляя заявку, Вы соглашаетесь с <a href="javascript:void(0)" class="show-rules">условиями обработки личных данных.</a></p>
+                <p>
+                    <input type="checkbox" name="rule" value="Y" id="sel-rule" checked>
+                    Нажимая на эту кнопку, я даю свое согласие на <a href="/upload/compliance.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="/upload/politics.pdf" target="_blank">политики конфиденциальности</a>.*
+                </p>
                 <input type="submit" value="Отправить">
             </form>
 

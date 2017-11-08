@@ -34,7 +34,11 @@ $APPLICATION->AddHeadString('<script type="text/javascript" src="/js/jquery.mask
 
         <div class="rule_block">
             <input type="checkbox" name="rule" id="sel-rule" checked>
-            <div class="left rule"><p>Я прочитал <a class="skyblue show-rules" href="javascript:;">правила</a> и даю свое согласие на обработку персональных данных</p></div>
+            <div class="left rule">
+                <p>
+                    Нажимая на эту кнопку, я даю свое согласие на <a href="/upload/compliance.pdf" target="_blank">обработку персональных данных</a> и соглашаюсь с условиями <a href="/upload/politics.pdf" target="_blank">политики конфиденциальности</a>.*
+                </p>
+            </div>
         </div>
 
 

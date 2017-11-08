@@ -37,9 +37,9 @@ $APPLICATION->SetTitle("kalkulyator-to");
 						<div class="form-new-detail">
 							<h1>Запись на ТО</h1>
 							 <?$APPLICATION->IncludeComponent(
-	"mystery:feedback.all.ajax",
-	"page.feedback.form",
-	Array(
+	"mystery:feedback.all.ajax", 
+	"page.feedback.form", 
+	array(
 		"ACTIVED" => "Y",
 		"AJAX_MODE" => "Y",
 		"AJAX_OPTION_ADDITIONAL" => "",
@@ -50,15 +50,30 @@ $APPLICATION->SetTitle("kalkulyator-to");
 		"CAPTCHA_WIDTH" => "",
 		"DESC_TEXT" => "Все поля отмеченные *, обязательны для заполнения",
 		"EMAIL_TO" => "zhukov@motorlandgroup.ru, savvina@motorlandgroup.ru, obrazhnikov@motorlandgroup.ru",
-		"EVENT_MESSAGE_ID" => array(0=>"8",),
-		"FIELDS" => array(0=>"NAME",1=>"PHONE",2=>"EMAIL",3=>"TIME",4=>"MODEL",),
+		"EVENT_MESSAGE_ID" => array(
+		),
+		"FIELDS" => array(
+			0 => "NAME",
+			1 => "PHONE",
+			2 => "EMAIL",
+			3 => "TIME",
+			4 => "MODEL",
+			5 => "RULE",
+		),
 		"IBLOCK_ID" => "20",
-		"IBLOCK_TYPE" => "Feedback",
+		"IBLOCK_TYPE" => "-",
 		"ID_POPUP" => "feedback2",
 		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-		"REQUIRED_FIELDS" => array(0=>"NAME",1=>"PHONE",2=>"EMAIL",),
-		"USE_CAPTCHA" => "N"
-	)
+		"REQUIRED_FIELDS" => array(
+			0 => "NAME",
+			1 => "PHONE",
+			2 => "EMAIL",
+			3 => "RULE",
+		),
+		"USE_CAPTCHA" => "N",
+		"COMPONENT_TEMPLATE" => "page.feedback.form"
+	),
+	false
 );?>
 						</div>
 					</div>

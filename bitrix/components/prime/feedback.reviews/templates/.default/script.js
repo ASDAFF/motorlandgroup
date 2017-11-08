@@ -10,6 +10,7 @@
                     surname: 'required',
                     phone: 'required',
                     text: 'required',
+                    rule: 'required',
 
 
                 },
@@ -20,7 +21,9 @@
                 errorPlacement: function (error, element) {
                     if(element.attr("name") == "modelid[]"){
                         error.insertAfter("#place-one-model-error-here");
-                    } else {
+                    }else if(element.attr("name") == "rule"){
+                        error.appendTo(element.parent());
+                    }else {
                         error.insertAfter(element);
                     }
                 },
