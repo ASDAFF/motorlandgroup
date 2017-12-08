@@ -107,7 +107,7 @@ div.news-list img.preview_picture
 }
 
 @media (max-width: 500px) {
-    .super-offer h1 {
+    .super-offer .h1 {
         font-size: 45px;
     }
 }
