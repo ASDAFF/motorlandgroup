@@ -233,7 +233,7 @@ $this->setFrameMode(true);
 		<div class="headerz">
 			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["ONE_TEXT"]?></p>
 			<? foreach($arItem["PROPERTIES"]["TEXT"]["VALUE"] as $text):?>
-				<p class="h2"><?=$text;?></p>
+				<p class="h2" style="color: <?=$arItem["PROPERTIES"]["TEXT"]["DESCRIPTION"][$key]?>"><?=$text;?></p>
 			<? endforeach;?>
 			<a class="mtr-btn mtr-btn-white" href="<?=$arItem["PROPERTIES"]["LINK_BTN"]["VALUE"];?>"><?=$arItem["PROPERTIES"]["TEXT_BTN"]["VALUE"];?></a>
 		</div>
