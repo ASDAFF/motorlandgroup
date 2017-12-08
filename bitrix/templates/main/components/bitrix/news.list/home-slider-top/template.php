@@ -232,7 +232,7 @@ $this->setFrameMode(true);
 	<div class="b2" style="background-image: url('<?=CFile::ResizeImageGet($arItem["PROPERTIES"]["IMG"]["VALUE"][1], array('width'=>415, 'height'=>660), BX_RESIZE_IMAGE_EXACT, true)['src'];?>');">
 		<div class="headerz">
 			<p class="h3"><?=$arItem["PROPERTIES"]["TEXT"]["ONE_TEXT"]?></p>
-			<? foreach($arItem["PROPERTIES"]["TEXT"]["VALUE"] as $text):?>
+			<? foreach($arItem["PROPERTIES"]["TEXT"]["VALUE"] as $key => $text):?>
 				<p class="h2" style="color: <?=$arItem["PROPERTIES"]["TEXT"]["DESCRIPTION"][$key]?>"><?=$text;?></p>
 			<? endforeach;?>
 			<a class="mtr-btn mtr-btn-white" href="<?=$arItem["PROPERTIES"]["LINK_BTN"]["VALUE"];?>"><?=$arItem["PROPERTIES"]["TEXT_BTN"]["VALUE"];?></a>
