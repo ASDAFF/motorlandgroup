@@ -97,6 +97,11 @@ margin: 0;
 		font-size: 12px;
         border-bottom: 1px solid #DDD;
 	}
+    .mPrint table td span{
+        font-size: 10px;
+        text-transform: lowercase;
+    }
+
 	.mPrint table th, .mPrint table tr.mPrint_Price td {
         font-family: arial, helvetica, sans-serif;
 		text-align: right;
