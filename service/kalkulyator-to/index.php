@@ -116,7 +116,7 @@ $APPLICATION->SetTitle("kalkulyator-to");
 						 Регламент технических работ в рамках обязательного Технического обслуживания:
 					</p>
 					<p>
- <a href="http://motorlandgroup.ru/upload/iblock/758/7587c93eb2cbe569b76158c01287b09b.pdf" target="_blank">Техническое обслуживание для автомобилей S60, S80, XC60, V70/XC80</a>
+ <a href="http://motorlandgroup.ru/upload/iblock/758/7587c93eb2cbe569b76158c01287b09b.pdf" target="_blank">Техническое обслуживание для автомобилей S60, S80, XC60</a>
 					</p>
 					<p>
  <a href="http://motorlandgroup.ru/upload/iblock/758/Tehnicheskoe obslujivanie V40CC.pdf" target="_blank">Техническое обслуживание для автомобилей V40CC</a>

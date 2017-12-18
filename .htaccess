@@ -31,3 +31,5 @@ ErrorDocument 404 /404.php
   ExpiresByType image/jpeg "access plus 3 day"
   ExpiresByType image/gif "access plus 3 day"
 </IfModule>
+
+Redirect 301 /service/volvocarser/ http://accessories.volvocars.com/ru-ru

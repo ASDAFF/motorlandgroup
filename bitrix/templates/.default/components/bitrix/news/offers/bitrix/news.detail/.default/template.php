@@ -163,7 +163,7 @@ $this->setFrameMode(true);
 
 			<div class="additionalEquipment">
 
-				<p class="hBrazen">Пакеты и опции</p>
+				<p class="hBrazen">АКСЕССУАРЫ</p>
 				<hr>
 
 				<div class="row">
@@ -225,7 +225,7 @@ $this->setFrameMode(true);
 						<div class="positioner">
 							<p class="hheeaadd">ЦЕНА СО СКИДКОЙ</p>
 							<p class="hheeaadd greeeat"><?=$arResult["PROPERTIES"]["NEW_PRICE"]["VALUE"];?><sup>*</sup></p>
-							<p class="micrrro">* СКИДКА ПРЕДОСТАВЛЯЕТСЯ НА ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
+							<p class="micrrro">*СКИДКА ПРЕДОСТАВЛЯЕТСЯ НА ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ</p>
 						</div>
 					</div>
 				</div>
@@ -499,7 +499,7 @@ $this->setFrameMode(true);
 			type: 'itemView',
 			productid: '<?=$arResult['ID'];?>',
 			pagetype: '<?=$arResult['CODE'];?>',
-			list: 1,
+			list: 2,
 			totalvalue: '<?=$arResult["PROPERTIES"]["NEW_PRICE"]["VALUE"];?>'
 		});
 	</script>
