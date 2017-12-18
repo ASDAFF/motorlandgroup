@@ -476,7 +476,7 @@ $this->setFrameMode(true);
 
 			<tr class="mPrint_Price">
 				<td>&nbsp;</td>
-				<td>
+				<td style="line-height: 8px">
 					СТОИМОСТЬ АКСЕССУАРОВ :&nbsp;<?=$arResult['PROPERTIES']['PRICE_DOP']['VALUE']?>
 					<span>Аксессуары не входят в стоимость данного автомобиля.</span>
 				</td>
