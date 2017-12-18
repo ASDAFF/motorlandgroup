@@ -1161,7 +1161,12 @@ body.new-offers {
         .model-page-promo1-slider .model-page-promo1-slide .model-page-promo1-gallery-selector img:hover {
           transform: scale(1.1); }
 
-
+.offer-public-rule{
+  font-size: 12px;
+  color: grey;
+  margin: 10px;
+  text-align: center;
+}
 
 .clear {
   clear: both;

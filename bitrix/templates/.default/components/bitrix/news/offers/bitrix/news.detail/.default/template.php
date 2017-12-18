@@ -202,7 +202,8 @@ $this->setFrameMode(true);
 
 				<p class="hModest">Стоимость аксессуаров</p>
 				<hr>
-				<p class="hBrazen"><?=$arResult["PROPERTIES"]["PRICE_DOP"]["VALUE"];?></p>
+				<p class="hBrazen"><?=$arResult["PROPERTIES"]["PRICE_DOP"]["VALUE"];?>*</p>
+				<p class="offer-public-rule">Аксессуары не входят в стоимость данного автомобиля.</p>
 			</div>
 		</div>
 
