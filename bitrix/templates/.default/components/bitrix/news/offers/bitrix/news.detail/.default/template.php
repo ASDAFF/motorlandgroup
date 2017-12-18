@@ -199,6 +199,10 @@ $this->setFrameMode(true);
 					</div>
 					<?endforeach;?>
 				</div>
+
+				<p class="hModest">Стоимость аксессуаров</p>
+				<hr>
+				<p class="hBrazen"><?=$arResult["PROPERTIES"]["PRICE_DOP"]["VALUE"];?></p>
 			</div>
 		</div>
 
