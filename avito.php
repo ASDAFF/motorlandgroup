@@ -59,7 +59,7 @@ $xml .= '<offers>';
 	  $xml .= '<offer id="'.$arResult['ID'].'" available="true" >';
 	  
 	  
-	  $xml .= '<url>'.'http://www.motorlandgroup.ru/pages/offers/'.$arResult['CODE'].'/'.'</url>';
+	  $xml .= '<url>'.'http://www.motorlandgroup.ru/offers/'.$arResult['CODE'].'/'.'</url>';
 	  $xml .= '<price>'.$price_new_old.'</price>';
 	  $xml .= '<currencyId>RUR</currencyId>';
 	  $xml .= '<categoryId>15</categoryId>';
